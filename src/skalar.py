@@ -1,5 +1,6 @@
 import tkinter as tk
 import window as mw
+import instructions as ins
 
 class skalar_cookbook:
     def home_frame():
@@ -239,95 +240,105 @@ class skalar_cookbook:
                                                    skalar_cookbook.home_frame()]).grid(row = 5, column = 0, padx = 20, pady = 20)
 class skalar_recipes:
     def get_recipe(reagent, volume):
-        with open(r"C:\Users\john.sorensen\Box\programming\python\pi_lab\src\piReagText2.txt", mode = "r") as file:
-            recipes = file.readlines()
+        nitrb = ins.skalar_recipes.nitrateNitriteBuffer
+        nitrc = ins.skalar_recipes.nitrateNitriteColor
+        ffd6 = ins.skalar_recipes.phosphateFFD6
+        sulf = ins.skalar_recipes.phosphateSulfuric
+        hept = ins.skalar_recipes.phosphateAmmoniumHeptamolybdate
+        lplus = ins.skalar_recipes.phosphateLAscorbicAcid
+        ammob = ins.skalar_recipes.ammoniaBuffer
+        sali = ins.skalar_recipes.ammoniaSalicyalite
+        nitr = ins.skalar_recipes.ammoniaNitroprusside
+        dich = ins.skalar_recipes.ammoniaDichlorocyanurite
+        rins = ins.skalar_recipes.rinsingLiquid
+        skastd = ins.skalar_recipes.skalarSTD
         if reagent == "nitrate_buffer" and volume == 500:
-            recipe = recipes[5:9]
+            recipe = nitrb["500 mL"]
             return recipe
         if reagent == "nitrate_buffer" and volume == 1000:
-            recipe = recipes[11:15]
+            recipe = nitrb["1 L"]
             return recipe
         if reagent == "nitrate_buffer" and volume == 2000:
-            recipe = recipes[17:21]
+            recipe = nitrb["2 L"]
             return recipe
         if reagent == "color_reagent" and volume == 500:
-            recipe = recipes[23:28]
+            recipe = nitrc["500 mL"]
             return recipe
         if reagent == "color_reagent" and volume == 1000:
-            recipe = recipes[30:35]
+            recipe = nitrc["1 L"]
             return recipe
         if reagent == "ffd6" and volume == 500:
-            recipe = "To 500 mL of Deionized Water add 1 mL of FFD6."
+            recipe = ffd6["500 mL"]
             return recipe
         if reagent == "ffd6" and volume == 1000:
-            recipe = "To 1000 mL of Deionized Water add 2 mL of FFD6."
+            recipe = ffd6["1 L"]
             return recipe
         if reagent == "sulfuric_acid" and volume == 500:
-            recipe = recipes[43:47]
+            recipe = sulf["500 mL"]
             return recipe
         if reagent == "sulfuric_acid" and volume == 1000:
-            recipe = recipes[49:53]
+            recipe = sulf["1 L"]
             return recipe
         if reagent == "ammonium_heptamolybdate" and volume == 500:
-            recipe = recipes[55:60]
+            recipe = hept["500 mL"]
             return recipe
         if reagent == "ammonium_heptamolybdate" and volume == 1000:
-            recipe = recipes[62:67]
+            recipe = hept["1 L"]
             return recipe
         if reagent == "l_plus_ascorbic" and volume == 500:
-            recipe = recipes[74:78]
+            recipe = lplus["500 mL"]
             return recipe
         if reagent == "l_plus_ascorbic" and volume == 1000:
-            recipe = recipes[80:84]
+            recipe = lplus["1 L"]
             return recipe
         if reagent == "ammonium_buffer" and volume == 500:
-            recipe = recipes[86:91]
+            recipe = ammob["500 mL"]
             return recipe
         if reagent == "ammonium_buffer" and volume == 1000:
-            recipe = recipes[93:98]
+            recipe = ammob["1 L"]
             return recipe
         if reagent == "ammonium_buffer" and volume == 2000:
-            recipe = recipes[100:105]
+            recipe = ammob["2 L"]
             return recipe
         if reagent == "salicyalite" and volume == 500:
-            recipe = recipes[107:111]
+            recipe = sali["500 mL"]
             return recipe
         if reagent == "salicyalite" and volume == 1000:
-            recipe = recipes[113:117]
+            recipe = sali["1 L"]
             return recipe
         if reagent == "nitroprusside" and volume == 500:
-            recipe = recipes[119:122]
+            recipe = nitr["500 mL"]
             return recipe
         if reagent == "nitroprusside" and volume == 1000:
-            recipe = recipes[124:127]
+            recipe = nitr["1 L"]
             return recipe
         if reagent == "dichlorocyanurite" and volume == 500:
-            recipe = recipes[129:132]
+            recipe = dich["500 mL"]
             return recipe
         if reagent == "dichlorocyanurite" and volume == 1000:
-            recipe = recipes[134:137]
+            recipe = dich["1 L"]
             return recipe
         if reagent == "rinsing" and volume == 500:
-            recipe = "Add 1 mL of Sulfuric Acid to 500 mL DI Water."
+            recipe = rins["500 mL"]
             return recipe
         if reagent == "rinsing" and volume == 1000:
-            recipe = "Add 2 mL of Sulfuric Acid to 1 L of DI Water."
+            recipe = rins["1 L"]
             return recipe
         if reagent == "rinsing" and volume == 2000:
-            recipe = "Add 4 mL of Sulfuric Acid to 2 L of DI Water."
+            recipe = rins["2 L"]
             return recipe
         if reagent == "std1":
-            recipe = recipes[138:143]
+            recipe = skastd["STD 1"]
             return recipe
         if reagent == "std2":
-            recipe = recipes[144:149]
+            recipe = skastd["STD 2"]
             return recipe
         if reagent == "std3":
-            recipe = recipes[150:155]
+            recipe = skastd["STD 3"]
             return recipe
         if reagent == "std4":
-            recipe = recipes[156:161]
+            recipe = skastd["STD 4"]
             return recipe
         if reagent == "std5":
-            recipe = recipes[162:167]
+            recipe = skastd["STD 5"]
             return recipe
