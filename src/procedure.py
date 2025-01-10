@@ -191,7 +191,7 @@ class procedure_selection:
         
 class protocols:
     def open_protocols():
-        with open("protocols.txt", mode = "r") as file:
+        with open(r"C:\Users\john.sorensen\Box\programming\python\pi_lab\src\protocols.txt", mode = "r") as file:
             proto = file.readlines()
             return proto
 

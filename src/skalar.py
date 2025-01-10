@@ -239,7 +239,7 @@ class skalar_cookbook:
                                                    skalar_cookbook.home_frame()]).grid(row = 5, column = 0, padx = 20, pady = 20)
 class skalar_recipes:
     def get_recipe(reagent, volume):
-        with open("piReagText2.txt", mode = "r") as file:
+        with open(r"C:\Users\john.sorensen\Box\programming\python\pi_lab\src\piReagText2.txt", mode = "r") as file:
             recipes = file.readlines()
         if reagent == "nitrate_buffer" and volume == 500:
             recipe = recipes[5:9]

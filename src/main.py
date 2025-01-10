@@ -8,9 +8,6 @@ class MainWindow:
         self.master = master
         self.master.title("piLab By John Sorensen")
 
-    def open_extracts(self):
-        procedure_selection(self.master)
-
 
 if __name__ == "__main__":
     root = tk.Tk()
