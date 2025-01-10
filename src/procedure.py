@@ -70,12 +70,12 @@ class procedure_selection:
                           command = lambda: [mw.window.clear_frame(m3_frame),
                                              protocols.m3_stock_click(protocols.open_protocols())]).grid(row = 7, column = 1, padx = 20, pady = 20)
         m3_1L = tk.Button(m3_frame,
-                          text = "M3 Solution 1 L",
+                          text = "M3 Solution 2.5 L",
                           font = ("Arial", 20),
                           command = lambda: [mw.window.clear_frame(m3_frame),
                                              protocols.m3_1L_click(protocols.open_protocols())]).grid(row = 7, column = 3, padx = 20, pady = 20)
         m3_2L = tk.Button(m3_frame,
-                          text = "M3 Solution 2 L",
+                          text = "M3 Solution 5 L",
                           font = ("Arial", 20),
                           command = lambda: [mw.window.clear_frame(m3_frame),
                                              protocols.m3_2L_click(protocols.open_protocols())]).grid(row = 8, column =2, padx = 20, pady = 20)
