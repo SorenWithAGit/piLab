@@ -1,3 +1,10 @@
+"""
+window.py adds the .clear_frame function to destroy a frame to be 
+rebuilt by the click of another tk button.
+piLab_home will rebuild the home window
+"""
+
+
 import tkinter as tk
 import procedure as pr
 
