@@ -1,6 +1,7 @@
 import tkinter as tk
 import window as mw
 import procedure as pr
+import instructions as ins
 
 class icp_cookbook:
     def icp_home_frame():
@@ -134,7 +135,6 @@ class icp_cookbook:
 
 class icp_control:
     def std_3_proto():
-        proto = pr.protocols.open_protocols()
         std_3 = tk.Frame()
         std_3.pack()
         text = tk.Text(std_3,
@@ -142,8 +142,8 @@ class icp_control:
                        width = 50,
                        font = ("Arial", 18))
         text.grid(row = 0, column = 0, padx = 20, pady =20)
-        for line in proto[90:94]:
-            text.insert(tk.END, line)
+        std3 = ins.icp_recipes.icpSTD["STD 3"]
+        text.insert(tk.END, std3)
         piLab_home = tk.Button(std_3,
                          text = "piLab Home",
                          font = ("Arial", 20),
@@ -156,7 +156,6 @@ class icp_control:
                                                 icp_cookbook.icp_home_frame()]).grid(row = 1, column = 2, padx = 20, pady = 20)
 
     def std_2_proto():
-        proto = pr.protocols.open_protocols()
         std_2 = tk.Frame()
         std_2.pack()
         text = tk.Text(std_2,
@@ -164,8 +163,8 @@ class icp_control:
                        width = 50,
                        font = ("Arial", 18))
         text.grid(row = 0, column = 0, padx = 20, pady =20)
-        for line in proto[95:99]:
-            text.insert(tk.END, line)
+        std2 = ins.icp_recipes.icpSTD["STD 2"]
+        text.insert(tk.END, std2)
         piLab_home = tk.Button(std_2,
                          text = "piLab Home",
                          font = ("Arial", 20),
@@ -178,7 +177,6 @@ class icp_control:
                                                 icp_cookbook.icp_home_frame()]).grid(row = 1, column = 2, padx = 20, pady = 20)
 
     def std_1_proto():
-        proto = pr.protocols.open_protocols()
         std_1 = tk.Frame()
         std_1.pack()
         text = tk.Text(std_1,
@@ -186,8 +184,8 @@ class icp_control:
                        width = 50,
                        font = ("Arial", 18))
         text.grid(row = 0, column = 0, padx = 20, pady =20)
-        for line in proto[100:104]:
-            text.insert(tk.END, line)
+        std1 = ins.icp_recipes.icpSTD["STD 1"]
+        text.insert(tk.END, std1)
         piLab_home = tk.Button(std_1,
                          text = "piLab Home",
                          font = ("Arial", 20),
