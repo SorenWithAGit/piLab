@@ -280,7 +280,7 @@ Add 5 mL of STD 2 to a 50 mL volumetric flask
 Dilute to mark."""
     }
 
-class extraction_procedures:
+class extract_protocols:
 
     mehlich3 = """Extraction is a 1:10 Soil to Mehlich 3 
 Extraction Solution.
@@ -299,5 +299,6 @@ Extraction Solution.
 To 3 g of soil add 30 mL of solution."""
 
     hcl = """Extraction is a 1:10 plant sample to
-Hydrochloric Acid. Ash 2 g of sample in muffle furnace.
+Hydrochloric Acid. Ash 2 g of sample in a muffle 
+furnace.
 Add 20 mL of 32% Hydrochloric Acid."""

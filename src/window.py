@@ -25,12 +25,17 @@ class window:
                              command = lambda: [window.clear_frame(home),
                                                pr.procedure_selection.extracts_click()] ).grid(row = 7, column = 1, padx = 20, pady = 20)
 
-        instruments = tk.Button(home,
-                                text = "Instrumentation",
+        instrument_recipies = tk.Button(home,
+                                text = "Instrument Recipes",
                                 font = ("Arial", 20),
                                 command = lambda: [window.clear_frame(home),
                                                    pr.procedure_selection.instruments_click()]).grid(row = 7, column = 3, padx = 20, pady = 20)
-        protocols = tk.Button(home,
-                              text = "Protocols",
+        extraction_protocols = tk.Button(home,
+                              text = "Extraction Protocols",
                               font = ("Arial", 20),
-                              ).grid(row = 8, column = 2, padx = 20, pady = 20)
+                              command = lambda: [window.clear_frame(home),
+                                                 pr.procedure_selection.extraction_protocol()]).grid(row = 8, column = 1, padx = 20, pady = 20)
+        analytical_instruments = tk.Button(home,
+                                text = "Analytical Instrumentation",
+                                font = ("Arial", 20),
+                                ).grid(row = 8, column = 3, padx = 20, pady = 20)

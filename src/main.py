@@ -5,7 +5,6 @@ main.py initializes the tkinter window to navigate the piLab package
 
 import tkinter as tk
 import window
-from procedure import procedure_selection
 
 class MainWindow:
 
