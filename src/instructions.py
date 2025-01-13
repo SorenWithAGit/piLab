@@ -279,3 +279,25 @@ Dilute to mark.""",
 Add 5 mL of STD 2 to a 50 mL volumetric flask
 Dilute to mark."""
     }
+
+class extraction_procedures:
+
+    mehlich3 = """Extraction is a 1:10 Soil to Mehlich 3 
+Extraction Solution.
+To 3 g of soil add 30 mL of solution."""
+
+    potassiumChloride = """Extraction is a 1:10 Soil to Potassium  
+Chloride Extraction Solution.
+To 3 g of soil add 30 mL of solution."""
+
+    olsenP = """Extraction is a 1:10 Soil to Olsen P
+Extraction Solution.
+To 3 g of soil add 30 mL of solution."""
+
+    h3a = """Extraction is a 1:10 Soil to Haney 3 Acid
+Extraction Solution.
+To 3 g of soil add 30 mL of solution."""
+
+    hcl = """Extraction is a 1:10 plant sample to
+Hydrochloric Acid. Ash 2 g of sample in muffle furnace.
+Add 20 mL of 32% Hydrochloric Acid."""
