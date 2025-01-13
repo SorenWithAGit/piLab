@@ -1,6 +1,5 @@
 import tkinter as tk
 import window as mw
-import procedure as pr
 import instructions as ins
 
 class icp_cookbook:
