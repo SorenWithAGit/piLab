@@ -302,3 +302,32 @@ To 3 g of soil add 30 mL of solution."""
 Hydrochloric Acid. Ash 2 g of sample in a muffle 
 furnace.
 Add 20 mL of 32% Hydrochloric Acid."""
+
+class icp_operation:
+
+    step1 = """Step 1: Gas Supply
+At the argon tanks pallet rotate the valve
+clockwise to open the gas supply."""
+
+    step2 = """Step 2: Pump Tubing
+Stretch the pump tubing at the auto sampler
+and peltier pump on the ICP, ensure the 
+tubes are secured by the clamps, secure
+the clamps"""
+
+    step3 = """Step 3: Power On
+Flip the power switch on at the left side
+of the instrument, push the mains button in
+bottom left of the front of the instrument.
+Power on the Autosampler"""
+
+    step4 = """Step 4: Connection & Warmup
+Login to the ICP computer and open ICP Expert.
+Once launched click the instrument tab on the
+ribbon. A new window will open.
+Allow the ICP to warmup the peltier to 30 C
+before turning on the chiller. Roughly 30 mins
+can continue to step 5 as instrument warms."""
+
+    step5 = """Step 5: Sequence
+"""
