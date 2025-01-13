@@ -2,7 +2,6 @@ import tkinter as tk
 import window as mw
 import skalar as sk
 import icp as ic
-import instructions as ins
 import extractions as ex
 
 class procedure_selection:
