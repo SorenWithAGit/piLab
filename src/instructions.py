@@ -211,7 +211,7 @@ Transfer to solution container and add 3 L of Deionized Water."""
     }
 
     H3A = {
-        "1 L" : """Fill a 1000 mL volumetric flask half full of\m
+        "1 L" : """Fill a 1000 mL volumetric flask half full of
 Deionzied Water
 Add 1.1 g of Malic Acid
 Add 0.7 g of Citric Acid
