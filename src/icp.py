@@ -415,28 +415,28 @@ class icp_operation:
         icp_op = ins.icp_operation
         text = tk.Text(instruct_frame,
                            height = 10,
-                           width = 50,
+                           width = 45,
                            font = ("Arial", 18))
         text.grid(row = 0, column = 1)
         step = icp_op.step1
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20,
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 18),
+                                     font = ("Arial", 16),
                                      text = "ICP Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         icp_step_window.steps()]).grid(row = 1, column = 1,
                                                                                       padx = 20,
                                                                                       pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 2",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step2()]).grid(row = 1, column = 2,
@@ -450,35 +450,35 @@ class icp_operation:
         icp_op = ins.icp_operation
         text = tk.Text(instruct_frame,
                            height = 10,
-                           width = 50,
+                           width = 45,
                            font = ("Arial", 18))
         text.grid(row = 0, column = 1)
         step = icp_op.step2
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 18),
+                                     font = ("Arial", 16),
                                      text = "ICP Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         icp_step_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 1",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step1()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 3",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step3()]).grid(row = 2, column = 2,
@@ -491,35 +491,35 @@ class icp_operation:
         icp_op = ins.icp_operation
         text = tk.Text(instruct_frame,
                            height = 10,
-                           width = 50,
+                           width = 45,
                            font = ("Arial", 18))
         text.grid(row = 0, column = 1)
         step = icp_op.step3
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 18),
+                                     font = ("Arial", 16),
                                      text = "ICP Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         icp_step_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 2",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step2()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 4",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step4()]).grid(row = 2, column = 2,
@@ -532,35 +532,35 @@ class icp_operation:
         icp_op = ins.icp_operation
         text = tk.Text(instruct_frame,
                            height = 10,
-                           width = 50,
+                           width = 45,
                            font = ("Arial", 18))
         text.grid(row = 0, column = 1)
         step = icp_op.step4
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 18),
+                                     font = ("Arial", 16),
                                      text = "ICP Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         icp_step_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 3",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step3()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 5",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step5()]).grid(row = 2, column = 2,
@@ -573,35 +573,35 @@ class icp_operation:
         icp_op = ins.icp_operation
         text = tk.Text(instruct_frame,
                         height = 10,
-                        width = 50,
+                        width = 45,
                         font = ("Arial", 18))
         text.grid(row = 0, column = 1)
         step = icp_op.step5
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                     padx = 20, 
                                                                     pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                    font = ("Arial", 18),
+                                    font = ("Arial", 16),
                                     text = "ICP Step Home",
                                     command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         icp_step_window.steps()]).grid(row = 1, column = 2,
                                                                                     padx = 20,
                                                                                     pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 4",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                 icp_operation.step4()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 6",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                 icp_operation.step6()]).grid(row = 2, column = 2,
@@ -614,35 +614,35 @@ class icp_operation:
         icp_op = ins.icp_operation
         text = tk.Text(instruct_frame,
                            height = 10,
-                           width = 50,
+                           width = 45,
                            font = ("Arial", 18))
         text.grid(row = 0, column = 1)
         step = icp_op.step6
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 18),
+                                     font = ("Arial", 16),
                                      text = "ICP Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         icp_step_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 5",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step5()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 7",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step7()]).grid(row = 2, column = 2,
@@ -655,35 +655,35 @@ class icp_operation:
         icp_op = ins.icp_operation
         text = tk.Text(instruct_frame,
                            height = 10,
-                           width = 50,
+                           width = 45,
                            font = ("Arial", 18))
         text.grid(row = 0, column = 1)
         step = icp_op.step7
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 18),
+                                     font = ("Arial", 16),
                                      text = "ICP Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         icp_step_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 6",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step6()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 8",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step8()]).grid(row = 2, column = 2,
@@ -696,35 +696,35 @@ class icp_operation:
         icp_op = ins.icp_operation
         text = tk.Text(instruct_frame,
                            height = 10,
-                           width = 50,
+                           width = 45,
                            font = ("Arial", 18))
         text.grid(row = 0, column = 1)
         step = icp_op.step8
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 18),
+                                     font = ("Arial", 16),
                                      text = "ICP Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         icp_step_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 7",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step7()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 9",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step9()]).grid(row = 2, column = 2,
@@ -737,28 +737,28 @@ class icp_operation:
         icp_op = ins.icp_operation
         text = tk.Text(instruct_frame,
                            height = 10,
-                           width = 50,
+                           width = 45,
                            font = ("Arial", 18))
         text.grid(row = 0, column = 1)
         step = icp_op.step9
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 18),
+                                     font = ("Arial", 16),
                                      text = "ICP Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         icp_step_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 18),
+                                font = ("Arial", 16),
                                 text = "Step 8",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    icp_operation.step8()]).grid(row = 2, column = 0,
