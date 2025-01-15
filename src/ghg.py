@@ -227,10 +227,3 @@ class operating_procedure:
                                                    operating_procedure.step3()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
-        next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 20),
-                                text = "Step 5",
-                                command = lambda: [mw.window.clear_frame(instruct_frame),
-                                                   operating_procedure.step5()]).grid(row = 2, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)

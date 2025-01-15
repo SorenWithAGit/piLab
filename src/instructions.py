@@ -478,8 +478,8 @@ class ghg_stds:
     stds = """Standard 1 & 2:
 Evacuate 12 mL GC vials by use of syringe and needle.
 Ensure regulator flow valve is closed.
-Open standard tank's valve. Fix syringe to regulator by use of 
-present tubing on regulator.
+Open standard tank's valve. Fix syringe to regulator by use 
+of present tubing on regulator.
 Open the regulator valve and allow syringe to fill to 35 mL.
 Fix needle to syringe depress plunger to 30 mL. Add gas 
 standard to vials.
@@ -496,11 +496,13 @@ configuration to load on PAL system.
 """
 
     step2 = """Step 2: Method Startup
-Click the home button on GC, click method, select Greenhouse
-Press ok twice.
-Under the detector tab enable the TCD, EFC14, and FID EFC11.
-If flame for FID does not ignite (audible pop) press ignite.
-Allow GC to warmup, led indicator on instrument will turn green."""
+Click the home button on GC, click method, select 
+Greenhouse press ok twice.
+Under the detector tab enable the TCD, EFC14, 
+and FID EFC11.
+If flame for FID does not ignite (audible pop) 
+press ignite. Allow GC to warmup, led indicator on 
+instrument will turn green."""
 
     step3 = """Step 3: Table Setup & Run Sequence
 On top ribbon click "File" then "New Sequence", number of lines
@@ -513,8 +515,8 @@ Left click column label to select all, right click and select
 Click the "Play" Button to start sequence"""
 
     step4 = """Step 4: Data Collection
-After each sample has been run a .csv file will be created on
-the computer. After the sequence has completed copy the run
-file .csv's to an external disk for transfer for the 
-automation module to process."""
+After each sample has been run a .csv file will be created 
+on the computer. After the sequence has completed copy 
+the run file .csv's to an external disk for transfer for 
+the automation module to process."""
 
