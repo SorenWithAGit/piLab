@@ -402,7 +402,7 @@ class icp_step_window():
                                                                                 pady = 20)
         smtih_home_button = tk.Button(step_frame,
                                     font = ("Arial", 18),
-                                    text = "ICP Home",
+                                    text = "Smith Lab Home",
                                     command = lambda: [mw.window.clear_frame(step_frame),
                                         mw.window.Smith_lab_home()]).grid(row = 5,
                                                                         column = 0,
