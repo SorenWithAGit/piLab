@@ -18,8 +18,8 @@ class window:
          icp_op = ins.icp_operation
          text = tk.Text(welcome_frame,
                            height = 10,
-                           width = 45,
-                           font = ("Arial", 18))
+                           width = 52,
+                           font = ("Arial", 20))
          text.grid(row = 0, column = 1)
          text.insert(tk.END, welcome)
          smith_lab = tk.Button(welcome_frame,

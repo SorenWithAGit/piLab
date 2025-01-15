@@ -14,27 +14,27 @@ class skalar_cookbook:
                               font = ("Arial", 20)).grid(row = 6, columnspan = 3, padx = 20, pady = 20)
         nitr_button = tk.Button(home,
                                 text = "Nitrate/Nitrite Channel",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(home),
                                                    skalar_cookbook.nitrate_frame()]).grid(row = 7, column = 0, padx = 20, pady = 20)
         phos_button = tk.Button(home,
                                 text = "Phosphate Channel",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(home),
                                                    skalar_cookbook.phosphate_frame()]).grid(row = 7, column = 1, padx = 20, pady = 20)
         ammo_button = tk.Button(home,
                                 text = "Ammonium Channel",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(home),
                                                    skalar_cookbook.ammonium_frame()]).grid(row = 7, column = 2, padx = 20, pady = 20)
         rins_button = tk.Button(home,
                                 text = "Rinsing Liquid",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(home),
                                                    skalar_cookbook.volume_frame("rinsing")]).grid(row = 8, column = 0, padx = 20, pady = 20)
         stds_button = tk.Button(home,
                                 text = "Calibration Standards",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(home),
                                                    skalar_cookbook.standards_frame()]).grid(row = 8, column = 2, padx = 20, pady = 20)
         piLab_home = tk.Button(home,
@@ -52,17 +52,17 @@ class skalar_cookbook:
 
         nitr_buffer = tk.Button(nitr_frame,
                                 text = "Nitrate/Nitrite Buffer",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(nitr_frame),
                                                    skalar_cookbook.buffer_volume_frame("nitrate_buffer")]).grid(row = 6, column = 1, padx = 20, pady = 20)
         color_reag = tk.Button(nitr_frame,
                                text = "Color Reagent",
-                               font = ("Arial", 18),
+                               font = ("Arial", 20),
                                command = lambda: [mw.window.clear_frame(nitr_frame),
                                                    skalar_cookbook.volume_frame("color_reagent")]).grid(row = 6, column = 2, padx = 20, pady = 20)
         home_button = tk.Button(nitr_frame,
                                 text = "Skalar Home",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(nitr_frame),
                                                    skalar_cookbook.home_frame()]).grid(row = 7, column =0, padx = 20, pady = 20)
 
@@ -74,27 +74,27 @@ class skalar_cookbook:
                              text = "").grid(row = i)
         ffd6_button = tk.Button(phos_frame,
                                 text = "FFD6 Solution",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(phos_frame),
                                                    skalar_cookbook.volume_frame("ffd6")]).grid(row = 6, column = 1, padx = 20, pady = 20)
         sulf_button = tk.Button(phos_frame,
                                 text = "Sulfuric Acid Solution",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(phos_frame),
                                                    skalar_cookbook.volume_frame("sulfuric_acid")]).grid(row = 6, column = 2, padx = 20, pady = 20)
         hept_button = tk.Button(phos_frame,
                                 text = "Ammonium Heptamolybdate",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(phos_frame),
                                                    skalar_cookbook.volume_frame("ammonium_heptamolybdate")]).grid(row = 7, column = 1, padx = 20, pady = 20)
         lplus_button = tk.Button(phos_frame,
                                  text = "L+ Ascorbic Acid",
-                                 font = ("Arial", 18),
+                                 font = ("Arial", 20),
                                  command = lambda: [mw.window.clear_frame(phos_frame),
                                                    skalar_cookbook.volume_frame("l_plus_ascorbic")]).grid(row = 7, column = 2, padx = 20, pady = 20)
         home_button = tk.Button(phos_frame,
                                 text = "Skalar Home",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(phos_frame),
                                                    skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
 
@@ -106,27 +106,27 @@ class skalar_cookbook:
                              text = "").grid(row = i)
         ammo_buffer = tk.Button(ammo_frame,
                                 text = "Ammonium Buffer",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(ammo_frame),
                                                    skalar_cookbook.buffer_volume_frame("ammonium_buffer")]).grid(row = 6, column = 1, padx = 20, pady = 20)
         sali_button = tk.Button(ammo_frame,
                                   text = "Sodium Salicyalite Solution",
-                                  font = ("Arial", 18),
+                                  font = ("Arial", 20),
                                   command = lambda: [mw.window.clear_frame(ammo_frame),
                                                    skalar_cookbook.volume_frame("salicyalite")]).grid(row = 6, column = 2, padx = 20, pady = 20)
         nitro_button = tk.Button(ammo_frame,
                                  text = "Nitroprusside Solution",
-                                 font = ("Arial", 18),
+                                 font = ("Arial", 20),
                                  command = lambda: [mw.window.clear_frame(ammo_frame),
                                                    skalar_cookbook.volume_frame("nitroprusside")]).grid(row = 7, column = 1, padx = 20, pady = 20)
         dichlo_button = tk.Button(ammo_frame,
                                   text = "Dichlorocyanurite Solution",
-                                  font = ("Arial", 18),
+                                  font = ("Arial", 20),
                                   command = lambda: [mw.window.clear_frame(ammo_frame),
                                                    skalar_cookbook.volume_frame("dichlorocyanurite")]).grid(row = 7, column = 2, padx = 20, pady = 20)
         home_button = tk.Button(ammo_frame,
                                 text = "Skalar Home",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(ammo_frame),
                                                    skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
     def standards_frame():
@@ -136,34 +136,34 @@ class skalar_cookbook:
             label = tk.Label(std_frame,
                              text = "").grid(row = 1)
         std1 = tk.Button(std_frame,
-                         font = ("Arial", 18),
+                         font = ("Arial", 20),
                          text = "Standard 1",
                          command = lambda: [mw.window.clear_frame(std_frame),
                          skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std1", 100))]).grid(row = 6, column = 0, padx = 20, pady = 40)
         std2 = tk.Button(std_frame,
                          text = "Standard 2",
-                         font = ("Arial", 18),
+                         font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(std_frame),
                          skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std2", 100))]).grid(row = 6, column = 1, padx = 20, pady = 40)
         std3 = tk.Button(std_frame,
                          text = "Standard 3",
-                         font = ("Arial", 18),
+                         font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(std_frame),
                          skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std3", 100))]).grid(row = 6, column = 2, padx = 20, pady = 40)
         std4 = tk.Button(std_frame,
                          text = "Standard 4",
-                         font = ("Arial", 18),
+                         font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(std_frame),
                          skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std4", 100))]).grid(row = 7, column = 1, padx = 20, pady = 40)
         std5 = tk.Button(std_frame,
                          text = "Standard 5",
-                         font = ("Arial", 18),
+                         font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(std_frame),
                          skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std5", 100))]).grid(row = 7, column = 2, padx = 20, pady = 40)
 
         home_button = tk.Button(std_frame,
                                 text = "Skalar Home",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(std_frame),
                                                    skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
 
@@ -176,23 +176,23 @@ class skalar_cookbook:
                              text = "").grid(row = i)
         vol_1 = tk.Button(vol_frame,
                           text = "500 mL",
-                          font = ("Arial", 18),
+                          font = ("Arial", 20),
                           command = lambda: [mw.window.clear_frame(vol_frame),
                                              skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 500))]).grid(row = 6, column = 1, padx = 20, pady = 40)
         vol_2 = tk.Button(vol_frame,
                           text = "1,000 mL",
-                          font = ("Arial", 18),
+                          font = ("Arial", 20),
                           command = lambda: [mw.window.clear_frame(vol_frame),
                                              skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 1000))]).grid( row = 6, column = 2, padx = 20, pady = 40)
         vol_3 = tk.Button(vol_frame,
                           text = "2,000 mL",
-                          font = ("Arial", 18),
+                          font = ("Arial", 20),
                           command = lambda: [mw.window.clear_frame(vol_frame),
                                              skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 2000))]).grid(row = 7, column = 1, padx = 20, pady = 40)
 
         home_button = tk.Button(vol_frame,
                                 text = "Skalar Home",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(vol_frame),
                                                    skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
 
@@ -205,18 +205,18 @@ class skalar_cookbook:
                              text = "").grid(row = i)
         vol_1 = tk.Button(vol_frame,
                           text = "500 mL",
-                          font = ("Arial", 18),
+                          font = ("Arial", 20),
                           command = lambda: [mw.window.clear_frame(vol_frame),
                                              skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 500))]).grid(row = 6, column = 1, padx = 20, pady = 40)
         vol_2 = tk.Button(vol_frame,
                           text = "1,000 mL",
-                          font = ("Arial", 18),
+                          font = ("Arial", 20),
                           command = lambda: [mw.window.clear_frame(vol_frame),
                                              skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 1000))]).grid( row = 6, column = 2, padx = 20, pady = 40)
 
         home_button = tk.Button(vol_frame,
                                 text = "Skalar Home",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(vol_frame),
                                                    skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
 
@@ -228,14 +228,14 @@ class skalar_cookbook:
                              text = "").grid(row = i)
         text = tk.Text(inst_frame,
                        height = 10,
-                       width = 40,
-                       font = ("Arial", 18))
+                       width = 48,
+                       font = ("Arial", 20))
         text.grid(row = 4, column = 1, columnspan = 2, padx = 20, pady = 35)
         for line in recipe:
             text.insert(tk.END, line)
         home_button = tk.Button(inst_frame,
                                 text = "Skalar Home",
-                                font = ("Arial", 18),
+                                font = ("Arial", 20),
                                 command = lambda: [mw.window.clear_frame(inst_frame),
                                                    skalar_cookbook.home_frame()]).grid(row = 5, column = 0, padx = 20, pady = 20)
 class skalar_recipes:
@@ -411,7 +411,7 @@ class skalar_window:
                                                                                 padx = 20,
                                                                                 pady = 20)
         smtih_home_button = tk.Button(step_frame,
-                                    font = ("Arial", 18),
+                                    font = ("Arial", 20),
                                     text = "Smith Lab Home",
                                     command = lambda: [mw.window.clear_frame(step_frame),
                                         mw.window.Smith_lab_home()]).grid(row = 5,
@@ -425,28 +425,28 @@ class operating_procedure:
         skal_op = ins.skalar_operation
         text = tk.Text(instruct_frame,
                            height = 13,
-                           width = 45,
-                           font = ("Arial", 18))
+                           width = 48,
+                           font = ("Arial", 20))
         text.grid(row = 0, column = 1)
         step = skal_op.step1
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20,
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 16),
+                                     font = ("Arial", 20),
                                      text = "Skalar Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         skalar_window.steps()]).grid(row = 1, column = 1,
                                                                                       padx = 20,
                                                                                       pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 2",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step2()]).grid(row = 1, column = 2,
@@ -460,35 +460,35 @@ class operating_procedure:
         skal_op = ins.skalar_operation
         text = tk.Text(instruct_frame,
                            height = 13,
-                           width = 45,
-                           font = ("Arial", 18))
+                           width = 48,
+                           font = ("Arial", 20))
         text.grid(row = 0, column = 1)
         step = skal_op.step2
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 16),
+                                     font = ("Arial", 20),
                                      text = "Skalar Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         skalar_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 1",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step1()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 3",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step3()]).grid(row = 2, column = 2,
@@ -501,35 +501,35 @@ class operating_procedure:
         skal_op = ins.skalar_operation
         text = tk.Text(instruct_frame,
                            height = 13,
-                           width = 45,
-                           font = ("Arial", 18))
+                           width = 48,
+                           font = ("Arial", 20))
         text.grid(row = 0, column = 1)
         step = skal_op.step3
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 16),
+                                     font = ("Arial", 20),
                                      text = "Skalar Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         skalar_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 2",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step2()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 4",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step4()]).grid(row = 2, column = 2,
@@ -542,35 +542,35 @@ class operating_procedure:
         skal_op = ins.skalar_operation
         text = tk.Text(instruct_frame,
                            height = 13,
-                           width = 45,
-                           font = ("Arial", 18))
+                           width = 48,
+                           font = ("Arial", 20))
         text.grid(row = 0, column = 1)
         step = skal_op.step4
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 16),
+                                     font = ("Arial", 20),
                                      text = "Skalar Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         skalar_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 3",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step3()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 5",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step5()]).grid(row = 2, column = 2,
@@ -583,35 +583,35 @@ class operating_procedure:
         skal_op = ins.skalar_operation
         text = tk.Text(instruct_frame,
                         height = 13,
-                        width = 45,
-                        font = ("Arial", 14))
+                        width = 48,
+                        font = ("Arial", 20))
         text.grid(row = 0, column = 1)
         step = skal_op.step5
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                     padx = 20, 
                                                                     pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                    font = ("Arial", 16),
+                                    font = ("Arial", 20),
                                     text = "Skalar Step Home",
                                     command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         skalar_window.steps()]).grid(row = 1, column = 2,
                                                                                     padx = 20,
                                                                                     pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 4",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                 operating_procedure.step4()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 6",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                 operating_procedure.step6()]).grid(row = 2, column = 2,
@@ -624,35 +624,35 @@ class operating_procedure:
         skal_op = ins.skalar_operation
         text = tk.Text(instruct_frame,
                            height = 13,
-                           width = 45,
-                           font = ("Arial", 18))
+                           width = 48,
+                           font = ("Arial", 20))
         text.grid(row = 0, column = 1)
         step = skal_op.step6
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 16),
+                                     font = ("Arial", 20),
                                      text = "Skalar Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         skalar_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 5",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step5()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 7",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step7()]).grid(row = 2, column = 2,
@@ -665,35 +665,35 @@ class operating_procedure:
         skal_op = ins.skalar_operation
         text = tk.Text(instruct_frame,
                            height = 13,
-                           width = 45,
-                           font = ("Arial", 18))
+                           width = 48,
+                           font = ("Arial", 20))
         text.grid(row = 0, column = 1)
         step = skal_op.step7
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 16),
+                                     font = ("Arial", 20),
                                      text = "Skalar Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         skalar_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 6",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step6()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 8",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step8()]).grid(row = 2, column = 2,
@@ -706,35 +706,35 @@ class operating_procedure:
         skal_op = ins.skalar_operation
         text = tk.Text(instruct_frame,
                            height = 13,
-                           width = 45,
-                           font = ("Arial", 18))
+                           width = 48,
+                           font = ("Arial", 20))
         text.grid(row = 0, column = 1)
         step = skal_op.step8
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 16),
+                                     font = ("Arial", 20),
                                      text = "Skalar Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         skalar_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 7",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step7()]).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 9",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step9()]).grid(row = 2, column = 2,
@@ -747,28 +747,28 @@ class operating_procedure:
         skal_op = ins.skalar_operation
         text = tk.Text(instruct_frame,
                            height = 13,
-                           width = 45,
-                           font = ("Arial", 18))
+                           width = 48,
+                           font = ("Arial", 20))
         text.grid(row = 0, column = 1)
         step = skal_op.step9
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                     mw.window.Smith_lab_home()]).grid(row = 1, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
-                                     font = ("Arial", 16),
+                                     font = ("Arial", 20),
                                      text = "Skalar Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         skalar_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(instruct_frame,
-                                font = ("Arial", 16),
+                                font = ("Arial", 20),
                                 text = "Step 8",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
                                                    operating_procedure.step8()]).grid(row = 2, column = 0,

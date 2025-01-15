@@ -16,7 +16,7 @@ class MainWindow:
 if __name__ == "__main__":
     root = tk.Tk()
     root.title("piLab By John Sorensen")
-    root.geometry("1024x600")
+    root.geometry("1280x800")
     root.resizable(width = False, height = False)
     app = MainWindow(root)
     window.window.piLab_home()
