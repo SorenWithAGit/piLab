@@ -22,7 +22,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -48,7 +48,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -73,7 +73,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -99,7 +99,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -124,7 +124,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -150,7 +150,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -176,7 +176,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -201,7 +201,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -227,7 +227,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -253,7 +253,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -279,7 +279,7 @@ class recipes:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -307,7 +307,7 @@ class extract_protocol:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extraction_protocols= tk.Button(frame,
                                  text = "Extraction Protocols",
                                  font = ("Arial", 20),
@@ -332,7 +332,7 @@ class extract_protocol:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                   mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extraction_protocols= tk.Button(frame,
                                  text = "Extraction Protocols",
                                  font = ("Arial", 20),
@@ -357,7 +357,7 @@ class extract_protocol:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extraction_protocols= tk.Button(frame,
                                 text = "Extraction Protocols",
                                 font = ("Arial", 20),
@@ -382,7 +382,7 @@ class extract_protocol:
                                     text = "piLab Home",
                                     font = ("Arial", 18),
                                     command = lambda: [mw.window.clear_frame(frame),
-                                                    mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                    mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
             extraction_protocols= tk.Button(frame,
                                     text = "Extraction Protocols",
                                     font = ("Arial", 20),
@@ -407,7 +407,7 @@ class extract_protocol:
                                 text = "piLab Home",
                                 font = ("Arial", 18),
                                 command = lambda: [mw.window.clear_frame(frame),
-                                                mw.window.piLab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                                mw.window.Smith_lab_home()]).grid(row = 5, column = 0, padx = 20, pady = 20)
         extraction_protocols= tk.Button(frame,
                                 text = "Extraction Protocols",
                                 font = ("Arial", 20),

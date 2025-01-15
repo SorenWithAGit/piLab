@@ -13,7 +13,7 @@ class window:
     def clear_frame(frame):
         frame.destroy()
     
-    def piLab_home():
+    def Smith_lab_home():
         home = tk.Frame()
         home.pack()
         for i in range(6):

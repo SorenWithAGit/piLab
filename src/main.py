@@ -19,5 +19,5 @@ if __name__ == "__main__":
     root.geometry("1024x600")
     root.resizable(width = False, height = False)
     app = MainWindow(root)
-    window.window.piLab_home()
+    window.window.Smith_lab_home()
     root.mainloop()

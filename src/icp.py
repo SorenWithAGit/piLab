@@ -30,7 +30,7 @@ class icp_cookbook:
                          text = "piLab Home",
                          font = ("Arial", 18),
                          command = lambda: [mw.window.clear_frame(home_frame),
-                                            mw.window.piLab_home()]).grid(row = 3, column = 0, padx = 50, pady = 50)
+                                            mw.window.Smith_lab_home()]).grid(row = 3, column = 0, padx = 50, pady = 50)
 
     def icp_element_frame():
         element_frame = tk.Frame()
@@ -125,7 +125,7 @@ class icp_cookbook:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(element_frame),
-                                            mw.window.piLab_home()]).grid(row = 4, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 4, column = 0, padx = 20, pady = 20)
         icp_home = tk.Button(element_frame,
                              text = "ICP Home",
                              font = ("Arial", 20),
@@ -147,7 +147,7 @@ class icp_control:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(std_3),
-                                            mw.window.piLab_home()]).grid(row = 1, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 1, column = 0, padx = 20, pady = 20)
         icp_home = tk.Button(std_3,
                              text = "ICP Home",
                              font = ("Arial", 20),
@@ -168,7 +168,7 @@ class icp_control:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(std_2),
-                                            mw.window.piLab_home()]).grid(row = 1, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 1, column = 0, padx = 20, pady = 20)
         icp_home = tk.Button(std_2,
                              text = "ICP Home",
                              font = ("Arial", 20),

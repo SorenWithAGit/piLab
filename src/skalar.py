@@ -41,7 +41,7 @@ class skalar_cookbook:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(home),
-                                            mw.window.piLab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
 
     def nitrate_frame():
         nitr_frame = tk.Frame()

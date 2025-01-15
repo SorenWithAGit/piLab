@@ -26,7 +26,7 @@ class procedure_selection:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(instrument_frame),
-                                            mw.window.piLab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
     def extracts_click():     
          extract_frame = tk.Frame()
          extract_frame.pack()
@@ -57,7 +57,7 @@ class procedure_selection:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(extract_frame),
-                                            mw.window.piLab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
     
     
     def m3_click():
@@ -85,7 +85,7 @@ class procedure_selection:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(m3_frame),
-                                            mw.mw.window.piLab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                                            mw.mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(m3_frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -114,7 +114,7 @@ class procedure_selection:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(h3a_frame),
-                                            mw.window.piLab_home()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 8, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(h3a_frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -143,7 +143,7 @@ class procedure_selection:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(olsen_frame),
-                                            mw.window.piLab_home()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 8, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(olsen_frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -182,7 +182,7 @@ class procedure_selection:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(kcl_frame),
-                                            mw.window.piLab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(kcl_frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
@@ -236,4 +236,4 @@ class procedure_selection:
                          text = "piLab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(ex_pro_frame),
-                                            mw.window.piLab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
