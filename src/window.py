@@ -29,6 +29,18 @@ class window:
                                                   window.Smith_lab_home()]).grid(row = 1, column = 1,
                                                                                  padx = 20,
                                                                                  pady = 20)
+         yost_lab = tk.Button(welcome_frame,
+                              text = "Yost Lab?",
+                              font = ("Arial", 20),
+                              ).grid(row = 2, column = 1,
+                                     padx = 20,
+                                     pady = 20)
+         Schantz_lab = tk.Button(welcome_frame,
+                              text = "Schantz Lab?",
+                              font = ("Arial", 20),
+                              ).grid(row = 3, column = 1,
+                                     padx = 20,
+                                     pady = 20)
 
     def clear_frame(frame):
         frame.destroy()
@@ -60,3 +72,10 @@ class window:
                                 font = ("Arial", 20),
                                 command = lambda: [window.clear_frame(home),
                                                    pr.procedure_selection.analytical_instruments()]).grid(row = 8, column = 3, padx = 20, pady = 20)
+        piLab_home = tk.Button(home,
+                               text = "piLab Home",
+                               font = ("Arial", 20),
+                               command = lambda: [window.clear_frame(home),
+                                                  window.piLab_home()]).grid(row = 9, column = 0,
+                                                                             padx = 20,
+                                                                             pady = 20)

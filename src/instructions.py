@@ -186,6 +186,83 @@ Add 400 uL of 1000 ppm Ammonia Stock Standard
 Dilute to 100 mL for final 4.0 ppm"""
     }
 
+class skalar_operation:
+    
+    step1 = """Step 1: Pump Tubing
+Tighten the pump tubing for the autosampler and 
+SAN++ Chemistry Unit."""
+
+    step2 = """Step 2: Power on and Connection
+In the following order turn on:
+Auto Sampler, Chemistry Unit, Interface, Computer.
+Open Flow Access V3 on the desktop,
+Select the USA configuration (only one)."""
+
+    step3 = """Step 3: Reagent lines
+Place all reagent lines & Autosampler lines
+into the Brij Solution (1 mL Brij/ L DI).
+Allow lines to rest in solution for 10 minutes.
+Remove lines one channel at a time and place
+in corresponding reagent bottle, autosampler
+lines placed in Rinsing Liquid.
+Allow to sit for 5 minutes, then open
+the cadmium column."""
+
+    step4 = """Step 4: Baseline Monitoring
+After lines have sat in reagent bottles, 
+select "BASELINE" on the top ribbon,
+Choose appropriate channels.
+KCl Extracts: Nitrate & Ammonium.
+All others: Nitrate, Phosphate, Ammonium.
+Monitor baseline for 10 - 15 minutes,
+baseline should spike then idle out.
+Can enter sample info to run while waiting."""
+
+    step5 = """Step 5: Table Preparation
+Select "Table" from the top ribbon, choose "Edit Existing".
+Standards 1 - 5 and initial Tracer and drift should already
+be populated.
+Delete unneccessary rows by highlighting and right clicking
+choose delete rows.
+If additional rows are needed click cursor in the last row in
+the "Sample Type" column. 
+Samples are added in groups of 10 or less by typing U and 
+pressing enter. Every 10 samples type D to insert a drift 
+and  wash. Continue with Samples. Position is 
+filled with A  followed by the corresponding 
+Autosampler position."""
+
+    step6 = """Step 6: Sample positions and Placement
+The initial Tracer and Drift (STD 5) are placed in 
+Autosampler position 1 & 2. Standards 1-5 are placed in
+3, 4, 5, 6, 7. with a Drift (STD 5) in 8.
+Fill samples (with drift after every 10 samples)."""
+
+    step7 = """Step 7: Begin Run
+By this time all samples a& standards should be loaded
+and all baselines are idle. Select "Stop" and uncheck 
+Channels. 
+Select Analysis and check the appropriate channels for 
+the analysis. 
+KCl: Nitrate & Ammonium.
+All others: Nitrate, Phosphate, Ammonium.
+Assign a name to the Run and begin.
+Monitor the baseline for the standards to 
+ensure everything is functioning properly."""
+
+    step8 = """Step 8: Export Run
+When run has finished export the run by 
+data processing in the main window, open the run.
+At the top ribbon select export and choose excel.
+Move the excel file to an external flashdrive."""
+
+    step9 = """Step 9: Shut Down
+Close the Cadmium column and place reagent lines
+into a beaker of DI water. Allow to rest for 15
+minutes. Shutdown in the following order:
+Interface, Chemistry Unit, Autosampler.
+Release the pump tubing."""
+
 class extractant_recipes:
 
     mehlich3Stock = """Fill a 100 mL volumetric flask with 50-60 mL

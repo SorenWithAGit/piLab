@@ -251,6 +251,13 @@ class procedure_selection:
                                                   ic.icp_step_window.steps()]).grid(row = 7, column = 0,
                                                                                     padx = 20,
                                                                                     pady = 20)
+        skalar_button = tk.Button(analy_ins_frame,
+                                  text = "SKalar CFA",
+                                  font = ("Arial", 20),
+                                  command = lambda: [mw.window.clear_frame(analy_ins_frame),
+                                                     sk.skalar_window.steps()]).grid(row = 7, column = 1,
+                                                                               padx = 20,
+                                                                               pady = 20)
         smith_lab_home = tk.Button(analy_ins_frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
