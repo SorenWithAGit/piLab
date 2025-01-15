@@ -284,19 +284,39 @@ class extract_protocols:
 
     mehlich3 = """Extraction is a 1:10 Soil to Mehlich 3 
 Extraction Solution.
-To 3 g of soil add 30 mL of solution."""
+To 3 g of soil add 30 mL of solution.
+Shake for 5 minutes then centrifuge
+at 3000 rpm for 5 mins.
+Pour the supernatant through a 2V
+filter paper into a 20 mL 
+scintillation vial."""
 
     potassiumChloride = """Extraction is a 1:10 Soil to Potassium  
 Chloride Extraction Solution.
-To 3 g of soil add 30 mL of solution."""
+To 3 g of soil add 30 mL of solution.
+shake for 1 hour then centrifuge
+at 3000 rpm for 5 mins.
+Pour the supernatant through a 2V
+filter paper into a 20 mL 
+scintillation vial."""
 
     olsenP = """Extraction is a 1:10 Soil to Olsen P
 Extraction Solution.
-To 3 g of soil add 30 mL of solution."""
+To 3 g of soil add 30 mL of solution.
+shake for 5 minutes then centrifuge
+at 3000 rpm for 5 mins.
+Pour the supernatant through a 2V
+filter paper into a 20 mL 
+scintillation vial."""
 
     h3a = """Extraction is a 1:10 Soil to Haney 3 Acid
 Extraction Solution.
-To 3 g of soil add 30 mL of solution."""
+To 3 g of soil add 30 mL of solution.
+shake for 5 minutes then centrifuge
+at 3000 rpm for 5 mins.
+Pour the supernatant through a 2V
+filter paper into a 20 mL 
+scintillation vial."""
 
     hcl = """Extraction is a 1:10 plant sample to
 Hydrochloric Acid. Ash 2 g of sample in a muffle 
