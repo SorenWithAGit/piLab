@@ -71,7 +71,7 @@ class operating_procedure:
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
                                      font = ("Arial", 20),
-                                     text = "Skalar Step Home",
+                                     text = "GHG Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         ghg_window.steps()]).grid(row = 1, column = 1,
                                                                                       padx = 20,
@@ -98,7 +98,7 @@ class operating_procedure:
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
                                      font = ("Arial", 20),
-                                     text = "Skalar Step Home",
+                                     text = "GHG Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         ghg_window.steps()]).grid(row = 1, column = 1,
                                                                                       padx = 20,
@@ -133,7 +133,7 @@ class operating_procedure:
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
                                      font = ("Arial", 20),
-                                     text = "Skalar Step Home",
+                                     text = "GHG Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         ghg_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
@@ -174,7 +174,7 @@ class operating_procedure:
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
                                      font = ("Arial", 20),
-                                     text = "Skalar Step Home",
+                                     text = "GHG Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         ghg_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
@@ -215,7 +215,7 @@ class operating_procedure:
                                                                       pady = 20)
         step_home_button = tk.Button(instruct_frame,
                                      font = ("Arial", 20),
-                                     text = "Skalar Step Home",
+                                     text = "GHG Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
                                                         ghg_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
