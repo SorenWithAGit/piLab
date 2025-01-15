@@ -7,8 +7,28 @@ piLab_home will rebuild the home window
 
 import tkinter as tk
 import procedure as pr
+import instructions as ins
 
 class window:
+
+    def piLab_home():
+         welcome = ins.welcome.welcome_statment
+         welcome_frame = tk.Frame()
+         welcome_frame.pack()
+         icp_op = ins.icp_operation
+         text = tk.Text(welcome_frame,
+                           height = 10,
+                           width = 45,
+                           font = ("Arial", 18))
+         text.grid(row = 0, column = 1)
+         text.insert(tk.END, welcome)
+         smith_lab = tk.Button(welcome_frame,
+                               text = "Smith Lab",
+                               font = ("Arial", 20),
+                               command = lambda: [window.clear_frame(welcome_frame),
+                                                  window.Smith_lab_home()]).grid(row = 1, column = 1,
+                                                                                 padx = 20,
+                                                                                 pady = 20)
 
     def clear_frame(frame):
         frame.destroy()

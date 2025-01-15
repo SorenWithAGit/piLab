@@ -1,3 +1,9 @@
+class welcome:
+    welcome_statment = """Welcome to piLab developed by John Sorensen!
+This tool will be a guide to protocols & operating 
+procedures for the Grassland Soil Water Research
+Laboratory in Temple, Texas."""
+
 class skalar_recipes:
 
     rinsingLiquid = {
