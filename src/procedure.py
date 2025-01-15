@@ -3,6 +3,7 @@ import window as mw
 import skalar as sk
 import icp as ic
 import extractions as ex
+import ghg
 
 class procedure_selection:
 
@@ -258,6 +259,13 @@ class procedure_selection:
                                                      sk.skalar_window.steps()]).grid(row = 7, column = 1,
                                                                                padx = 20,
                                                                                pady = 20)
+        scion456 = tk.Button(analy_ins_frame,
+                             text = "SCION 456 GHG",
+                             font = ("Arial", 20),
+                             command = lambda: [mw.window.clear_frame(analy_ins_frame),
+                                                ghg.ghg_window.steps()]).grid(row = 7, column = 2,
+                                                                             padx = 20,
+                                                                             pady = 20)
         smith_lab_home = tk.Button(analy_ins_frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),

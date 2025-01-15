@@ -472,3 +472,49 @@ By clicking the top left of "RackTube"
 all rows will be selected copy and paste
 into an excel file and save with the same
 run name."""
+
+class ghg_stds:
+    
+    stds = """Standard 1 & 2:
+Evacuate 12 mL GC vials by use of syringe and needle.
+Ensure regulator flow valve is closed.
+Open standard tank's valve. Fix syringe to regulator by use of 
+present tubing on regulator.
+Open the regulator valve and allow syringe to fill to 35 mL.
+Fix needle to syringe depress plunger to 30 mL. Add gas 
+standard to vials.
+Repeat with Standard 2"""
+
+class ghg_operation:
+    step1 = """Step 1: Gasses and Connection
+Open the tank valves for Hydrogen, Argon, and Zero Air.
+Turn on the autosampler by switch on back of power supply box.
+Turn on GC by switch at bottom left of instrument.
+Allow GC to initialize.
+Open CompassCDC on computer. Click systems, wait for
+configuration to load on PAL system.
+"""
+
+    step2 = """Step 2: Method Startup
+Click the home button on GC, click method, select Greenhouse
+Press ok twice.
+Under the detector tab enable the TCD, EFC14, and FID EFC11.
+If flame for FID does not ignite (audible pop) press ignite.
+Allow GC to warmup, led indicator on instrument will turn green."""
+
+    step3 = """Step 3: Table Setup & Run Sequence
+On top ribbon click "File" then "New Sequence", number of lines
+is how many samples to be run, including standards, +1.
+Save the sequence with a unique name.
+Add the sample Names/IDs to the table.
+Method will be GHGAnalysisMethod(2).
+Left click column label to select all, right click and select
+"Fill Block" Do the same for "Vial Number" & Tray Number.
+Click the "Play" Button to start sequence"""
+
+    step4 = """Step 4: Data Collection
+After each sample has been run a .csv file will be created on
+the computer. After the sequence has completed copy the run
+file .csv's to an external disk for transfer for the 
+automation module to process."""
+
