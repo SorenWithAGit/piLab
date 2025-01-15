@@ -22,8 +22,8 @@ class procedure_selection:
                         font = ("Arial", 25),
                         command = lambda: [mw.window.clear_frame(instrument_frame),
                                            sk.skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
-        piLab_home = tk.Button(instrument_frame,
-                         text = "piLab Home",
+        smith_lab_home = tk.Button(instrument_frame,
+                         text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(instrument_frame),
                                             mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
@@ -53,8 +53,8 @@ class procedure_selection:
                         font = ("Arial", 20),
                         command = lambda: [mw.window.clear_frame(extract_frame),
                                           procedure_selection.kcl_click()]).grid(row = 8, column = 2, padx = 20, pady = 20)
-         piLab_home = tk.Button(extract_frame,
-                         text = "piLab Home",
+         smith_lab_home = tk.Button(extract_frame,
+                         text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(extract_frame),
                                             mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
@@ -81,8 +81,8 @@ class procedure_selection:
                           font = ("Arial", 20),
                           command = lambda: [mw.window.clear_frame(m3_frame),
                                              ex.recipes.m3_2L_click()]).grid(row = 8, column =2, padx = 20, pady = 20)
-        piLab_home = tk.Button(m3_frame,
-                         text = "piLab Home",
+        smith_lab_home = tk.Button(m3_frame,
+                         text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(m3_frame),
                                             mw.mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
@@ -110,8 +110,8 @@ class procedure_selection:
                            font = ("Arial", 20),
                            command = lambda: [mw.window.clear_frame(h3a_frame),
                                               ex.recipes.h3a_2L_click()]).grid(row = 7, column = 2, padx = 20, pady = 20)
-        piLab_home = tk.Button(h3a_frame,
-                         text = "piLab Home",
+        smith_lab_home = tk.Button(h3a_frame,
+                         text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(h3a_frame),
                                             mw.window.Smith_lab_home()]).grid(row = 8, column = 0, padx = 20, pady = 20)
@@ -139,8 +139,8 @@ class procedure_selection:
                              font = ("Arial", 20),
                              command = lambda: [mw.window.clear_frame(olsen_frame),
                                                 ex.recipes.olsen_2L_click()]).grid(row = 7, column = 2, padx = 20, pady = 20)
-        piLab_home = tk.Button(olsen_frame,
-                         text = "piLab Home",
+        smith_lab_home = tk.Button(olsen_frame,
+                         text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(olsen_frame),
                                             mw.window.Smith_lab_home()]).grid(row = 8, column = 0, padx = 20, pady = 20)
@@ -178,8 +178,8 @@ class procedure_selection:
                               font = ("Arial", 20),
                               command = lambda: [mw.window.clear_frame(kcl_frame),
                                                  ex.recipes.kcl_2N_2L_click()]).grid(row = 8, column =2, padx = 20, pady = 20)
-        piLab_home = tk.Button(kcl_frame,
-                         text = "piLab Home",
+        smith_lab_home = tk.Button(kcl_frame,
+                         text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(kcl_frame),
                                             mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
@@ -232,8 +232,8 @@ class procedure_selection:
                                            ex.extract_protocol.hcl_click()]).grid(row = 8, column = 3,
                                                                                   padx = 20,
                                                                                   pady = 20)
-        piLab_home = tk.Button(ex_pro_frame,
-                         text = "piLab Home",
+        smith_lab_home = tk.Button(ex_pro_frame,
+                         text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(ex_pro_frame),
                                             mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
@@ -251,3 +251,8 @@ class procedure_selection:
                                                   ic.icp_step_window.steps()]).grid(row = 7, column = 0,
                                                                                     padx = 20,
                                                                                     pady = 20)
+        smith_lab_home = tk.Button(analy_ins_frame,
+                         text = "Smith Lab Home",
+                         font = ("Arial", 20),
+                         command = lambda: [mw.window.clear_frame(analy_ins_frame),
+                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
