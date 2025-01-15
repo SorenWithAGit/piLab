@@ -237,3 +237,17 @@ class procedure_selection:
                          font = ("Arial", 20),
                          command = lambda: [mw.window.clear_frame(ex_pro_frame),
                                             mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+
+    def analytical_instruments():
+        analy_ins_frame = tk.Frame()
+        analy_ins_frame.pack()
+        for i in range(6):
+            label = tk.Label(analy_ins_frame,
+                             text = "").grid(row = i)
+        icp_button = tk.Button(analy_ins_frame,
+                               text = "ICP-OES",
+                               font = ("Arial", 20),
+                               command = lambda: [mw.window.clear_frame(analy_ins_frame),
+                                                  ic.icp_step_window.steps()]).grid(row = 7, column = 0,
+                                                                                    padx = 20,
+                                                                                    pady = 20)

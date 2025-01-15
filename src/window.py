@@ -38,4 +38,5 @@ class window:
         analytical_instruments = tk.Button(home,
                                 text = "Analytical Instrumentation",
                                 font = ("Arial", 20),
-                                ).grid(row = 8, column = 3, padx = 20, pady = 20)
+                                command = lambda: [window.clear_frame(home),
+                                                   pr.procedure_selection.analytical_instruments()]).grid(row = 8, column = 3, padx = 20, pady = 20)

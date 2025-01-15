@@ -330,4 +330,42 @@ before turning on the chiller. Roughly 30 mins
 can continue to step 5 as instrument warms."""
 
     step5 = """Step 5: Sequence
-"""
+At the main window select Open, and choose
+ICP-OES Template.esws.
+On the left hand ribbon, select "Sequence"
+For stds in "RackTube", S1:1 - S1:5
+is unchanged. Set the desired number of
+samples and change "Solution Label" to
+Sample Names/IDs"""
+
+    step6 = """Step 6: Activating Plasma
+Once "Peltier" Temp reaches 30 C,
+On the top ribbon select "Instrument".
+Select "Plasma" on the ribbon, choose
+"Plasma On". May require multiple
+attempts."""
+
+    step7 = """Step 7: Begin Run
+Close the "Instrument" window,
+on the main ribbon select "Run"
+By selecting "Analysis" on the 
+left hand ribbon the results can 
+be viewed."""
+
+    step8 = """Step 8: Replicants
+Once the calibration STDs have 
+been run, adjusting the chosen 
+replicants may be required.
+To do this select the STD concentration,
+at the bottom left deselect/select 
+replicants until the calibration curve
+is satisfactory.
+The run is ready to process all samples."""
+
+    step9 = """Step 9: Saving Results
+Once the run is completed, select "Save As"
+from the top ribbon Name the run and save.
+By clicking the top left of "RackTube"
+all rows will be selected copy and paste
+into an excel file and save with the same
+run name."""
