@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 main.py initializes the tkinter window to navigate the piLab package
 """

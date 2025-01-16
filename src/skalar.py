@@ -442,14 +442,14 @@ class operating_procedure:
                                      font = ("Arial", 20),
                                      text = "Skalar Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
-                                                        skalar_window.steps()]).grid(row = 1, column = 1,
+                                                        skalar_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         next_button = tk.Button(instruct_frame,
                                 font = ("Arial", 20),
                                 text = "Step 2",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
-                                                   operating_procedure.step2()]).grid(row = 1, column = 2,
+                                                   operating_procedure.step2()]).grid(row = 2, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)
     

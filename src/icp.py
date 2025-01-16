@@ -432,14 +432,14 @@ class icp_operation:
                                      font = ("Arial", 20),
                                      text = "ICP Step Home",
                                      command = lambda: [mw.window.clear_frame(instruct_frame),
-                                                        icp_step_window.steps()]).grid(row = 1, column = 1,
+                                                        icp_step_window.steps()]).grid(row = 1, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         next_button = tk.Button(instruct_frame,
                                 font = ("Arial", 20),
                                 text = "Step 2",
                                 command = lambda: [mw.window.clear_frame(instruct_frame),
-                                                   icp_operation.step2()]).grid(row = 1, column = 2,
+                                                   icp_operation.step2()]).grid(row = 2, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)
     
