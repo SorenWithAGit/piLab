@@ -8,5 +8,5 @@ setup(
     license='CC0 1.0',
     author='John A Sorensen',
     author_email='john.sorensen@usda.gov',
-    description='A python GUI Package for labs from GSWRL Temple, TX.'
+    description='A python GUI Package for labs at the GSWRL Temple, TX.'
 )
