@@ -1,7 +1,7 @@
 import tkinter as tk
-import window as mw
-import procedure as pr
-import instructions as ins
+from src import window as mw
+from src import procedure as pr
+from src import instructions as ins
 
 class recipes:
 

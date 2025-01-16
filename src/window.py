@@ -6,8 +6,8 @@ piLab_home will rebuild the home window
 
 
 import tkinter as tk
-import procedure as pr
-import instructions as ins
+from src import procedure as pr
+from src import instructions as ins
 
 class window:
 

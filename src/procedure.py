@@ -1,9 +1,9 @@
 import tkinter as tk
-import window as mw
-import skalar as sk
-import icp as ic
-import extractions as ex
-import ghg
+from src import window as mw
+from src import skalar as sk
+from src import icp as ic
+from src import extractions as ex
+from src import ghg
 
 class procedure_selection:
 

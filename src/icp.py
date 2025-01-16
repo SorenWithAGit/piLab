@@ -1,6 +1,6 @@
 import tkinter as tk
-import window as mw
-import instructions as ins
+from src import window as mw
+from src import instructions as ins
 
 class icp_cookbook:
     def icp_home_frame():
