@@ -8,18 +8,26 @@ main.py initializes the tkinter window to navigate the piLab package
 import tkinter as tk
 from src import window
 
-class MainWindow:
+class MainWindow(tk.Frame):
 
-    def __init__(self, master):
-        self.master = master
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+
+    def initUI(self):
         self.master.title("piLab By John Sorensen")
+        window.window.piLab_home()
 
 
-if __name__ == "__main__":
+
+def main():
     root = tk.Tk()
     root.title("piLab By John Sorensen")
     root.geometry("1280x800")
     root.resizable(width = False, height = False)
-    app = MainWindow(root)
-    window.window.piLab_home()
+    app = MainWindow()
     root.mainloop()
+
+
+if __name__ == "__main__":
+    main()
