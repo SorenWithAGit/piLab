@@ -242,7 +242,7 @@ class skalarWindowControl:
 
      def ammo_buff_click(frame):
           window.clear_frame(frame)
-          sk.skalar_cookbook.volume_frame("ammonium_buffer")
+          sk.skalar_cookbook.buffer_volume_frame("ammonium_buffer")
 
      def sali_click(frame):
           window.clear_frame(frame)
@@ -275,6 +275,26 @@ class skalarWindowControl:
      def std5_click(frame):
           window.clear_frame(frame)
           sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std5", 100))
+
+     def buff_vol1_click(frame, reagent):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 500))
+
+     def buff_vol2_click(frame, reagent):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 1000))
+
+     def buff_vol3_click(frame, reagent):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 2000))
+
+     def reag_vol1_click(frame, reagent):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 500))
+
+     def reag_vol2_click(frame, reagent):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 1000))
 
 class ghgWindowControl:
 
