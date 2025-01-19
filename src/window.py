@@ -3,6 +3,7 @@ from src import procedure as pr
 from src import instructions as ins
 from src import ghg
 from src import icp
+from src import skalar as sk
 
 class window:
 
@@ -188,6 +189,92 @@ class icpWindowControl:
      def icp_step9(frame):
           window.clear_frame(frame)
           icp.icp_operation.step9()
+
+class skalarWindowControl:
+
+     def skalar_home(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.home_frame()
+     
+     def nitr_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.nitrate_frame()
+     
+     def phos_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.phosphate_frame()
+     
+     def ammo_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.ammonium_frame()
+
+     def rins_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("rinsing")
+
+     def cal_stds_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.standards_frame()
+
+     def nitr_buff_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.buffer_volume_frame("nitrate_buffer")
+
+     def color_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("color_reagent")
+
+     def ffd6_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("ffd6")
+
+     def sulf_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("sulfuric_acid")
+
+     def hept_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("ammonium_heptamolybdate")
+
+     def lplus_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("l_plus_ascorbic")
+
+     def ammo_buff_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("ammonium_buffer")
+
+     def sali_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("salicyalite")
+
+     def nitro_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("nitroprusside")
+
+     def dichlor_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.volume_frame("dichlorocyanurite")
+     
+     def std1_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std1", 100))
+
+     def std2_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std2", 100))
+
+     def std3_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std3", 100))
+
+     def std4_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std4", 100))
+
+     def std5_click(frame):
+          window.clear_frame(frame)
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std5", 100))
 
 class ghgWindowControl:
 

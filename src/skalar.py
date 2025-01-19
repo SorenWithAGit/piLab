@@ -15,33 +15,27 @@ class skalar_cookbook:
         nitr_button = tk.Button(frame,
                                 text = "Nitrate/Nitrite Channel",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.nitrate_frame()]).grid(row = 7, column = 0, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.nitr_click(frame)).grid(row = 7, column = 0, padx = 20, pady = 20)
         phos_button = tk.Button(frame,
                                 text = "Phosphate Channel",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.phosphate_frame()]).grid(row = 7, column = 1, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.phos_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
         ammo_button = tk.Button(frame,
                                 text = "Ammonium Channel",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.ammonium_frame()]).grid(row = 7, column = 2, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.ammo_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
         rins_button = tk.Button(frame,
                                 text = "Rinsing Liquid",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.volume_frame("rinsing")]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.rins_click(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
         stds_button = tk.Button(frame,
                                 text = "Calibration Standards",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.standards_frame()]).grid(row = 8, column = 2, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.cal_stds_click(frame)).grid(row = 8, column = 2, padx = 20, pady = 20)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: mw.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
 
     def nitrate_frame():
         frame = tk.Frame()
@@ -53,18 +47,15 @@ class skalar_cookbook:
         nitr_buffer = tk.Button(frame,
                                 text = "Nitrate/Nitrite Buffer",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.buffer_volume_frame("nitrate_buffer")]).grid(row = 6, column = 1, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.nitr_buff_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 20)
         color_reag = tk.Button(frame,
                                text = "Color Reagent",
                                font = ("Arial", 20),
-                               command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.volume_frame("color_reagent")]).grid(row = 6, column = 2, padx = 20, pady = 20)
+                               command = lambda: mw.skalarWindowControl.color_click(frame)).grid(row = 6, column = 2, padx = 20, pady = 20)
         home_button = tk.Button(frame,
                                 text = "Skalar Home",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.home_frame()]).grid(row = 7, column =0, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.skalar_home(frame)).grid(row = 7, column =0, padx = 20, pady = 20)
 
     def phosphate_frame():
         frame = tk.Frame()
@@ -75,28 +66,23 @@ class skalar_cookbook:
         ffd6_button = tk.Button(frame,
                                 text = "FFD6 Solution",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.volume_frame("ffd6")]).grid(row = 6, column = 1, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.ffd6_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 20)
         sulf_button = tk.Button(frame,
                                 text = "Sulfuric Acid Solution",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.volume_frame("sulfuric_acid")]).grid(row = 6, column = 2, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.sulf_click(frame)).grid(row = 6, column = 2, padx = 20, pady = 20)
         hept_button = tk.Button(frame,
                                 text = "Ammonium Heptamolybdate",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.volume_frame("ammonium_heptamolybdate")]).grid(row = 7, column = 1, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.hept_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
         lplus_button = tk.Button(frame,
                                  text = "L+ Ascorbic Acid",
                                  font = ("Arial", 20),
-                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.volume_frame("l_plus_ascorbic")]).grid(row = 7, column = 2, padx = 20, pady = 20)
+                                 command = lambda: mw.skalarWindowControl.lplus_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
         home_button = tk.Button(frame,
                                 text = "Skalar Home",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
 
     def ammonium_frame():
         frame = tk.Frame()
@@ -107,28 +93,23 @@ class skalar_cookbook:
         ammo_buffer = tk.Button(frame,
                                 text = "Ammonium Buffer",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.buffer_volume_frame("ammonium_buffer")]).grid(row = 6, column = 1, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.ammo_buff_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 20)
         sali_button = tk.Button(frame,
                                   text = "Sodium Salicyalite Solution",
                                   font = ("Arial", 20),
-                                  command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.volume_frame("salicyalite")]).grid(row = 6, column = 2, padx = 20, pady = 20)
+                                  command = lambda: mw.skalarWindowControl.sali_click(frame)).grid(row = 6, column = 2, padx = 20, pady = 20)
         nitro_button = tk.Button(frame,
                                  text = "Nitroprusside Solution",
                                  font = ("Arial", 20),
-                                 command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.volume_frame("nitroprusside")]).grid(row = 7, column = 1, padx = 20, pady = 20)
+                                 command = lambda: mw.skalarWindowControl.nitro_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
         dichlo_button = tk.Button(frame,
                                   text = "Dichlorocyanurite Solution",
                                   font = ("Arial", 20),
-                                  command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.volume_frame("dichlorocyanurite")]).grid(row = 7, column = 2, padx = 20, pady = 20)
+                                  command = lambda: mw.skalarWindowControl.dichlor_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
         home_button = tk.Button(frame,
                                 text = "Skalar Home",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
     def standards_frame():
         frame = tk.Frame()
         frame.pack()
@@ -138,34 +119,28 @@ class skalar_cookbook:
         std1 = tk.Button(frame,
                          font = ("Arial", 20),
                          text = "Standard 1",
-                         command = lambda: [mw.window.clear_frame(frame),
-                         skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std1", 100))]).grid(row = 6, column = 0, padx = 20, pady = 40)
+                         command = lambda: mw.skalarWindowControl.std1_click(frame)).grid(row = 6, column = 0, padx = 20, pady = 40)
         std2 = tk.Button(frame,
                          text = "Standard 2",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                         skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std2", 100))]).grid(row = 6, column = 1, padx = 20, pady = 40)
+                         command = lambda: mw.skalarWindowControl.std2_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 40)
         std3 = tk.Button(frame,
                          text = "Standard 3",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                         skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std3", 100))]).grid(row = 6, column = 2, padx = 20, pady = 40)
+                         command = lambda: mw.skalarWindowControl.std3_click(frame)).grid(row = 6, column = 2, padx = 20, pady = 40)
         std4 = tk.Button(frame,
                          text = "Standard 4",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                         skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std4", 100))]).grid(row = 7, column = 1, padx = 20, pady = 40)
+                         command = lambda: mw.skalarWindowControl.std4_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 40)
         std5 = tk.Button(frame,
                          text = "Standard 5",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                         skalar_cookbook.instruct_frame(skalar_recipes.get_recipe("std5", 100))]).grid(row = 7, column = 2, padx = 20, pady = 40)
+                         command = lambda: mw.skalarWindowControl.std5_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 40)
 
         home_button = tk.Button(frame,
                                 text = "Skalar Home",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
 
     def buffer_volume_frame(reagent):
         reagent = reagent

@@ -16,8 +16,7 @@ class procedure_selection:
         icp = tk.Button(frame,
                         text = "ICP-OES",
                         font = ("Arial", 25),
-                        command = lambda: [mw.window.clear_frame(frame),
-                                           ic.icp_cookbook.icp_home_frame()]).grid(row = 7, column = 0, padx = 20, pady = 20)
+                        command = lambda: mw.icpWindowControl.icp_home(frame)).grid(row = 7, column = 0, padx = 20, pady = 20)
         cfa = tk.Button(frame,
                         text = "Skalar San ++",
                         font = ("Arial", 25),
