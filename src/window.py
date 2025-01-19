@@ -85,24 +85,109 @@ class window:
 
 class icpWindowControl:
 
-    def std4_click(frame):
+     def icp_home(frame):
+          window.clear_frame(frame)
+          icp.icp_cookbook.icp_home_frame()
+
+     def icp_step_home(frame):
+          window.clear_frame(frame)
+          icp.icp_step_window.steps()
+
+     def std4_click(frame):
          window.clear_frame(frame)
          icp.icp_cookbook.icp_element_frame()
 
-    def std3_click(frame):
+     def std3_click(frame):
          window.clear_frame(frame)
          icp.icp_control.std_3_proto()
     
-    def std2_click(frame):
+     def std2_click(frame):
          window.clear_frame(frame)
          icp.icp_control.std_2_proto()
 
-    def std1_click(frame):
+     def std1_click(frame):
          window.clear_frame(frame)
          icp.icp_control.std_2_proto()
+     
+     def al_click(frame):
+         window.clear_frame(frame)
+         icp.icp_control.stock_solutions("Aluminium")
+      
+     def ca_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Calcium")
+     
+     def cu_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Copper")
 
-    
+     def fe_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Iron")
 
+     def k_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Potassium")
+
+     def mg_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Magnesium")
+
+     def mn_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Manganese")
+     
+     def na_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Sodium")
+
+     def p_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Phosphorus")
+
+     def s_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Sulfur")
+
+     def zn_click(frame):
+          window.clear_frame(frame)
+          icp.icp_control.stock_solutions("Zinc")
+
+     def icp_step1(frame):
+          window.clear_frame(frame)
+          icp.icp_operation.step1()
+
+     def icp_step2(frame):
+          window.clear_frame(frame)
+          icp.icp_operation.step2()
+
+     def icp_step3(frame):
+          window.clear_frame(frame)
+          icp.icp_operation.step3()
+
+     def icp_step4(frame):
+          window.clear_frame(frame)
+          icp.icp_operation.step4()
+     
+     def icp_step5(frame):
+          window.clear_frame(frame)
+          icp.icp_operation.step5()
+
+     def icp_step6(frame):
+          window.clear_frame(frame)
+          icp.icp_operation.step6()
+
+     def icp_step7(frame):
+          window.clear_frame(frame)
+          icp.icp_operation.step7()
+
+     def icp_step8(frame):
+          window.clear_frame(frame)
+          icp.icp_operation.step8()
+     
+     def icp_step9(frame):
+          window.clear_frame(frame)
+          icp.icp_operation.step9()
 
 class ghgWindowControl:
 

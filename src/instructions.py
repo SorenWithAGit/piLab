@@ -519,4 +519,3 @@ After each sample has been run a .csv file will be created
 on the computer. After the sequence has completed copy 
 the run file .csv's to an external disk for transfer for 
 the automation module to process."""
-
