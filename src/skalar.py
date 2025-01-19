@@ -152,24 +152,20 @@ class skalar_cookbook:
         vol_1 = tk.Button(frame,
                           text = "500 mL",
                           font = ("Arial", 20),
-                          command = lambda: [mw.window.clear_frame(frame),
-                                             skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 500))]).grid(row = 6, column = 1, padx = 20, pady = 40)
+                          command = lambda: mw.skalarWindowControl.buff_vol1_click(frame, reagent)).grid(row = 6, column = 1, padx = 20, pady = 40)
         vol_2 = tk.Button(frame,
                           text = "1,000 mL",
                           font = ("Arial", 20),
-                          command = lambda: [mw.window.clear_frame(frame),
-                                             skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 1000))]).grid( row = 6, column = 2, padx = 20, pady = 40)
+                          command = lambda: mw.skalarWindowControl.buff_vol2_click(frame, reagent)).grid( row = 6, column = 2, padx = 20, pady = 40)
         vol_3 = tk.Button(frame,
                           text = "2,000 mL",
                           font = ("Arial", 20),
-                          command = lambda: [mw.window.clear_frame(frame),
-                                             skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 2000))]).grid(row = 7, column = 1, padx = 20, pady = 40)
+                          command = lambda: mw.skalarWindowControl.buff_vol3_click(frame, reagent)).grid(row = 7, column = 1, padx = 20, pady = 40)
 
         home_button = tk.Button(frame,
                                 text = "Skalar Home",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
 
     def volume_frame(reagent):
         reagent = reagent
@@ -181,19 +177,16 @@ class skalar_cookbook:
         vol_1 = tk.Button(frame,
                           text = "500 mL",
                           font = ("Arial", 20),
-                          command = lambda: [mw.window.clear_frame(frame),
-                                             skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 500))]).grid(row = 6, column = 1, padx = 20, pady = 40)
+                          command = lambda: mw.skalarWindowControl.reag_vol1_click(frame, reagent)).grid(row = 6, column = 1, padx = 20, pady = 40)
         vol_2 = tk.Button(frame,
                           text = "1,000 mL",
                           font = ("Arial", 20),
-                          command = lambda: [mw.window.clear_frame(frame),
-                                             skalar_cookbook.instruct_frame(skalar_recipes.get_recipe(reagent, 1000))]).grid( row = 6, column = 2, padx = 20, pady = 40)
+                          command = lambda: mw.skalarWindowControl.reag_vol2_click(frame, reagent)).grid( row = 6, column = 2, padx = 20, pady = 40)
 
         home_button = tk.Button(frame,
                                 text = "Skalar Home",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
 
     def instruct_frame(recipe):
         frame = tk.Frame()
@@ -211,8 +204,7 @@ class skalar_cookbook:
         home_button = tk.Button(frame,
                                 text = "Skalar Home",
                                 font = ("Arial", 20),
-                                command = lambda: [mw.window.clear_frame(frame),
-                                                   skalar_cookbook.home_frame()]).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                command = lambda: mw.skalarWindowControl.skalar_home(frame)).grid(row = 5, column = 0, padx = 20, pady = 20)
 class skalar_recipes:
     def get_recipe(reagent, volume):
         nitrb = ins.skalar_recipes.nitrateNitriteBuffer
