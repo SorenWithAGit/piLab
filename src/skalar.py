@@ -39,6 +39,10 @@ class skalar_cookbook:
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: mw.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
+        instrument_recipies = tk.Button(frame,
+                                   text = "Instrument Recipes",
+                                   font = ("Arial", 20),
+                                   command = lambda: mw.window.instruments_click(frame)).grid(row = 9, column = 2, padx = 20, pady = 20)
 
     def nitrate_frame():
         frame = tk.Frame()

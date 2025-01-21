@@ -29,6 +29,10 @@ class icp_cookbook:
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: mw.window.smith_lab_click(frame)).grid(row = 3, column = 0, padx = 50, pady = 50)
+        instrument_recipies = tk.Button(frame,
+                                   text = "Instrument Recipes",
+                                   font = ("Arial", 20),
+                                   command = lambda: mw.window.instruments_click(frame)).grid(row = 3, column = 1, padx = 20, pady = 20)
 
     def icp_element_frame():
         frame = tk.Frame()
