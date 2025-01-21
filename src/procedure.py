@@ -20,13 +20,11 @@ class procedure_selection:
         cfa = tk.Button(frame,
                         text = "Skalar San ++",
                         font = ("Arial", 25),
-                        command = lambda: [mw.window.clear_frame(frame),
-                                           sk.skalar_cookbook.home_frame()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                        command = lambda: mw.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: mw.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
     def extracts_click():     
          frame = tk.Frame()
          frame.pack()
@@ -36,28 +34,23 @@ class procedure_selection:
          m3 = tk.Button(frame,
                        text = "Mehlich 3",
                        font = ("Arial", 20),
-                       command = lambda: [mw.window.clear_frame(frame),
-                                           procedure_selection.m3_click()]).grid(row = 7, column = 0, padx = 20, pady = 20)
+                       command = lambda: mw.procedureControl.m3_click(frame)).grid(row = 7, column = 0, padx = 20, pady = 20)
          h3a = tk.Button(frame,
                         text = "H3A: Haney 3 Acids",
                         font = ("Arial", 20),
-                        command = lambda: [mw.window.clear_frame(frame),
-                                           procedure_selection.h3a_click()]).grid(row = 7, column = 2, padx = 20, pady = 20)
+                        command = lambda: mw.procedureControl.h3a_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
          olsen = tk.Button(frame,
                           text = "Olsen P",
                           font = ("Arial", 20),
-                          command = lambda: [mw.window.clear_frame(frame),
-                                             procedure_selection.olsen_click()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                          command = lambda: mw.procedureControl.olsen_click(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
          kcl = tk.Button(frame,
                         text = "KCl: Potassium Chloride",
                         font = ("Arial", 20),
-                        command = lambda: [mw.window.clear_frame(frame),
-                                          procedure_selection.kcl_click()]).grid(row = 8, column = 2, padx = 20, pady = 20)
+                        command = lambda: mw.procedureControl.kcl_click(frame)).grid(row = 8, column = 2, padx = 20, pady = 20)
          smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: mw.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
     
     
     def m3_click():
@@ -69,28 +62,23 @@ class procedure_selection:
         stock = tk.Button(frame,
                           text = "M3 Stock Solution",
                           font = ("Arial", 20),
-                          command = lambda: [mw.window.clear_frame(frame),
-                                             ex.recipes.m3_stock_click()]).grid(row = 7, column = 1, padx = 20, pady = 20)
+                          command = lambda: mw.procedureControl.stock_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
         m3_1L = tk.Button(frame,
                           text = "M3 Solution 2.5 L",
                           font = ("Arial", 20),
-                          command = lambda: [mw.window.clear_frame(frame),
-                                             ex.recipes.m3_1L_click()]).grid(row = 7, column = 3, padx = 20, pady = 20)
+                          command = lambda: mw.procedureControl.m3_1_click(frame)).grid(row = 7, column = 3, padx = 20, pady = 20)
         m3_2L = tk.Button(frame,
                           text = "M3 Solution 5 L",
                           font = ("Arial", 20),
-                          command = lambda: [mw.window.clear_frame(frame),
-                                             ex.recipes.m3_2L_click()]).grid(row = 8, column =2, padx = 20, pady = 20)
+                          command = lambda: mw.procedureControl.m3_2_click(frame)).grid(row = 8, column =2, padx = 20, pady = 20)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                                            mw.mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: mw.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: [mw.window.clear_frame(frame),
-                                                    procedure_selection.extracts_click()]).grid(row = 9, column = 1,
+                                 command = lambda: mw.extract_home_click(frame)).grid(row = 9, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
 
@@ -103,23 +91,19 @@ class procedure_selection:
         h3a_1L = tk.Button(frame,
                            text = "H3A 1 L",
                            font = ("Arial", 20),
-                           command = lambda: [mw.window.clear_frame(frame),
-                                              ex.recipes.h3a_1L_click()]).grid(row = 7, column = 1, padx = 20, pady = 20)
+                           command = lambda: mw.procedureControl.h3a_1_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
         h3a_2L = tk.Button(frame,
                            text = "H3A 2 L",
                            font = ("Arial", 20),
-                           command = lambda: [mw.window.clear_frame(frame),
-                                              ex.recipes.h3a_2L_click()]).grid(row = 7, column = 2, padx = 20, pady = 20)
+                           command = lambda: mw.procedureControl.h3a_2_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                                            mw.window.Smith_lab_home()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                         command = lambda: mw.window.smith_lab_click(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: [mw.window.clear_frame(frame),
-                                                    procedure_selection.extracts_click()]).grid(row = 8, column = 1,
+                                 command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 8, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
 
@@ -132,23 +116,19 @@ class procedure_selection:
         olsen_1L = tk.Button(frame,
                              text = "Olsen P 1 L",
                              font = ("Arial", 20),
-                             command = lambda: [mw.window.clear_frame(frame),
-                                                ex.recipes.olsen_1L_click()]).grid(row = 7, column = 1, padx = 20, pady = 20)
+                             command = lambda: mw.procedureControl.olsen_1_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
         olsen_2L = tk.Button(frame,
                              text = "Olsen P 2 L",
                              font = ("Arial", 20),
-                             command = lambda: [mw.window.clear_frame(frame),
-                                                ex.recipes.olsen_2L_click()]).grid(row = 7, column = 2, padx = 20, pady = 20)
+                             command = lambda: mw.procedureControl.olsen_2_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                                            mw.window.Smith_lab_home()]).grid(row = 8, column = 0, padx = 20, pady = 20)
+                         command = lambda: mw.window.smith_lab_click(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: [mw.window.clear_frame(frame),
-                                                    procedure_selection.extracts_click()]).grid(row = 8, column = 1,
+                                 command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 8, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
 
@@ -161,33 +141,27 @@ class procedure_selection:
         kcl_1N_1L = tk.Button(frame,
                               text = "1N KCl 1 L",
                               font = ("Arial", 20),
-                              command = lambda: [mw.window.clear_frame(frame),
-                                                 ex.recipes.kcl_1N_1L_click()]).grid(row = 7, column = 1, padx = 20, pady = 20)
+                              command = lambda: mw.procedureControl.kcl_1N_1L(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
         kcl_1N_2L = tk.Button(frame,
                               text = "1N KCl 2 L",
                               font = ("Arial", 20),
-                              command = lambda: [mw.window.clear_frame(frame),
-                                                 ex.recipes.kcl_1N_2L_click()]).grid(row = 7, column =2, padx = 20, pady = 20)
+                              command = lambda: mw.procedureControl.kcl_1N_2L(frame)).grid(row = 7, column =2, padx = 20, pady = 20)
         kcl_2N_1L = tk.Button(frame,
                               text = "2N KCl 1 L",
                               font = ("Arial", 20),
-                              command = lambda: [mw.window.clear_frame(frame),
-                                                 ex.recipes.kcl_2N_1L_click()]).grid(row = 8, column =1, padx = 20, pady = 20)
+                              command = lambda: mw.procedureControl.kcl_2N_1L(frame)).grid(row = 8, column =1, padx = 20, pady = 20)
         kcl_2N_2L = tk.Button(frame,
                               text = "1N KCl 2 L",
                               font = ("Arial", 20),
-                              command = lambda: [mw.window.clear_frame(frame),
-                                                 ex.recipes.kcl_2N_2L_click()]).grid(row = 8, column =2, padx = 20, pady = 20)
+                              command = lambda: mw.procedureControl.kcl_2N_2L(frame)).grid(row = 8, column =2, padx = 20, pady = 20)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: mw.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: [mw.window.clear_frame(frame),
-                                                    procedure_selection.extracts_click()]).grid(row = 9, column = 1,
+                                 command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 9, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
         
@@ -200,43 +174,37 @@ class procedure_selection:
         mehlich3 = tk.Button(frame,
                              text = "M3 Extraction",
                              font = ("Arial", 20),
-                             command = lambda: [mw.window.clear_frame(frame),
-                                                ex.extract_protocol.mehlich3_pro_click()]).grid(row = 7, column = 1,
+                             command = lambda: mw.procedureControl.m3_proto_click(frame)).grid(row = 7, column = 1,
                                                                                               padx = 20,
                                                                                               pady = 20)
         potassiumChloride = tk.Button(frame,
                             text = "KCl Extraction",
                             font = ("Arial", 20),
-                            command = lambda: [mw.window.clear_frame(frame),
-                                             ex.extract_protocol.potassium_chloride_click()]).grid(row = 7, column = 2,
+                            command = lambda: mw.procedureControl.kcl_proto_click(frame)).grid(row = 7, column = 2,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
         olsenP = tk.Button(frame,
                            text = "Olsen P Extraction",
                            font = ("Arial", 20),
-                           command = lambda: [mw.window.clear_frame(frame),
-                                              ex.extract_protocol.olsenP_click()]).grid(row = 7, column = 3,
+                           command = lambda: mw.procedureControl.olsen_proto_click(frame)).grid(row = 7, column = 3,
                                                                                         padx = 20,
                                                                                         pady = 20)
         h3a = tk.Button(frame,
                         text = ("H3A Extraction"),
                         font = ("Arial", 20),
-                        command = lambda: [mw.window.clear_frame(frame),
-                                           ex.extract_protocol.h3a_click()]).grid(row = 8, column = 1,
+                        command = lambda: mw.procedureControl.h3a_proto_click(frame)).grid(row = 8, column = 1,
                                                                                   padx = 20,
                                                                                   pady = 20)
         hcl = tk.Button(frame,
                         text = "HCl Extraction",
                         font = ("Arial", 20),
-                        command = lambda: [mw.window.clear_frame(frame),
-                                           ex.extract_protocol.hcl_click()]).grid(row = 8, column = 3,
+                        command = lambda: mw.procedureControl.hcl_proto_click(frame)).grid(row = 8, column = 3,
                                                                                   padx = 20,
                                                                                   pady = 20)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: mw.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
 
     def analytical_instruments():
         frame = tk.Frame()
@@ -247,26 +215,22 @@ class procedure_selection:
         icp_button = tk.Button(frame,
                                text = "ICP-OES",
                                font = ("Arial", 20),
-                               command = lambda: [mw.window.clear_frame(frame),
-                                                  ic.icp_step_window.steps()]).grid(row = 7, column = 0,
+                               command = lambda: mw.icpWindowControl.icp_step_home(frame)).grid(row = 7, column = 0,
                                                                                     padx = 20,
                                                                                     pady = 20)
         skalar_button = tk.Button(frame,
                                   text = "SKalar CFA",
                                   font = ("Arial", 20),
-                                  command = lambda: [mw.window.clear_frame(frame),
-                                                     sk.skalar_window.steps()]).grid(row = 7, column = 1,
+                                  command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 7, column = 1,
                                                                                padx = 20,
                                                                                pady = 20)
         scion456 = tk.Button(frame,
                              text = "SCION 456 GHG",
                              font = ("Arial", 20),
-                             command = lambda: [mw.window.clear_frame(frame),
-                                                ghg.ghg_window.steps()]).grid(row = 7, column = 2,
+                             command = lambda: mw.ghgWindowControl.steps_home(frame)).grid(row = 7, column = 2,
                                                                              padx = 20,
                                                                              pady = 20)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: [mw.window.clear_frame(frame),
-                                            mw.window.Smith_lab_home()]).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: mw.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)

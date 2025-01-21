@@ -4,6 +4,8 @@ from src import instructions as ins
 from src import ghg
 from src import icp
 from src import skalar as sk
+from src import procedure as pr
+from src import extractions as ex
 
 class window:
 
@@ -83,6 +85,92 @@ class window:
     def smith_lab_click(frame):
          window.clear_frame(frame)
          window.Smith_lab_home()
+
+class procedureControl:
+
+     def m3_click(frame):
+          window.clear_frame(frame)
+          pr.procedure_selection.m3_click()
+
+     def h3a_click(frame):
+          window.clear_frame(frame)
+          pr.procedure_selection.h3a_click()
+
+     def olsen_click(frame):
+          window.clear_frame(frame)
+          pr.procedure_selection.olsen_click()
+
+     def kcl_click(frame):
+          window.clear_frame(frame)
+          pr.procedure_selection.kcl_click()
+
+     def extract_home_click(frame):
+          window.clear_frame(frame)
+          pr.procedure_selection.extracts_click()
+
+     def stock_click(frame):
+          window.clear_frame(frame)
+          ex.recipes.m3_stock_click()
+
+     def m3_1_click(frame):
+          window.clear_frame(frame)
+          ex.recipes.m3_1L_click()
+
+     def m3_2_click(frame):
+          window.clear_frame(frame)
+          ex.recipes.m3_2L_click()
+     
+     def h3a_1_click(frame):
+          window.clear_frame(frame)
+          ex.recipes.h3a_1L_click()
+
+     def h3a_2_click(frame):
+          window.clear_frame(frame)
+          ex.recipes.h3a_2L_click()
+
+     def olsen_1_click(frame):
+          window.clear_frame(frame)
+          ex.recipes.olsen_1L_click()
+     
+     def olsen_2_click(frame):
+          window.clear_frame(frame)
+          ex.recipes.olsen_2L_click()
+
+     def kcl_1N_1L(frame):
+          window.clear_frame(frame)
+          ex.recipes.kcl_1N_1L_click()
+
+     def kcl_1N_2L(frame):
+          window.clear_frame(frame)
+          ex.recipes.kcl_1N_2L_click()
+
+     def kcl_2N_1L(frame):
+          window.clear_frame(frame)
+          ex.recipes.kcl_2N_1L_click()
+
+     def kcl_2N_2L(frame):
+          window.clear_frame(frame)
+          ex.recipes.kcl_2N_2L_click()
+
+     def m3_proto_click(frame):
+          window.clear_frame(frame)
+          ex.extract_protocol.mehlich3_pro_click()
+
+     def kcl_proto_click(frame):
+          window.clear_frame(frame)
+          ex.extract_protocol.potassium_chloride_click()
+
+     def olsen_proto_click(frame):
+          window.clear_frame(frame)
+          ex.extract_protocol.olsenP_click()
+     
+     def h3a_proto_click(frame):
+          window.clear_frame(frame)
+          ex.extract_protocol.h3a_click()
+
+     def hcl_proto_click(frame):
+          window.clear_frame(frame)
+          ex.extract_protocol.hcl_click()
 
 class icpWindowControl:
 
@@ -338,22 +426,26 @@ class skalarWindowControl:
 
 class ghgWindowControl:
 
-    def stds_click(frame):
+     def steps_home(frame):
+          window.clear_frame(frame)
+          ghg.ghg_window.steps()
+
+     def stds_click(frame):
           window.clear_frame(frame)
           ghg.operating_procedure.stds()
-    
-    def step1_click(frame):
-        window.clear_frame(frame)
-        ghg.operating_procedure.step1()
 
-    def step2_click(frame):
-         window.clear_frame(frame)
-         ghg.operating_procedure.step2()
-    
-    def step3_click(frame):
-         window.clear_frame(frame)
-         ghg.operating_procedure.step3()
-    
-    def step4_click(frame):
-         window.clear_frame(frame)
-         ghg.operating_procedure.step4()
+     def step1_click(frame):
+          window.clear_frame(frame)
+          ghg.operating_procedure.step1()
+
+     def step2_click(frame):
+          window.clear_frame(frame)
+          ghg.operating_procedure.step2()
+
+     def step3_click(frame):
+          window.clear_frame(frame)
+          ghg.operating_procedure.step3()
+
+     def step4_click(frame):
+          window.clear_frame(frame)
+          ghg.operating_procedure.step4()
