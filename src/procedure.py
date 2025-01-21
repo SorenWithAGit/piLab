@@ -10,7 +10,10 @@ class procedure_selection:
     def instruments_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Instrument Recipes Selection",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         icp = tk.Button(frame,
@@ -28,7 +31,10 @@ class procedure_selection:
     def extracts_click():     
          frame = tk.Frame()
          frame.pack()
-         for i in range(6):
+         main_label = tk.Label(frame,
+                               text = "Extraction Recipes",
+                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+         for i in range(1,6):
              label = tk.Label(frame,
                               text = "").grid(row = i)
          m3 = tk.Button(frame,
@@ -56,7 +62,10 @@ class procedure_selection:
     def m3_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Mehlich 3 Recipes",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         stock = tk.Button(frame,
@@ -85,7 +94,10 @@ class procedure_selection:
     def h3a_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Haney 3 Acids Recipes",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         h3a_1L = tk.Button(frame,
@@ -110,7 +122,10 @@ class procedure_selection:
     def olsen_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Olsen P Recipes",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         olsen_1L = tk.Button(frame,
@@ -135,7 +150,10 @@ class procedure_selection:
     def kcl_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Potassium Chloride Recipes",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         kcl_1N_1L = tk.Button(frame,
@@ -168,7 +186,10 @@ class procedure_selection:
     def extraction_protocol():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Extraction Protocols",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         mehlich3 = tk.Button(frame,
@@ -209,7 +230,10 @@ class procedure_selection:
     def analytical_instruments():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Analytical Instrumentation Protocols",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         icp_button = tk.Button(frame,

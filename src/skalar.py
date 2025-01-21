@@ -6,7 +6,10 @@ class skalar_cookbook:
     def home_frame():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Skalar Recipies Home",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+        for i in range(1, 6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         channel = tk.Label(frame,
@@ -40,7 +43,10 @@ class skalar_cookbook:
     def nitrate_frame():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Skalar: Nitrate/Nitrite Reagents",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
 
@@ -60,7 +66,10 @@ class skalar_cookbook:
     def phosphate_frame():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Skalar: Phosphate Reagents",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         ffd6_button = tk.Button(frame,
@@ -87,7 +96,10 @@ class skalar_cookbook:
     def ammonium_frame():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Skalar: Ammonium Reagents",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         ammo_buffer = tk.Button(frame,
@@ -113,7 +125,10 @@ class skalar_cookbook:
     def standards_frame():
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = "Skalar: Standards Recipes",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = 1)
         std1 = tk.Button(frame,
@@ -146,7 +161,10 @@ class skalar_cookbook:
         reagent = reagent
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = ("Skalar: " + str(reagent) + " Volume Frame"),
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         vol_1 = tk.Button(frame,
@@ -171,7 +189,10 @@ class skalar_cookbook:
         reagent = reagent
         frame = tk.Frame()
         frame.pack()
-        for i in range(6):
+        main_label = tk.Label(frame,
+                              text = ("Skalar:" + str(reagent) + "Volume Frame"),
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+        for i in range(1,6):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         vol_1 = tk.Button(frame,
@@ -314,58 +335,61 @@ class skalar_window:
     def steps():
         frame = tk.Frame()
         frame.pack()
+        main_label = tk.Label(frame,
+                              text = "Skalar: SOP Steps",
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         step1_click = tk.Button(frame,
                                 text = "Step 1",
                                 font = ("Arial", 20),
-                                command = lambda: mw.skalarWindowControl.sop_step1(frame)).grid(row = 0, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step1(frame)).grid(row = 1, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step2_click = tk.Button(frame,
                                 text = "Step 2",
                                 font = ("Arial", 20),
-                                command = lambda: mw.skalarWindowControl.sop_step2(frame)).grid(row = 0, column = 1,
+                                command = lambda: mw.skalarWindowControl.sop_step2(frame)).grid(row = 1, column = 1,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step3_click = tk.Button(frame,
                                 text = "Step 3",
                                 font = ("Arial", 20),
-                                command = lambda: mw.skalarWindowControl.sop_step3(frame)).grid(row = 0, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step3(frame)).grid(row = 1, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step4_click = tk.Button(frame,
                                 text = "Step 4",
                                 font = ("Arial", 20),
-                                command = lambda: mw.skalarWindowControl.sop_step4(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step4(frame)).grid(row = 2, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step5_click = tk.Button(frame,
                                 text = "Step 5",
                                 font = ("Arial", 20),
-                                command = lambda: mw.skalarWindowControl.sop_step5(frame)).grid(row = 1, column = 1,
+                                command = lambda: mw.skalarWindowControl.sop_step5(frame)).grid(row = 2, column = 1,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step6_click = tk.Button(frame,
                                 text = "Step 6",
                                 font = ("Arial", 20),
-                                command = lambda: mw.skalarWindowControl.sop_step6(frame)).grid(row = 1, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step6(frame)).grid(row = 2, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step7_click = tk.Button(frame,
                                 text = "Step 7",
                                 font = ("Arial", 20),
-                                command = lambda: mw.skalarWindowControl.sop_step7(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step7(frame)).grid(row = 3, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step8_click = tk.Button(frame,
                                 text = "Step 8",
                                 font = ("Arial", 20),
-                                command = lambda: mw.skalarWindowControl.sop_step8(frame)).grid(row = 2, column = 1,
+                                command = lambda: mw.skalarWindowControl.sop_step8(frame)).grid(row = 3, column = 1,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step9_click = tk.Button(frame,
                                 text = "Step 9",
                                 font = ("Arial", 20),
-                                command = lambda: mw.skalarWindowControl.sop_step9(frame)).grid(row = 2, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step9(frame)).grid(row = 3, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)
         smtih_home_button = tk.Button(frame,
@@ -379,31 +403,34 @@ class operating_procedure:
     def step1():
         frame = tk.Frame()
         frame.pack()
+        main_label = tk.Label(frame,
+                              text = "Skalar SOP: Step 1",
+                              font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         skal_op = ins.skalar_operation
         text = tk.Text(frame,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.grid(row = 0, column = 1)
+        text.grid(row = 1, column = 2)
         step = skal_op.step1
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
-                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 2, column = 0,
                                                                       padx = 20,
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "Skalar Step Home",
-                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 1, column = 2,
+                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 2, column = 3,
                                                                                       padx = 20,
                                                                                       pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 2",
-                                command = lambda: mw.skalarWindowControl.sop_step2(frame)).grid(row = 2, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step2(frame)).grid(row = 3, column = 3,
                                                                                 padx = 20,
                                                                                 pady = 20)
     
@@ -411,74 +438,80 @@ class operating_procedure:
     def step2():
         frame = tk.Frame()
         frame.pack()
+        main_label = tk.Label(frame,
+                              text = "Skalar SOP: Step 2",
+                              font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         skal_op = ins.skalar_operation
         text = tk.Text(frame,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.grid(row = 0, column = 1)
+        text.grid(row = 1, column = 2)
         step = skal_op.step2
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
-                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 2, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "Skalar Step Home",
-                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 1, column = 2,
+                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 2, column = 3,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 1",
-                                command = lambda: mw.skalarWindowControl.sop_step1(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step1(frame)).grid(row = 3, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 3",
-                                command = lambda: mw.skalarWindowControl.sop_step3(frame)).grid(row = 2, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step3(frame)).grid(row = 3, column = 3,
                                                                                 padx = 20,
                                                                                 pady = 20)
 
     def step3():
         frame = tk.Frame()
         frame.pack()
+        main_label = tk.Label(frame,
+                              text = "Skalar SOP: Step 3",
+                              font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         skal_op = ins.skalar_operation
         text = tk.Text(frame,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.grid(row = 0, column = 1)
+        text.grid(row = 1, column = 2)
         step = skal_op.step3
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
-                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 2, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "Skalar Step Home",
-                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 1, column = 2,
+                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 2, column = 3,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 2",
-                                command = lambda: mw.skalarWindowControl.sop_step2(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step2(frame)).grid(row = 3, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 4",
-                                command = lambda: mw.skalarWindowControl.sop_step4(frame)).grid(row = 2, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step4(frame)).grid(row = 3, column = 3,
                                                                                 padx = 20,
                                                                                 pady = 20)
     
@@ -486,36 +519,39 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         skal_op = ins.skalar_operation
+        main_label = tk.Label(frame,
+                              text = "Skalar SOP: Step 4",
+                              font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         text = tk.Text(frame,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.grid(row = 0, column = 1)
+        text.grid(row = 1, column = 2)
         step = skal_op.step4
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
-                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 2, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "Skalar Step Home",
-                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 1, column = 2,
+                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 2, column = 3,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 3",
-                                command = lambda: mw.skalarWindowControl.sop_step3(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step3(frame)).grid(row = 3, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 5",
-                                command = lambda: mw.skalarWindowControl.sop_step5(frame)).grid(row = 2, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step5(frame)).grid(row = 3, column = 3,
                                                                                 padx = 20,
                                                                                 pady = 20)
         
@@ -523,36 +559,39 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         skal_op = ins.skalar_operation
+        main_label = tk.Label(frame,
+                              text = "Skalar SOP: Step 5",
+                              font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         text = tk.Text(frame,
-                        height = 13,
-                        width = 48,
-                        font = ("Arial", 20))
-        text.grid(row = 0, column = 1)
+                           height = 13,
+                           width = 48,
+                           font = ("Arial", 20))
+        text.grid(row = 1, column = 2)
         step = skal_op.step5
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
-                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 2, column = 0,
                                                                     padx = 20, 
                                                                     pady = 20)
         step_home_button = tk.Button(frame,
                                     font = ("Arial", 20),
                                     text = "Skalar Step Home",
-                                    command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 1, column = 2,
+                                    command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 2, column = 3,
                                                                                     padx = 20,
                                                                                     pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 4",
-                                command = lambda: mw.skalarWindowControl.sop_step4(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step4(frame)).grid(row = 3, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 6",
-                                command = lambda: mw.skalarWindowControl.sop_step6(frame)).grid(row = 2, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step6(frame)).grid(row = 3, column = 3,
                                                                                 padx = 20,
                                                                                 pady = 20)
     
@@ -560,36 +599,39 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         skal_op = ins.skalar_operation
+        main_label = tk.Label(frame,
+                              text = "Skalar SOP: Step 6",
+                              font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         text = tk.Text(frame,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.grid(row = 0, column = 1)
+        text.grid(row = 1, column = 2)
         step = skal_op.step6
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
-                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 2, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "Skalar Step Home",
-                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 1, column = 2,
+                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 2, column = 3,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 5",
-                                command = lambda: mw.skalarWindowControl.sop_step5(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step5(frame)).grid(row = 3, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 7",
-                                command = lambda: mw.skalarWindowControl.sop_step7(frame)).grid(row = 2, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step7(frame)).grid(row = 3, column = 3,
                                                                                 padx = 20,
                                                                                 pady = 20)
     
@@ -597,36 +639,39 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         skal_op = ins.skalar_operation
+        main_label = tk.Label(frame,
+                              text = "Skalar SOP: Step 7",
+                              font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         text = tk.Text(frame,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.grid(row = 0, column = 1)
+        text.grid(row = 1, column = 2)
         step = skal_op.step7
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
-                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 2, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "Skalar Step Home",
-                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 1, column = 2,
+                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 2, column = 3,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 6",
-                                command = lambda: mw.skalarWindowControl.sop_step6(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step6(frame)).grid(row = 3, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 8",
-                                command = lambda: mw.skalarWindowControl.sop_step8(frame)).grid(row = 2, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step8(frame)).grid(row = 3, column = 3,
                                                                                 padx = 20,
                                                                                 pady = 20)
     
@@ -634,36 +679,39 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         skal_op = ins.skalar_operation
+        main_label = tk.Label(frame,
+                              text = "Skalar SOP: Step 8",
+                              font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         text = tk.Text(frame,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.grid(row = 0, column = 1)
+        text.grid(row = 1, column = 2)
         step = skal_op.step8
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
-                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 2, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "Skalar Step Home",
-                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 1, column = 2,
+                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 2, column = 3,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 7",
-                                command = lambda: mw.skalarWindowControl.sop_step7(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step7(frame)).grid(row = 3, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 9",
-                                command = lambda: mw.skalarWindowControl.sop_step9(frame)).grid(row = 2, column = 2,
+                                command = lambda: mw.skalarWindowControl.sop_step9(frame)).grid(row = 3, column = 3,
                                                                                 padx = 20,
                                                                                 pady = 20)
         
@@ -671,29 +719,32 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         skal_op = ins.skalar_operation
+        main_label = tk.Label(frame,
+                              text = "Skalar SOP: Step 9",
+                              font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         text = tk.Text(frame,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.grid(row = 0, column = 1)
+        text.grid(row = 1, column = 2)
         step = skal_op.step9
         text.insert(tk.END, step)
 
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
-                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 1, column = 0,
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 2, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "Skalar Step Home",
-                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 1, column = 2,
+                                     command = lambda: mw.skalarWindowControl.step_home(frame)).grid(row = 2, column = 3,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 8",
-                                command = lambda: mw.skalarWindowControl.sop_step8(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.skalarWindowControl.sop_step8(frame)).grid(row = 3, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)

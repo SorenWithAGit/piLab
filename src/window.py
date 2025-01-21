@@ -21,7 +21,7 @@ class window:
                               text = welcome,
                               height = 10,
                               width = 52,
-                              font = ("Arial", 20)).grid(row = 1, column = 1)
+                              font = ("Arial", 20)).grid(row = 1, columnspan = 3)
           smith_lab = tk.Button(frame,
                                    text = "Smith Lab",
                                    font = ("Arial", 20),
@@ -49,7 +49,7 @@ class window:
           frame.pack()
           label = tk.Label(frame,
                          text = "Smith Lab Home",
-                         font = ("Arial", 25)).grid(row = 0, column = 1)
+                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
           for i in range(1,6):
                     label = tk.Label(frame,
                                    text = "").grid(row = i)

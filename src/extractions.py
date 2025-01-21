@@ -8,7 +8,10 @@ class recipes:
     def m3_stock_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Mehclich 3 Stock Solution Protocol",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -32,7 +35,10 @@ class recipes:
     def m3_1L_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Mehlich 3 Protocol 2.5 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -55,7 +61,10 @@ class recipes:
     def m3_2L_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Mehlich 3 Protocol 5 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -79,7 +88,10 @@ class recipes:
     def h3a_1L_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Haney 3 Acids Protocol 1 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -102,7 +114,10 @@ class recipes:
     def h3a_2L_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Haney 3 Acids Protocol 2 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -126,7 +141,10 @@ class recipes:
     def olsen_1L_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Olsen P Protocol 1 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -150,7 +168,10 @@ class recipes:
     def olsen_2L_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Olsen P Protocol 2 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -173,7 +194,10 @@ class recipes:
     def kcl_1N_1L_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Potassium Chloride Protocol 1N 1 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -197,7 +221,10 @@ class recipes:
     def kcl_1N_2L_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Potassium Chloride Protocol 1N 2 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -221,7 +248,10 @@ class recipes:
     def kcl_2N_1L_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Potassium Chloride Protocol 2N 1 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -245,6 +275,9 @@ class recipes:
     def kcl_2N_2L_click():
         frame = tk.Frame()
         frame.pack()
+        main_label = tk.Label(frame,
+                        text = "Potassium Chloride Protocol 2N 2 L",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
@@ -271,7 +304,10 @@ class extract_protocol:
     def mehlich3_pro_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Mehlich 3 Extraction Protocol",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -294,7 +330,10 @@ class extract_protocol:
     def potassium_chloride_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Potassium Chloride Extraction Protocol",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -317,7 +356,10 @@ class extract_protocol:
     def olsenP_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Olsen P Extraction Protocol",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         text = tk.Text(frame,
@@ -340,7 +382,10 @@ class extract_protocol:
     def h3a_click():
             frame = tk.Frame()
             frame.pack()
-            for i in range(4):
+            main_label = tk.Label(frame,
+                        text = "Haney 3 Acids Extraction Protocol",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+            for i in range(1,4):
                 label = tk.Label(frame,
                                 text = "").grid(row = i)
             text = tk.Text(frame,
@@ -363,7 +408,10 @@ class extract_protocol:
     def hcl_click():
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                        text = "Hydrochloric Acid Extraction Protocol",
+                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1,4):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         text = tk.Text(frame,
