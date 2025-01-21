@@ -87,7 +87,7 @@ class window:
      
      def analytical_instrumentation_click(frame):
           window.clear_frame(frame)
-          pr.procedure_selection.analytical_instruments
+          pr.procedure_selection.analytical_instruments()
 
      def piLab_home_click(frame):
           window.clear_frame(frame)
