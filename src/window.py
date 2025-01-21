@@ -358,43 +358,53 @@ class skalarWindowControl:
      
      def std1_click(frame):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std1", 100))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std1", 100)[0],
+                                            sk.skalar_recipes.get_recipe("std1", 100)[1])
 
      def std2_click(frame):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std2", 100))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std2", 100)[0],
+                                            sk.skalar_recipes.get_recipe("std2", 100)[1])
 
      def std3_click(frame):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std3", 100))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std3", 100)[0],
+                                            sk.skalar_recipes.get_recipe("std3", 100)[1])
 
      def std4_click(frame):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std4", 100))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std4", 100)[0],
+                                            sk.skalar_recipes.get_recipe("std5", 100)[1])
 
      def std5_click(frame):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std5", 100))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe("std5", 100)[0],
+                                            sk.skalar_recipes.get_recipe("std5", 100)[1])
 
      def buff_vol1_click(frame, reagent):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 500))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 500)[0],
+                                            sk.skalar_recipes.get_recipe(reagent, 500)[1])
 
      def buff_vol2_click(frame, reagent):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 1000))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 1000)[0],
+                                            sk.skalar_recipes.get_recipe(reagent, 1000)[1])
 
      def buff_vol3_click(frame, reagent):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 2000))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 2000)[0],
+                                            sk.skalar_recipes.get_recipe(reagent, 2000)[1])
 
      def reag_vol1_click(frame, reagent):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 500))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 500)[0],
+                                            sk.skalar_recipes.get_recipe(reagent, 500)[1])
 
      def reag_vol2_click(frame, reagent):
           window.clear_frame(frame)
-          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 1000))
+          sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 1000)[0],
+                                            sk.skalar_recipes.get_recipe(reagent, 1000)[1])
 
      def step_home(frame):
           window.clear_frame(frame)

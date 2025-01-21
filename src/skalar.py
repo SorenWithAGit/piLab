@@ -166,7 +166,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = ("Skalar: " + str(reagent) + " Volume Frame"),
+                              text = ("Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -194,7 +194,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = ("Skalar:" + str(reagent) + "Volume Frame"),
+                              text = ("Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -213,10 +213,13 @@ class skalar_cookbook:
                                 font = ("Arial", 20),
                                 command = lambda: mw.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
 
-    def instruct_frame(recipe):
+    def instruct_frame(label, recipe):
         frame = tk.Frame()
         frame.pack()
-        for i in range(4):
+        main_label = tk.Label(frame,
+                              text = str(label),
+                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+        for i in range(1,4):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         text = tk.Text(frame,
@@ -245,95 +248,125 @@ class skalar_recipes:
         rins = ins.skalar_recipes.rinsingLiquid
         skastd = ins.skalar_recipes.skalarSTD
         if reagent == "nitrate_buffer" and volume == 500:
+            label = "Nitrate/Nitrite: Buffer 500 mL"
             recipe = nitrb["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "nitrate_buffer" and volume == 1000:
+            label = "Nitrate/Nitrite: Buffer 1 L"
             recipe = nitrb["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "nitrate_buffer" and volume == 2000:
+            label = "Nitrate/Nitrite: Buffer 2 L"
             recipe = nitrb["2 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "color_reagent" and volume == 500:
+            label = "Nitrate/Nitrite: Color Reagent 500 mL"
             recipe = nitrc["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "color_reagent" and volume == 1000:
+            label = "Nitrate/Nitrite: Color Reagent 1 L"
             recipe = nitrc["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "ffd6" and volume == 500:
+            label = "Phosphate: FFD6 500 mL"
             recipe = ffd6["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "ffd6" and volume == 1000:
+            label = "Phosphate: FFD6 1 L"
             recipe = ffd6["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "sulfuric_acid" and volume == 500:
+            label = "Phosphate: Sulfuric Acid 500 mL"
             recipe = sulf["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "sulfuric_acid" and volume == 1000:
+            label = "Phosphate: Sulfuric Acid 1 L"
             recipe = sulf["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "ammonium_heptamolybdate" and volume == 500:
+            label = "Phosphate: Ammonium Heptamolybdate 500 mL"
             recipe = hept["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "ammonium_heptamolybdate" and volume == 1000:
+            label = "Phosphate: Ammonium HeptaMolybdate 1 L"
             recipe = hept["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "l_plus_ascorbic" and volume == 500:
+            label = "Phosphate: L+ Ascorbic Acid 500 mL"
             recipe = lplus["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "l_plus_ascorbic" and volume == 1000:
+            label = "Phosphate: L+ Ascorbic acid 1 L"
             recipe = lplus["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "ammonium_buffer" and volume == 500:
+            label = "Ammonium: Buffer 500 mL"
             recipe = ammob["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "ammonium_buffer" and volume == 1000:
+            label = "Ammonium: Buffer 1 L"
             recipe = ammob["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "ammonium_buffer" and volume == 2000:
+            label = "Ammonium: Buffer 2 L"
             recipe = ammob["2 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "salicyalite" and volume == 500:
+            label = "Ammonium: Salicyalite 500 mL"
             recipe = sali["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "salicyalite" and volume == 1000:
+            label = "Ammonium: Salicyalite 1 L"
             recipe = sali["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "nitroprusside" and volume == 500:
+            label = "Ammonium: Nitroprusside 500 mL"
             recipe = nitr["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "nitroprusside" and volume == 1000:
+            label = "Ammonium: Nitroprusside 1 L"
             recipe = nitr["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "dichlorocyanurite" and volume == 500:
+            label = "Ammonium: Dichlorocyanurite 500 mL"
             recipe = dich["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "dichlorocyanurite" and volume == 1000:
+            label = "Ammonium Dichlorocyanurite 1 L"
             recipe = dich["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "rinsing" and volume == 500:
+            label = "Rinsing Liquid 500 mL"
             recipe = rins["500 mL"]
-            return recipe
+            return [label, recipe]
         if reagent == "rinsing" and volume == 1000:
+            label = "Rinsing Liquid 1 L"
             recipe = rins["1 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "rinsing" and volume == 2000:
+            label = "Rinsing Liquid 2 L"
             recipe = rins["2 L"]
-            return recipe
+            return [label, recipe]
         if reagent == "std1":
+            label = "Standard 1: 0.25 ppm"
             recipe = skastd["STD 1"]
-            return recipe
+            return [label, recipe]
         if reagent == "std2":
+            label = "Standard 2: 0.75 ppm"
             recipe = skastd["STD 2"]
-            return recipe
+            return [label, recipe]
         if reagent == "std3":
+            label = "Standard 3: 1.0 ppm"
             recipe = skastd["STD 3"]
-            return recipe
+            return [label, recipe]
         if reagent == "std4":
+            label = "Standard 4: 2.0 ppm"
             recipe = skastd["STD 4"]
-            return recipe
+            return [label, recipe]
         if reagent == "std5":
+            label = "Standard 5: 4.0 ppm"
             recipe = skastd["STD 5"]
-            return recipe
+            return [label, recipe]
         
 class skalar_window:
     def steps():
