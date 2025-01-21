@@ -296,6 +296,46 @@ class skalarWindowControl:
           window.clear_frame(frame)
           sk.skalar_cookbook.instruct_frame(sk.skalar_recipes.get_recipe(reagent, 1000))
 
+     def step_home(frame):
+          window.clear_frame(frame)
+          sk.skalar_window.steps()
+
+     def sop_step1(frame):
+          window.clear_frame(frame)
+          sk.operating_procedure.step1()
+
+     def sop_step2(frame):
+          window.clear_frame(frame)
+          sk.operating_procedure.step2()
+
+     def sop_step3(frame):
+          window.clear_frame(frame)
+          sk.operating_procedure.step3()
+     
+     def sop_step4(frame):
+          window.clear_frame(frame)
+          sk.operating_procedure.step4()
+
+     def sop_step5(frame):
+          window.clear_frame(frame)
+          sk.operating_procedure.step5()
+
+     def sop_step6(frame):
+          window.clear_frame(frame)
+          sk.operating_procedure.step6()
+     
+     def sop_step7(frame):
+          window.clear_frame(frame)
+          sk.operating_procedure.step7()
+
+     def sop_step8(frame):
+          window.clear_frame(frame)
+          sk.operating_procedure.step8()
+
+     def sop_step9(frame):
+          window.clear_frame(frame)
+          sk.operating_procedure.step9()
+
 class ghgWindowControl:
 
     def stds_click(frame):
