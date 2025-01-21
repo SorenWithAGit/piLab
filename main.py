@@ -40,6 +40,12 @@ def main():
     smith_menu.add_command(label = "Extraction Protocols", command = lambda: temp_command())
     smith_menu.add_command(label = "Analytical Instrumentation", command = lambda: temp_command())
 
+    yost_menu = tk.Menu(piLab_menu)
+    piLab_menu.add_cascade(label = "Yost Lab", menu = yost_menu)
+
+    schantz_menu = tk.Menu(piLab_menu)
+    piLab_menu.add_cascade(label = "Schantz Lab", menu = schantz_menu)
+
     app = MainWindow()
     root.mainloop()
 
