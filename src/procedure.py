@@ -78,7 +78,7 @@ class procedure_selection:
         extract_home = tk.Button(frame,
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: mw.extract_home_click(frame)).grid(row = 9, column = 1,
+                                 command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 9, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
 
