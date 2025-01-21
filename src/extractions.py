@@ -31,6 +31,12 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        m3_recipes_button = tk.Button(frame,
+                                      text = "Mehlich 3 Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.m3_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
 
     def m3_1L_click():
         frame = tk.Frame()
@@ -58,6 +64,13 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        m3_recipes_button = tk.Button(frame,
+                                      text = "Mehlich 3 Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.m3_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
+        
     def m3_2L_click():
         frame = tk.Frame()
         frame.pack()
@@ -84,6 +97,12 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        m3_recipes_button = tk.Button(frame,
+                                      text = "Mehlich 3 Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.m3_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
 
     def h3a_1L_click():
         frame = tk.Frame()
@@ -111,6 +130,13 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        h3a_recipes_button = tk.Button(frame,
+                                      text = "Haney 3 Acids Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.h3a_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
+        
     def h3a_2L_click():
         frame = tk.Frame()
         frame.pack()
@@ -137,6 +163,12 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        h3a_recipes_button = tk.Button(frame,
+                                      text = "Haney 3 Acids Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.h3a_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
 
     def olsen_1L_click():
         frame = tk.Frame()
@@ -164,6 +196,12 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        olsen_recipes_button = tk.Button(frame,
+                                      text = "Olsen P Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.olsen_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
 
     def olsen_2L_click():
         frame = tk.Frame()
@@ -191,6 +229,13 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        olsen_recipes_button = tk.Button(frame,
+                                      text = "Olsen P Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.olsen_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
+        
     def kcl_1N_1L_click():
         frame = tk.Frame()
         frame.pack()
@@ -217,6 +262,12 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        kcl_recipes_Button = tk.Button(frame,
+                                      text = "Potassium Chloride Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.kcl_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
 
     def kcl_1N_2L_click():
         frame = tk.Frame()
@@ -244,6 +295,12 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        kcl_recipes_Button = tk.Button(frame,
+                                      text = "Potassium Chloride Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.kcl_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
 
     def kcl_2N_1L_click():
         frame = tk.Frame()
@@ -271,6 +328,12 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        kcl_recipes_Button = tk.Button(frame,
+                                      text = "Potassium Chloride Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.kcl_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
 
     def kcl_2N_2L_click():
         frame = tk.Frame()
@@ -298,6 +361,12 @@ class recipes:
                                  command = lambda: mw.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+        kcl_recipes_Button = tk.Button(frame,
+                                      text = "Potassium Chloride Recipes",
+                                      font = ("Arial", 20),
+                                      command = lambda: mw.procedureControl.kcl_click(frame)).grid(row = 5, column = 2,
+                                                                                                  padx = 20, 
+                                                                                                  pady = 20)
 
 class extract_protocol:
 

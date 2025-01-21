@@ -6,45 +6,57 @@ class ghg_window:
     def steps():
         frame = tk.Frame()
         frame.pack()
+        
         main_label = tk.Label(frame,
                               text = "SCION456 GHG SOP",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1, 4):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         stds_click = tk.Button(frame,
                                text = "GHG Standards",
                                font = ("Arial", 20),
-                               command = lambda: mw.ghgWindowControl.stds_click(frame)).grid(row = 1, column = 0,
+                               command = lambda: mw.ghgWindowControl.stds_click(frame)).grid(row = 4, column = 0,
                                                                                     padx = 20, 
                                                                                     pady = 20)
         step1_click = tk.Button(frame,
                                 text = "Step 1",
                                 font = ("Arial", 20),
-                                command = lambda: mw.ghgWindowControl.step1_click(frame)).grid(row = 1, column = 1,
+                                command = lambda: mw.ghgWindowControl.step1_click(frame)).grid(row = 4, column = 1,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step2_click = tk.Button(frame,
                                 text = "Step 2",
                                 font = ("Arial", 20),
-                                command = lambda: mw.ghgWindowControl.step2_click(frame)).grid(row = 1, column = 2,
+                                command = lambda: mw.ghgWindowControl.step2_click(frame)).grid(row = 4, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step3_click = tk.Button(frame,
                                 text = "Step 3",
                                 font = ("Arial", 20),
-                                command = lambda: mw.ghgWindowControl.step3_click(frame)).grid(row = 2, column = 0,
+                                command = lambda: mw.ghgWindowControl.step3_click(frame)).grid(row = 5, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         step4_click = tk.Button(frame,
                                 text = "Step 4",
                                 font = ("Arial", 20),
-                                command = lambda: mw.ghgWindowControl.step4_click(frame)).grid(row = 2, column = 1,
+                                command = lambda: mw.ghgWindowControl.step4_click(frame)).grid(row = 5, column = 1,
                                                                                 padx = 20,
                                                                                 pady = 20)
+        for i in range(7, 10):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         smtih_home_button = tk.Button(frame,
                                     font = ("Arial", 20),
                                     text = "Smith Lab Home",
-                                    command = lambda: mw.window.smith_lab_click(frame)).grid(row = 5,
+                                    command = lambda: mw.window.smith_lab_click(frame)).grid(row = 10,
                                                                         column = 0,
                                                                         pady = 20)
+        instrumentation_home = tk.Button(frame,
+                                         font = ("Arial", 20),
+                                         text = "Instrumentation Home",
+                                         command = lambda: mw.window.analytical_instrumentation_click(frame)).grid(row = 10, 
+                                                                                                                  column = 2)
 class operating_procedure:
 
     def stds():
