@@ -32,7 +32,7 @@ def main():
    
     smith_menu  = tk.Menu(piLab_menu)
     piLab_menu.add_cascade(label = "Smith Lab", menu = smith_menu)
-    smith_menu.add_command(label = "Smith Lab Home", command = lambda: temp_command()())
+    smith_menu.add_command(label = "Smith Lab Home", command = lambda: temp_command())
     smith_menu.add_separator()
     smith_menu.add_command(label = "Extraction Recipes", command = lambda: temp_command())
     smith_menu.add_command(label = "Instrument Recipes", command = lambda: temp_command())
@@ -44,6 +44,8 @@ def main():
 
     schantz_menu = tk.Menu(piLab_menu)
     piLab_menu.add_cascade(label = "Schantz Lab", menu = schantz_menu)
+
+
 
     app = MainWindow()
     root.mainloop()
