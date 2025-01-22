@@ -1,5 +1,5 @@
 import tkinter as tk
-from src import control as ctrl
+from src.smithLab import control as ctrl
 
 class procedure_selection:
 

@@ -1,11 +1,11 @@
 import tkinter as tk
-from src import procedure as pr
-from src import instructions as ins
-from src import ghg
-from src import icp
-from src import skalar as sk
-from src import procedure as pr
-from src import extractions as ex
+from src.smithLab import procedure as pr
+from src.smithLab import instructions as ins
+from src.smithLab import ghg
+from src.smithLab import icp
+from src.smithLab import skalar as sk
+from src.smithLab import procedure as pr
+from src.smithLab import extractions as ex
 
 class window:
 

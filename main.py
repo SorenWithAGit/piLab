@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import tkinter as tk
-from src import control
+from src.smithLab import control
 
 class MainWindow(tk.Frame):
 

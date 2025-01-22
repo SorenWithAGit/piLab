@@ -1,6 +1,6 @@
 import tkinter as tk
-from src import control as ctrl
-from src import instructions as ins
+from src.smithLab import control as ctrl
+from src.smithLab import instructions as ins
 
 class skalar_cookbook:
     def home_frame():
