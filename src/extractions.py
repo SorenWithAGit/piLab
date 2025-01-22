@@ -389,7 +389,7 @@ class extract_protocol:
         smith_lab_home = tk.Button(frame,
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: mw.window.Smith_lab_home(frame)).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                command = lambda: mw.window.smith_lab_click(frame)).grid(row = 5, column = 0, padx = 20, pady = 20)
         extraction_protocols= tk.Button(frame,
                                  text = "Extraction Protocols",
                                  font = ("Arial", 20),
