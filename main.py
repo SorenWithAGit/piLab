@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 import tkinter as tk
-from src import window
-from src import instructions as ins
+from src import control
 
 class MainWindow(tk.Frame):
 
@@ -12,7 +11,7 @@ class MainWindow(tk.Frame):
 
     def initUI(self):
         self.master.title("piLab By John Sorensen")
-        window.window.piLab_home()
+        control.window.piLab_home()
 
 def temp_command():
      pass
