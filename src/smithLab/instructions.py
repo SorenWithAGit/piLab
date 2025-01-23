@@ -533,3 +533,28 @@ Switch on digestor and allow to warm up.
 Under one touch protocols select Water Quality Total P.
 Allow full digestion and cooling before removing samples."""
     }
+
+class ecph:
+
+    ecMeter = {
+        "Calibration" : """Place the EC Probe in one of the 
+calibration standards and press cal. 
+Endpoint mode should be set to auto.
+After the endpoint has been reached the display
+freezes and shows the ne standard value.
+The new cell constant of the sensor is shown on 
+right of the display.
+Press Read to save the calibration.""",
+
+        "Measurement Mode" : """There are two different reading modes
+for the F30 Meter: Electrical Conductivity and 
+Total Dissolved Solids.
+Select Electrical Conductivity.""",
+
+        "Measurement" : """Check the probe connection to the 
+instrument.
+Place the sensor in the sample and press read, 
+Measurement has begun, and is completed when the 
+screen freezes.
+Record value and rinse Probe with Deionized Water."""
+    }

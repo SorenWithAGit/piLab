@@ -265,6 +265,12 @@ class procedure_selection:
                           command = lambda: ctrl.microwaveDigest.digestHome(frame)).grid(row = 8, column = 0,
                                                                                          padx = 20,
                                                                                          pady = 20)
+        phec = tk.Button(frame,
+                         text = "pH and Conductivity Meters",
+                         font = ("Arial", 20),
+                         command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 1,
+                                                                            padx = 20,
+                                                                            pady = 20)
         for i in range(9,12):
             label = tk.Label(frame,
                              text = "").grid(row = i)

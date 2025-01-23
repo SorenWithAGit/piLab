@@ -7,6 +7,7 @@ from src.smithLab import skalar as sk
 from src.smithLab import procedure as pr
 from src.smithLab import extractions as ex
 from src.smithLab import microwaveDigestor as md
+from src.smithLab import pHandEC as phec
 
 class window:
 
@@ -482,4 +483,25 @@ class microwaveDigest:
      def totalP(frame):
           window.clear_frame(frame)
           md.totalP_frame()
-          
+
+class pHEC:
+
+     def phec_home(frame):
+          window.clear_frame(frame)
+          phec.phec_frame()
+
+     def ec_click(frame):
+          window.clear_frame(frame)
+          phec.ecMeter.ec_steps()
+     
+     def ec_cal_click(frame):
+          window.clear_frame(frame)
+          phec.ecMeter.cal_click()
+
+     def ec_mode_click(frame):
+          window.clear_frame(frame)
+          phec.ecMeter.mode_click()
+     
+     def ec_measure_click(frame):
+          window.clear_frame(frame)
+          phec.ecMeter.measure_click()
