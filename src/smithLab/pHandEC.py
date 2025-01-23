@@ -248,7 +248,7 @@ class phMeter:
         cal = tk.Button(frame,
                                  text = "Calibration",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.pHEC.ph_cal_click(frame)).grid(row = 4, column = 1,
+                                 command = lambda: ctrl.pHEC.ph_cal(frame)).grid(row = 4, column = 1,
                                         padx = 20,
                                         pady = 20)
         meas = tk.Button(frame,
