@@ -505,3 +505,19 @@ class pHEC:
      def ec_measure_click(frame):
           window.clear_frame(frame)
           phec.ecMeter.measure_click()
+
+     def ph_click(frame):
+          window.clear_frame(frame)
+          phec.phMeter.ph_steps()
+
+     def ph_cal_check(frame):
+          window.clear_frame(frame)
+          phec.phMeter.ph_cal_check()
+     
+     def ph_cal_click(frame):
+          window.clear_frame(frame)
+          phec.phMeter.ph_cal()
+
+     def ph_measure_click(frame):
+          window.clear_frame(frame)
+          phec.phMeter.ph_measure_click()

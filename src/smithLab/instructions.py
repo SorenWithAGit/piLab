@@ -558,3 +558,29 @@ Measurement has begun, and is completed when the
 screen freezes.
 Record value and rinse Probe with Deionized Water."""
     }
+
+    ph_meter = {
+        "CalCheck" : """Remove probe from stabilizing solution.
+Place probe in the 4.01 buffer solution.
+Allow to equilibrate, if pH is off a calibration is
+necessary. 
+Rinse the probe with Deionized Water.
+Else repeat with 7.00 and 10.00 solutions.""",
+    
+        "Calibration" : """Press Cal on benchtop meter.
+Insert probe into 4.01 buffer solution.
+Wait for equilibration when 4.01 appears press enter.
+Rinse the probe with Deionized Water.
+Repeat with the 7.00 adn 10.00 solutions.
+When finished with the 10.00 point, press
+Cal once more to save the calibration.""",
+
+        "Measurement" : """If calibration is satisfactory,
+place the probe in sample solution.
+Allow meter to equilibrate.
+A blue check will appear on the LED Screen.
+Rinse the probe with Deionized Water.
+Proceed with next Sample.
+Once through with the meter do a final rinse
+and place probe back in the stabilizing
+solution."""}
