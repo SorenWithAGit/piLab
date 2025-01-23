@@ -514,7 +514,7 @@ class pHEC:
           window.clear_frame(frame)
           phec.phMeter.ph_cal_check()
      
-     def ph_cal_click(frame):
+     def ph_cal(frame):
           window.clear_frame(frame)
           phec.phMeter.ph_cal()
 

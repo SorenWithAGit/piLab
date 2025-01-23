@@ -565,7 +565,9 @@ Place probe in the 4.01 buffer solution.
 Allow to equilibrate, if pH is off a calibration is
 necessary. 
 Rinse the probe with Deionized Water.
-Else repeat with 7.00 and 10.00 solutions.""",
+Else repeat with 7.00 and 10.00 solutions.
+If calibration is satisfactory, contiue 
+to measurement.""",
     
         "Calibration" : """Press Cal on benchtop meter.
 Insert probe into 4.01 buffer solution.

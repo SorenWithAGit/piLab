@@ -316,7 +316,7 @@ class phMeter:
         cal_button = tk.Button(frame,
                             text = "Calibration Mode",
                             font = ("Arial", 20),
-                            command = lambda: ctrl.pHEC.ph_cal_click(frame)).grid(row = 10, column = 1,
+                            command = lambda: ctrl.pHEC.ph_cal(frame)).grid(row = 10, column = 1,
                                                                                 padx = 20,
                                                                                 pady = 20)
         measure_button = tk.Button(frame,
@@ -362,13 +362,13 @@ class phMeter:
                               command = lambda: ctrl.pHEC.ph_click(frame)).grid(row = 9, column = 2,
                                                                          padx = 20,
                                                                          pady = 20)
-        previous_button = tk.Button(frame,
+        cal_check_button = tk.Button(frame,
                                     text = "Calibration Check",
                                     font = ("Arial", 20),
                                     command = lambda: ctrl.pHEC.ph_cal_check(frame)).grid(row = 10, column = 0,
                                                                                           padx = 20,
                                                                                           pady = 20)
-        next_button = tk.Button(frame,
+        meas_button = tk.Button(frame,
                                 text = "Measurement",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.pHEC.ph_measure_click(frame)).grid(row = 10, column = 2,
@@ -411,10 +411,16 @@ class phMeter:
                               command = lambda: ctrl.pHEC.ph_click(frame)).grid(row = 9, column = 2,
                                                                          padx = 20,
                                                                          pady = 20)
-        previous_button = tk.Button(frame,
+        cal_check_button = tk.Button(frame,
+                                     text = "Calibration Check",
+                                     font = ("Arial", 20),
+                                     command = lambda: ctrl.pHEC.ph_cal(frame)).grid(row = 10, column = 0,
+                                                                                     padx = 20,
+                                                                                     pady = 20)
+        cal_button = tk.Button(frame,
                                     text = "Calibration Mode",
                                     font = ("Arial", 20),
-                                    command = lambda: ctrl.pHEC.ph_cal_click(frame)).grid(row = 10, column = 0,
+                                    command = lambda: ctrl.pHEC.ph_cal(frame)).grid(row = 10, column = 1,
                                                                                           padx = 20,
                                                                                           pady = 20)
         
