@@ -76,26 +76,28 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = stds.stds
         text.insert(tk.END, step)
-
+        for i in range(6, 9):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                    ctrl.window.Smith_lab_home()]).grid(row = 6, column = 0,
+                                    ctrl.window.Smith_lab_home()]).grid(row = 9, column = 0,
                                                                       padx = 20,
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "GHG Step Home",
                                      command = lambda: [ctrl.window.clear_frame(frame),
-                                                        ghg_window.steps()]).grid(row = 6, column = 2,
+                                                        ghg_window.steps()]).grid(row = 9, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 1",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                                   operating_procedure.step1()]).grid(row = 7, column = 2)
+                                                   operating_procedure.step1()]).grid(row = 10, column = 2)
 
     def step1():
         frame = tk.Frame()
@@ -114,26 +116,28 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step1
         text.insert(tk.END, step)
-
+        for i in range(6, 9):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                    ctrl.window.Smith_lab_home()]).grid(row = 6, column = 0,
+                                    ctrl.window.Smith_lab_home()]).grid(row = 9, column = 0,
                                                                       padx = 20,
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "GHG Step Home",
                                      command = lambda: [ctrl.window.clear_frame(frame),
-                                                        ghg_window.steps()]).grid(row = 6, column = 2,
+                                                        ghg_window.steps()]).grid(row = 9, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 2",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                                   operating_procedure.step2()]).grid(row = 7, column = 2,
+                                                   operating_procedure.step2()]).grid(row = 10, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)
     
@@ -155,33 +159,35 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step2
         text.insert(tk.END, step)
-
+        for i in range(6, 9):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                    ctrl.window.Smith_lab_home()]).grid(row = 6, column = 0,
+                                    ctrl.window.Smith_lab_home()]).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "GHG Step Home",
                                      command = lambda: [ctrl.window.clear_frame(frame),
-                                                        ghg_window.steps()]).grid(row = 6, column = 2,
+                                                        ghg_window.steps()]).grid(row = 9, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 1",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                                   operating_procedure.step1()]).grid(row = 7, column = 0,
+                                                   operating_procedure.step1()]).grid(row = 10, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 3",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                                   operating_procedure.step3()]).grid(row = 7, column = 2,
+                                                   operating_procedure.step3()]).grid(row = 10, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)
 
@@ -202,33 +208,35 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step3
         text.insert(tk.END, step)
-
+        for i in range(6, 9):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                    ctrl.window.Smith_lab_home()]).grid(row = 6, column = 0,
+                                    ctrl.window.Smith_lab_home()]).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "GHG Step Home",
                                      command = lambda: [ctrl.window.clear_frame(frame),
-                                                        ghg_window.steps()]).grid(row = 6, column = 2,
+                                                        ghg_window.steps()]).grid(row = 9, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 2",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                                   operating_procedure.step2()]).grid(row = 7, column = 0,
+                                                   operating_procedure.step2()]).grid(row = 10, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 4",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                                   operating_procedure.step4()]).grid(row = 7, column = 2,
+                                                   operating_procedure.step4()]).grid(row = 10, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)
     
@@ -249,25 +257,27 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step4
         text.insert(tk.END, step)
-
+        for i in range(6, 9):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Smith Lab Home",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                    ctrl.window.Smith_lab_home()]).grid(row = 6, column = 0,
+                                    ctrl.window.Smith_lab_home()]).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "GHG Step Home",
                                      command = lambda: [ctrl.window.clear_frame(frame),
-                                                        ghg_window.steps()]).grid(row = 6, column = 2,
+                                                        ghg_window.steps()]).grid(row = 9, column = 2,
                                                                                       padx = 20,
                                                                                       pady = 20)
         previous_button = tk.Button(frame,
                                 font = ("Arial", 20),
                                 text = "Step 3",
                                 command = lambda: [ctrl.window.clear_frame(frame),
-                                                   operating_procedure.step3()]).grid(row = 7, column = 0,
+                                                   operating_procedure.step3()]).grid(row = 10, column = 0,
                                                                                 padx = 20,
                                                                                 pady = 20)
