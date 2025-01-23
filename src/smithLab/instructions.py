@@ -586,3 +586,32 @@ Proceed with next Sample.
 Once through with the meter do a final rinse
 and place probe back in the stabilizing
 solution."""}
+    
+class formacsTOC:
+    standard_prep = {
+        "TC Stock" : """To a 1,000 mL volumetric
+flask add roughly 800 mL of deionized water.
+Dissolve 2.128 g of potassium hydrogen
+phthalate. 
+Stir with hotplate. 
+Once dissolved dilute to mark.""",
+
+        "IC Stock" : """To a 1,000 mL volumetric
+flask add roughly 800 mL of deionized water.
+Dissolve 4.418 g of sodium carbonate.
+Add 3.500 g of sodium hydrogen carbonate.
+Stir with hotplate.
+Once dissolved dilute to mark.""",
+
+        "TN Stock" : """To a 1,000 mL volumetric
+flask add roughly 800 mL of deionized water.
+Dissolve 4.717 g of ammonium sulfate and
+7.219 g of potassium nitrate.
+Stir with hotplate.
+Once dissolved dilute to mark."""
+    }
+
+    phosphoricAcid = """Dilute 47 mL of 85%
+phosphoric acid to 1000 mL of deionized water."""
+
+    
