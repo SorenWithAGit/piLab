@@ -519,3 +519,17 @@ After each sample has been run a .csv file will be created
 on the computer. After the sequence has completed copy 
 the run file .csv's to an external disk for transfer for 
 the automation module to process."""
+
+class microwaveDigestor:
+
+    MDprotocols = {
+        "WQ Total P" : """Add 50 mL of water qualtiy Sample
+to the digestion vessel.
+Add 0.5 g of Potassium Persulfate (K2S2O8).
+Add 1 mL of Sulfuric Acid.
+Evenly space vessels across sample carousel and load into
+Instrument.
+Switch on digestor and allow to warm up.
+Under one touch protocols select Water Quality Total P.
+Allow full digestion and cooling before removing samples."""
+    }

@@ -250,6 +250,12 @@ class procedure_selection:
                              command = lambda: ctrl.ghgWindowControl.steps_home(frame)).grid(row = 7, column = 2,
                                                                              padx = 20,
                                                                              pady = 20)
+        mars6 = tk.Button(frame,
+                          text = "Microwave Digestor",
+                          font = ("Arial", 20),
+                          command = lambda: ctrl.microwaveDigest.digestHome(frame)).grid(row = 8, column = 0,
+                                                                                         padx = 20,
+                                                                                         pady = 20)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),

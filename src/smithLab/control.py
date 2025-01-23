@@ -6,6 +6,7 @@ from src.smithLab import icp
 from src.smithLab import skalar as sk
 from src.smithLab import procedure as pr
 from src.smithLab import extractions as ex
+from src.smithLab import microwaveDigestor as md
 
 class window:
 
@@ -471,3 +472,14 @@ class ghgWindowControl:
      def step4_click(frame):
           window.clear_frame(frame)
           ghg.operating_procedure.step4()
+
+class microwaveDigest:
+
+     def digestHome(frame):
+          window.clear_frame(frame)
+          md.microwave_frame()
+
+     def totalP(frame):
+          window.clear_frame(frame)
+          md.totalP_frame()
+          
