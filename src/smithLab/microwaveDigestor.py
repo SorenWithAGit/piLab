@@ -6,7 +6,7 @@ def microwave_frame():
     frame = tk.Frame()
     frame.pack()
     main_label = tk.Label(frame,
-                          text = "Microwave Digestor Protocols",
+                          text = "Smith Lab: Microwave Digestor Protocols",
                           font = ("Arial", 25)).grid(row = 0, columnspan = 3)
     for i in range(1,4):
             label = tk.Label(frame,
@@ -17,12 +17,21 @@ def microwave_frame():
                             command = lambda: ctrl.microwaveDigest.totalP(frame)).grid(row = 4, column = 0,
                                                                         padx = 20,
                                                                         pady = 20)
+    for i in range(9,12):
+          label = tk.Label(frame,
+                           text = "").grid(row = i)
+    instrumentation_home = tk.Button(frame,
+                                         font = ("Arial", 20),
+                                         text = "Instrumentation Home",
+                                         command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 12, 
+                                                                                                                  column = 0)
+
     
 def totalP_frame():
     frame = tk.Frame()
     frame.pack()
     main_label = tk.Label(frame,
-                          text = "Microwave Digestor Total P Water Digest",
+                          text = "Smith Lab: Total P Water Digest",
                           font = ("Arial", 25)).grid(row = 0, columnspan = 3)
     for i in range(1,4):
             label = tk.Label(frame,
@@ -34,13 +43,17 @@ def totalP_frame():
     text.grid(row = 4, column = 1, columnspan = 2, padx = 20, pady = 35)
     totalP_digestion = ins.microwaveDigestor.MDprotocols["WQ Total P"]
     text.insert(tk.END, totalP_digestion)
+    for i in range(5, 8):
+          label = tk.Label(frame,
+                           text = "").grid(row = i)
     smith_lab_home = tk.Button(frame,
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 0, padx = 20, pady = 20)
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
     mdHome = tk.Button(frame,
                                  text = "Microwave Digestor Protocols",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.microwaveDigest.digestHome(frame)).grid(row = 5, column = 1,
+                                 command = lambda: ctrl.microwaveDigest.digestHome(frame)).grid(row = 8, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+    

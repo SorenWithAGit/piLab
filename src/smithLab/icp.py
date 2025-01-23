@@ -7,7 +7,7 @@ class icp_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES Standard Recipes",
+                              text = "Smith Lab: ICP-OES Standard Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         std4_button = tk.Button(frame,
                                 text = "Standard 4 Elements and Concentrations",
@@ -38,7 +38,7 @@ class icp_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES Standard Element Selection",
+                              text = "Smith Lab: ICP-OES Standard Element Selection",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4,
                                                          padx = 20,
                                                          pady = 20)
@@ -131,7 +131,7 @@ class icp_control:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP Standard 3 Protocol",
+                              text = "Smith Lab: ICP Standard 3 Protocol",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         text = tk.Text(frame,
                        height = 6,
@@ -153,7 +153,7 @@ class icp_control:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP Standard 2 Protocol",
+                              text = "Smith Lab: ICP Standard 2 Protocol",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         text = tk.Text(frame,
                        height = 6,
@@ -175,7 +175,7 @@ class icp_control:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP Standard 1 Protocol",
+                              text = "Smith Lab: ICP Standard 1 Protocol",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         text = tk.Text(frame,
                        height = 6,
@@ -304,7 +304,7 @@ class icp_control:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP Standard 4 Protocol",
+                              text = "Smith Lab: ICP Standard 4 Protocol",
                               font = ("Arial", 25)).pack()
         text = tk.Text(frame,
                            height = 10,
@@ -335,7 +335,7 @@ class icp_step_window():
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP Steps",
+                              text = "Smith Lab ICP-OES SOP: Steps",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -414,7 +414,7 @@ class icp_operation:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP: Step 1",
+                              text = "Smith Lab ICP-OES SOP: Step 1",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -452,7 +452,7 @@ class icp_operation:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP: Step 2",
+                              text = "Smith Lab ICP-OES SOP: Step 2",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -495,7 +495,7 @@ class icp_operation:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP: Step 3",
+                              text = "Smith Lab ICP-OES SOP: Step 3",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -538,7 +538,7 @@ class icp_operation:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP: Step 4",
+                              text = "Smith Lab ICP-OES SOP: Step 4",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -581,7 +581,7 @@ class icp_operation:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP: Step 5",
+                              text = "Smith Lab ICP-OES SOP: Step 5",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -624,7 +624,7 @@ class icp_operation:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP: Step 6",
+                              text = "Smith Lab ICP-OES SOP: Step 6",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -667,7 +667,7 @@ class icp_operation:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP: Step 7",
+                              text = "Smith Lab ICP-OES SOP: Step 7",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -710,7 +710,7 @@ class icp_operation:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP: Step 8",
+                              text = "Smith Lab ICP-OES SOP: Step 8",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -753,7 +753,7 @@ class icp_operation:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "ICP-OES SOP: Step 9",
+                              text = "Smith Lab ICP-OES SOP: Step 9",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,

@@ -8,7 +8,7 @@ class ghg_window:
         frame.pack()
         
         main_label = tk.Label(frame,
-                              text = "SCION456 GHG SOP",
+                              text = "Smtith Lab: SCION456 GHG SOP",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -63,7 +63,7 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "SCION456 GHG SOP: Standards",
+                        text = "Smith Lab: SCION456 GHG SOP: Standards",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -101,7 +101,7 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "SCION456 GHG SOP: Step 1",
+                        text = "Smith Lab: SCION456 GHG SOP: Step 1",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -142,7 +142,7 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "SCION456 GHG SOP: Step 2",
+                        text = "Smith Lab: SCION456 GHG SOP: Step 2",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -189,7 +189,7 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "SCION456 GHG SOP: Step 3",
+                        text = "Smith Lab: SCION456 GHG SOP: Step 3",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -236,7 +236,7 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "SCION456 GHG SOP: Step 4",
+                        text = "Smith Lab: SCION456 GHG SOP: Step 4",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
             label = tk.Label(frame,

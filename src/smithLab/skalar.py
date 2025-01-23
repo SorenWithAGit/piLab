@@ -7,7 +7,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Skalar Recipies Home",
+                              text = "Smith Lab: Skalar Recipies Home",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1, 6):
             label = tk.Label(frame,
@@ -48,7 +48,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Skalar: Nitrate/Nitrite Reagents",
+                              text = "Smith Lab Skalar: Nitrate/Nitrite Reagents",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -71,7 +71,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Skalar: Phosphate Reagents",
+                              text = "Smith Lab Skalar: Phosphate Reagents",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -101,7 +101,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Skalar: Ammonium Reagents",
+                              text = "Smith Lab Skalar: Ammonium Reagents",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -130,7 +130,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Skalar: Standards Recipes",
+                              text = "Smith Lab Skalar: Standards Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -166,7 +166,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = ("Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
+                              text = ("Smith Lab Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -194,7 +194,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = ("Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
+                              text = ("Smith Lab Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -217,7 +217,7 @@ class skalar_cookbook:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = str(label),
+                              text = "Smith Lab: " + str(label),
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -373,7 +373,7 @@ class skalar_window:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Skalar: SOP Steps",
+                              text = "Smith Lab Skalar: SOP Steps",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -452,7 +452,7 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Skalar SOP: Step 1",
+                              text = "Smith Lab Skalar SOP: Step 1",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -490,7 +490,7 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Skalar SOP: Step 2",
+                              text = "Smith Lab Skalar SOP: Step 2",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -533,7 +533,7 @@ class operating_procedure:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Skalar SOP: Step 3",
+                              text = "Smith Lab Skalar SOP: Step 3",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -577,7 +577,7 @@ class operating_procedure:
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.Label(frame,
-                              text = "Skalar SOP: Step 4",
+                              text = "Smith Lab Skalar SOP: Step 4",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -620,7 +620,7 @@ class operating_procedure:
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.Label(frame,
-                              text = "Skalar SOP: Step 5",
+                              text = "Smith Lab Skalar SOP: Step 5",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -663,7 +663,7 @@ class operating_procedure:
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.Label(frame,
-                              text = "Skalar SOP: Step 6",
+                              text = "Smith Lab Skalar SOP: Step 6",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -706,7 +706,7 @@ class operating_procedure:
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.Label(frame,
-                              text = "Skalar SOP: Step 7",
+                              text = "Smith Lab Skalar SOP: Step 7",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -749,7 +749,7 @@ class operating_procedure:
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.Label(frame,
-                              text = "Skalar SOP: Step 8",
+                              text = "Smith Lab Skalar SOP: Step 8",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,
@@ -792,7 +792,7 @@ class operating_procedure:
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.Label(frame,
-                              text = "Skalar SOP: Step 9",
+                              text = "Smith Lab Skalar SOP: Step 9",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.Label(frame,

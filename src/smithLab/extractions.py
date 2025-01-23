@@ -8,7 +8,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Mehclich 3 Stock Solution Protocol",
+                        text = "Smith Lab: Mehclich 3 Stock Solution Protocol",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -41,7 +41,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Mehlich 3 Protocol 2.5 L",
+                        text = "Smith Lab: Mehlich 3 Protocol 2.5 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -74,7 +74,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Mehlich 3 Protocol 5 L",
+                        text = "Smith Lab: Mehlich 3 Protocol 5 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -107,7 +107,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Haney 3 Acids Protocol 1 L",
+                        text = "Smith Lab: Haney 3 Acids Protocol 1 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -140,7 +140,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Haney 3 Acids Protocol 2 L",
+                        text = "Smith Lab: Haney 3 Acids Protocol 2 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -173,7 +173,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Olsen P Protocol 1 L",
+                        text = "Smith Lab: Olsen P Protocol 1 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -206,7 +206,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Olsen P Protocol 2 L",
+                        text = "Smith Lab: Olsen P Protocol 2 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -239,7 +239,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Potassium Chloride Protocol 1N 1 L",
+                        text = "Smith Lab: Potassium Chloride Protocol 1N 1 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -272,7 +272,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Potassium Chloride Protocol 1N 2 L",
+                        text = "Smith Lab: Potassium Chloride Protocol 1N 2 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -305,7 +305,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Potassium Chloride Protocol 2N 1 L",
+                        text = "Smith Lab: Potassium Chloride Protocol 2N 1 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -338,7 +338,7 @@ class recipes:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Potassium Chloride Protocol 2N 2 L",
+                        text = "Smith Lab: Potassium Chloride Protocol 2N 2 L",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(4):
             label = tk.Label(frame,
@@ -373,7 +373,7 @@ class extract_protocol:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Mehlich 3 Extraction Protocol",
+                        text = "Smith Lab: Mehlich 3 Extraction Protocol",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -399,7 +399,7 @@ class extract_protocol:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Potassium Chloride Extraction Protocol",
+                        text = "Smith Lab: Potassium Chloride Extraction Protocol",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -425,7 +425,7 @@ class extract_protocol:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Olsen P Extraction Protocol",
+                        text = "Smith Lab: Olsen P Extraction Protocol",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,
@@ -451,7 +451,7 @@ class extract_protocol:
             frame = tk.Frame()
             frame.pack()
             main_label = tk.Label(frame,
-                        text = "Haney 3 Acids Extraction Protocol",
+                        text = "Smith Lab: Haney 3 Acids Extraction Protocol",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
             for i in range(1,4):
                 label = tk.Label(frame,
@@ -477,7 +477,7 @@ class extract_protocol:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                        text = "Hydrochloric Acid Extraction Protocol",
+                        text = "Smith Lab: Hydrochloric Acid Extraction Protocol",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.Label(frame,

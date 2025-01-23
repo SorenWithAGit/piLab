@@ -7,7 +7,7 @@ class procedure_selection:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Instrument Recipes Selection",
+                              text = "Smith Lab: Instrument Recipes Selection",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -20,15 +20,18 @@ class procedure_selection:
                         text = "Skalar San ++",
                         font = ("Arial", 25),
                         command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
+        for i in range(9,12):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 12, column = 0, padx = 20, pady = 20)
     def extracts_click():     
          frame = tk.Frame()
          frame.pack()
          main_label = tk.Label(frame,
-                               text = "Extraction Recipes",
+                               text = "Smith Lab: Extraction Recipes",
                                font = ("Arial", 25)).grid(row = 0, columnspan = 3)
          for i in range(1,6):
              label = tk.Label(frame,
@@ -49,17 +52,20 @@ class procedure_selection:
                         text = "KCl: Potassium Chloride",
                         font = ("Arial", 20),
                         command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 8, column = 2, padx = 20, pady = 20)
+         for i in range(9,12):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
          smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 12, column = 0, padx = 20, pady = 20)
     
     
     def m3_click():
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Mehlich 3 Recipes",
+                              text = "Smith Lab: Mehlich 3 Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -91,7 +97,7 @@ class procedure_selection:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Haney 3 Acids Recipes",
+                              text = "Smith Lab: Haney 3 Acids Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -119,7 +125,7 @@ class procedure_selection:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Olsen P Recipes",
+                              text = "Smith Lab: Olsen P Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -147,7 +153,7 @@ class procedure_selection:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Potassium Chloride Recipes",
+                              text = "Smith Lab: Potassium Chloride Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -183,7 +189,7 @@ class procedure_selection:
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Extraction Protocols",
+                              text = "Smith Lab: Extraction Protocols",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -218,16 +224,19 @@ class procedure_selection:
                         command = lambda: ctrl.procedureControl.hcl_proto_click(frame)).grid(row = 8, column = 3,
                                                                                   padx = 20,
                                                                                   pady = 20)
+        for i in range(9,12):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 12, column = 0, padx = 20, pady = 20)
 
     def analytical_instruments():
         frame = tk.Frame()
         frame.pack()
         main_label = tk.Label(frame,
-                              text = "Analytical Instrumentation Protocols",
+                              text = "Smith Lab: Analytical Instrumentation Protocols",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
             label = tk.Label(frame,
@@ -239,7 +248,7 @@ class procedure_selection:
                                                                                     padx = 20,
                                                                                     pady = 20)
         skalar_button = tk.Button(frame,
-                                  text = "SKalar CFA",
+                                  text = "Skalar CFA",
                                   font = ("Arial", 20),
                                   command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 7, column = 1,
                                                                                padx = 20,
@@ -256,7 +265,10 @@ class procedure_selection:
                           command = lambda: ctrl.microwaveDigest.digestHome(frame)).grid(row = 8, column = 0,
                                                                                          padx = 20,
                                                                                          pady = 20)
+        for i in range(9,12):
+            label = tk.Label(frame,
+                             text = "").grid(row = i)
         smith_lab_home = tk.Button(frame,
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
-                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0, padx = 20, pady = 20)
+                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 12, column = 0, padx = 20, pady = 20)
