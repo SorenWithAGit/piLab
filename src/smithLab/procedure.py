@@ -271,6 +271,12 @@ class procedure_selection:
                          command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 1,
                                                                             padx = 20,
                                                                             pady = 20)
+        toc = tk.Button(frame,
+                        text = "Formacs TOC",
+                        font = ("Arial", 20),
+                        command = lambda: ctrl.toc.toc_home(frame)).grid(row = 8, column = 2,
+                                                                         padx = 20,
+                                                                         pady = 20)
         for i in range(9,12):
             label = tk.Label(frame,
                              text = "").grid(row = i)

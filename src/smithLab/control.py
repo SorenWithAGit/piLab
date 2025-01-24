@@ -8,6 +8,7 @@ from src.smithLab import procedure as pr
 from src.smithLab import extractions as ex
 from src.smithLab import microwaveDigestor as md
 from src.smithLab import pHandEC as phec
+from src.smithLab import formacs as fm
 
 class window:
 
@@ -521,3 +522,58 @@ class pHEC:
      def ph_measure_click(frame):
           window.clear_frame(frame)
           phec.phMeter.ph_measure_click()
+
+class toc:
+
+     def toc_home(frame):
+          window.clear_frame(frame)
+          fm.tocHome()
+     
+     def stds(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.standardFrame()
+     
+     def steps(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.stepsHome()
+     
+     def std1(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.std1_click()
+     
+     def std2(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.std2_click()
+     
+     def std3(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.std3_click()
+     
+     def phos(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.phos_click()
+     
+     def step1(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.step1()
+
+     def step2(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.step2()
+     
+     def step3(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.step3()
+
+     def step4(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.step4()
+     
+     def step5(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.step5()
+     
+     def step6(frame):
+          window.clear_frame(frame)
+          fm.formacsOperation.step6()
+     

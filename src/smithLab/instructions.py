@@ -614,4 +614,64 @@ Once dissolved dilute to mark."""
     phosphoricAcid = """Dilute 47 mL of 85%
 phosphoric acid to 1000 mL of deionized water."""
 
-    
+    formacsOperation = {
+        "Step1" : """Step 1: Power On and connection
+Tighten tubing on autosampler and main unit,
+clamp pump decks on main unit.
+Open Zero Air valve.
+Power on in the following order:
+Autosampler -> Main Unit -> Nitrogen Detector.
+Open HT Access (Diamond Icon), press control F12
+to login.
+Click the disconnected button on top ribbon,
+click send settings to analyzer.""",
+
+    "Step2" : """Step 2: Template
+At the top left of the ribbon select "New" 
+then template, name file and press save.
+Select add position and select working 
+standard. choose the appropriate standard
+and concentration for TC/IC/TN.
+Positions S1: TC, S2: IC, S3: TN.
+Add psitions for blanks as "BL".
+Ensure that under injections TOC/TC/IC/TN
+are checked.
+Select add position to add unknowns, with
+standards being rerun every 20 samples.
+Save template then press "OK" to close """,
+
+    "Step3" : """Step 3: Analysis Creation
+At the top Ribbon click "New" then "Analysis".
+Choose the corresponding template, enter file
+name and press save.
+Select the "All" tab on the left side of 
+the analysis window.
+Check the box for "Go to Stand-By After Analysis.
+Allow the baseline for the "Carbon/Nitrogen
+window to stabilize. May need to adjust the
+scale of the graph.""",
+
+    "Step4" : """Step 4: Begin Analysis
+The working standards will be made by the 
+instrument, pour blanks and samples in the 
+corresponding position on autosampler
+Once the baseline has stabilized select
+"Begin Analysis".""",
+
+    "Step5" : """Step 5: Data Transfer
+After the run has completed, save the file
+and click "Export" at the top ribbon. Save 
+the data as a .csv. Transfer file to a 
+USB Drive and move to John's Box. """,
+
+    "Step6" : """Step 6: Shut Down
+If the instrument isn't already
+in standby, Select "Analyzer Settings
+"Stand-By" "Stand-By on".
+Wait for instrument to cool below 
+500 C. Close the HTAccess window.
+Power off N Detector -> main -> 
+Auto Sampler.
+Once shutdown release tension on
+pump decks and relieve pump tubing."""
+    }
