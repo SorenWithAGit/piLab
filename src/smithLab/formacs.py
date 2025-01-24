@@ -414,7 +414,7 @@ class formacsOperation:
                                                                                 pady = 20)
         next_button = tk.Button(frame,
                                 font = ("Arial", 20),
-                                text = "Step 4",
+                                text = "Step 3",
                                 command = lambda: ctrl.toc.step3(frame)).grid(row = 10, column = 2,
                                                                                 padx = 20,
                                                                                 pady = 20)    
