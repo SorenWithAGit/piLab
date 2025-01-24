@@ -8,7 +8,7 @@ def tocHome():
     main_label = tk.Label(frame,
                           text = "Smith Lab: TOC Home",
                           font = ("Arial", 25)).grid(row = 0, columnspan = 3)
-    for i in range(1, 4):
+    for i in range(1, 3):
             label = tk.Label(frame,
                              text = "").grid(row = i)
     standards = tk.Button(frame,
@@ -46,7 +46,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                             text = "Smith Lab: TOC Standards",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                                 text = "").grid(row = i)
         std1 = tk.Button(frame,
@@ -100,7 +100,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                             text = "Smith Lab TOC SOP: TC Standard",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         tcSTD = ins.formacsTOC.standard_prep["TC Stock"]
@@ -144,7 +144,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                             text = "Smith Lab TOC SOP: IC Standard",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         icSTD = ins.formacsTOC.standard_prep["IC Stock"]
@@ -188,7 +188,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                             text = "Smith Lab TOC SOP: TN Standard",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         tnSTD = ins.formacsTOC.standard_prep["TN Stock"]
@@ -232,7 +232,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                             text = "Smith Lab TOC SOP: Phosphoric Acid",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         phos = ins.formacsTOC.phosphoricAcid
@@ -264,7 +264,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                               text = "Smith Lab TOC SOP: Steps",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         step1_click = tk.Button(frame,
@@ -331,7 +331,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                               text = "Smith Lab TOC SOP: Step 1",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step1"]
@@ -375,7 +375,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                               text = "Smith Lab TOC SOP: Step 2",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step2"]
@@ -425,7 +425,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                               text = "Smith Lab TOC SOP: Step 3",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step3"]
@@ -474,7 +474,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                               text = "Smith Lab TOC SOP: Step 4",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step4"]
@@ -523,7 +523,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                               text = "Smith Lab TOC SOP: Step 5",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step5"]
@@ -572,7 +572,7 @@ class formacsOperation:
         main_label = tk.Label(frame,
                               text = "Smith Lab TOC SOP: Step 6",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step6"]
