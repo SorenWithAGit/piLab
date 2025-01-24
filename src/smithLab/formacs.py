@@ -110,7 +110,7 @@ class formacsOperation:
                         font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, tcSTD)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -154,7 +154,7 @@ class formacsOperation:
                         font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, icSTD)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -198,7 +198,7 @@ class formacsOperation:
                         font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, tnSTD)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -242,7 +242,7 @@ class formacsOperation:
                         font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, phos)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -304,7 +304,7 @@ class formacsOperation:
                                                                                 padx = 20,
                                                                                 pady = 20)  
 
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smtih_home_button = tk.Button(frame,
@@ -341,7 +341,7 @@ class formacsOperation:
                            font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -385,7 +385,7 @@ class formacsOperation:
                         font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -435,7 +435,7 @@ class formacsOperation:
                         font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -484,7 +484,7 @@ class formacsOperation:
                         font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -533,7 +533,7 @@ class formacsOperation:
                         font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -582,7 +582,7 @@ class formacsOperation:
                         font = ("Arial", 20))
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
