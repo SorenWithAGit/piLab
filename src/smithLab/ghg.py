@@ -76,7 +76,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = stds.stds
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -116,7 +116,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step1
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -159,7 +159,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step2
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -208,7 +208,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step3
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -257,7 +257,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step4
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,

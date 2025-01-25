@@ -465,7 +465,7 @@ class operating_procedure:
         text.grid(row = 5, column = 2)
         step = skal_op.step1
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -505,7 +505,7 @@ class operating_procedure:
         text.grid(row = 5, column = 2)
         step = skal_op.step2
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -550,7 +550,7 @@ class operating_procedure:
         text.grid(row = 5, column = 2)
         step = skal_op.step3
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -595,7 +595,7 @@ class operating_procedure:
         text.grid(row = 5, column = 2)
         step = skal_op.step4
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -640,7 +640,7 @@ class operating_procedure:
         text.grid(row = 5, column = 2)
         step = skal_op.step5
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -685,7 +685,7 @@ class operating_procedure:
         text.grid(row = 5, column = 2)
         step = skal_op.step6
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -730,7 +730,7 @@ class operating_procedure:
         text.grid(row = 5, column = 2)
         step = skal_op.step7
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -775,7 +775,7 @@ class operating_procedure:
         text.grid(row = 5, column = 2)
         step = skal_op.step8
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
@@ -820,7 +820,7 @@ class operating_procedure:
         text.grid(row = 5, column = 2)
         step = skal_op.step9
         text.insert(tk.END, step)
-        for i in range(6, 9):
+        for i in range(6, 8):
             label = tk.Label(frame,
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame,
