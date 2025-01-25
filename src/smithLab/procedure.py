@@ -1,7 +1,142 @@
 import tkinter as tk
 from src.smithLab import control as ctrl
+from src.smithLab import instructions as ins
+
+class mainFrames:
+
+    def piLab_home():
+          welcome = ins.welcome.welcome_statment
+          frame = tk.Frame()
+          frame.pack()
+          icp_op = ins.icp_operation
+          label = tk.Label(frame,
+                              text = "piLab Home",
+                              font = ("Arial", 25)).grid(row = 0, column = 1)
+          welcome_label = tk.Label(frame,
+                              text = welcome,
+                              height = 10,
+                              width = 52,
+                              font = ("Arial", 20)).grid(row = 1, columnspan = 3)
+          smith_lab = tk.Button(frame,
+                                   text = "Smith Lab",
+                                   font = ("Arial", 20),
+                                   command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 2, column = 1,
+                                                                                     padx = 20,
+                                                                                     pady = 20)
+          yost_lab = tk.Button(frame,
+                              text = "Yost Lab?",
+                              font = ("Arial", 20),
+                              ).grid(row = 3, column = 1,
+                                        padx = 20,
+                                        pady = 20)
+          Schantz_lab = tk.Button(frame,
+                              text = "Schantz Lab?",
+                              font = ("Arial", 20),
+                              ).grid(row = 4, column = 1,
+                                        padx = 20,
+                                        pady = 20)
+
+
+    def Smith_lab_home():
+          frame = tk.Frame()
+          frame.pack()
+          label = tk.Label(frame,
+                         text = "Smith Lab Home",
+                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+          for i in range(1,6):
+                    label = tk.Label(frame,
+                                   text = "").grid(row = i)
+          extracts = tk.Button(frame,
+                              text = "Extractant Recipes",
+                              font = ("Arial", 20),
+                              command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
+
+          instrument_recipies = tk.Button(frame,
+                                   text = "Instrument Recipes",
+                                   font = ("Arial", 20),
+                                   command = lambda: ctrl.window.instruments_click(frame)).grid(row = 7, column = 3, padx = 20, pady = 20)
+          extraction_protocols = tk.Button(frame,
+                              text = "Extraction Protocols",
+                              font = ("Arial", 20),
+                              command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 8, column = 1, padx = 20, pady = 20)
+          analytical_instruments = tk.Button(frame,
+                                   text = "Analytical Instrumentation",
+                                   font = ("Arial", 20),
+                                   command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, column = 3, padx = 20, pady = 20)
+          piLab_home = tk.Button(frame,
+                                   text = "piLab Home",
+                                   font = ("Arial", 20),
+                                   command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
+                                                                      padx = 20,
+                                                                      pady = 20)
 
 class procedure_selection:
+
+    def piLab_home():
+          welcome = ins.welcome.welcome_statment
+          frame = tk.Frame()
+          frame.pack()
+          icp_op = ins.icp_operation
+          label = tk.Label(frame,
+                              text = "piLab Home",
+                              font = ("Arial", 25)).grid(row = 0, column = 1)
+          welcome_label = tk.Label(frame,
+                              text = welcome,
+                              height = 10,
+                              width = 52,
+                              font = ("Arial", 20)).grid(row = 1, columnspan = 3)
+          smith_lab = tk.Button(frame,
+                                   text = "Smith Lab",
+                                   font = ("Arial", 20),
+                                   command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 2, column = 1,
+                                                                                     padx = 20,
+                                                                                     pady = 20)
+          yost_lab = tk.Button(frame,
+                              text = "Yost Lab?",
+                              font = ("Arial", 20),
+                              ).grid(row = 3, column = 1,
+                                        padx = 20,
+                                        pady = 20)
+          Schantz_lab = tk.Button(frame,
+                              text = "Schantz Lab?",
+                              font = ("Arial", 20),
+                              ).grid(row = 4, column = 1,
+                                        padx = 20,
+                                        pady = 20)
+
+
+    def Smith_lab_home():
+          frame = tk.Frame()
+          frame.pack()
+          label = tk.Label(frame,
+                         text = "Smith Lab Home",
+                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+          for i in range(1,6):
+                    label = tk.Label(frame,
+                                   text = "").grid(row = i)
+          extracts = tk.Button(frame,
+                              text = "Extractant Recipes",
+                              font = ("Arial", 20),
+                              command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
+
+          instrument_recipies = tk.Button(frame,
+                                   text = "Instrument Recipes",
+                                   font = ("Arial", 20),
+                                   command = lambda: ctrl.window.instruments_click(frame)).grid(row = 7, column = 3, padx = 20, pady = 20)
+          extraction_protocols = tk.Button(frame,
+                              text = "Extraction Protocols",
+                              font = ("Arial", 20),
+                              command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 8, column = 1, padx = 20, pady = 20)
+          analytical_instruments = tk.Button(frame,
+                                   text = "Analytical Instrumentation",
+                                   font = ("Arial", 20),
+                                   command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, column = 3, padx = 20, pady = 20)
+          piLab_home = tk.Button(frame,
+                                   text = "piLab Home",
+                                   font = ("Arial", 20),
+                                   command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
+                                                                      padx = 20,
+                                                                      pady = 20)
 
     def instruments_click():
         frame = tk.Frame()

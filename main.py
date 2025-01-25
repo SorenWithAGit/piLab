@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import tkinter as tk
-from src.smithLab import control
+from src.smithLab import procedure as pr
 
 class MainWindow(tk.Frame):
 
@@ -11,7 +11,7 @@ class MainWindow(tk.Frame):
 
     def initUI(self):
         self.master.title("piLab By John Sorensen")
-        control.window.piLab_home()
+        pr.mainFrames.piLab_home()
 
 def temp_command():
      pass
@@ -45,11 +45,8 @@ def main():
     schantz_menu = tk.Menu(piLab_menu)
     piLab_menu.add_cascade(label = "Schantz Lab", menu = schantz_menu)
 
-
-
     app = MainWindow()
     root.mainloop()
-
 
 if __name__ == "__main__":
     main()
