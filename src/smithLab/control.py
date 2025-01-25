@@ -8,8 +8,6 @@ from src.smithLab import microwaveDigestor as md
 from src.smithLab import pHandEC as phec
 from src.smithLab import formacs as fm
 
-current_frame = None
-
 class window:
 
      def clear_frame(frame):
