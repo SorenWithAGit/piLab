@@ -86,11 +86,12 @@ class formacsOperation:
                                         font = ("Arial", 20),
                                         text = "Instrumentation Home",
                                         command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, 
-                                                                                                                column = 1)
+                                                                                                                column = 1,
+                                                                                                                columnspan = 2)
         toc_home = tk.Button(frame,
                              text = "TOC Home",
                              font = ("Arial", 20),
-                             command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
+                             command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 3,
                                                                               padx = 20,
                                                                               pady = 20)
     
@@ -119,6 +120,12 @@ class formacsOperation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                     padx = 20,
                                                                     pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         TOC_home_button = tk.Button(frame,
                                     font = ("Arial", 20),
                                     text = "TOC Home",
@@ -163,6 +170,12 @@ class formacsOperation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                     padx = 20,
                                                                     pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         TOC_home_button = tk.Button(frame,
                                     font = ("Arial", 20),
                                     text = "TOC Home",
@@ -207,6 +220,12 @@ class formacsOperation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                     padx = 20,
                                                                     pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         TOC_home_button = tk.Button(frame,
                                     font = ("Arial", 20),
                                     text = "TOC Home",
@@ -251,6 +270,12 @@ class formacsOperation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                     padx = 20,
                                                                     pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         TOC_home_button = tk.Button(frame,
                                     font = ("Arial", 20),
                                     text = "TOC Home",

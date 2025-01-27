@@ -436,6 +436,12 @@ class icp_operation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                       padx = 20,
                                                                       pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "ICP Step Home",
@@ -476,6 +482,12 @@ class icp_operation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "ICP Step Home",
@@ -521,6 +533,12 @@ class icp_operation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "ICP Step Home",
@@ -566,6 +584,12 @@ class icp_operation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "ICP Step Home",
@@ -611,6 +635,12 @@ class icp_operation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                     padx = 20, 
                                                                     pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         step_home_button = tk.Button(frame,
                                     font = ("Arial", 20),
                                     text = "ICP Step Home",
@@ -656,6 +686,12 @@ class icp_operation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "ICP Step Home",
@@ -701,6 +737,12 @@ class icp_operation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "ICP Step Home",
@@ -746,6 +788,12 @@ class icp_operation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "ICP Step Home",
@@ -791,6 +839,12 @@ class icp_operation:
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
                                                                       padx = 20, 
                                                                       pady = 20)
+        instructions_home = tk.Button(frame,
+                                      font = ("Arial", 20),
+                                      text = "Instrumentation Home",
+                                      command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
         step_home_button = tk.Button(frame,
                                      font = ("Arial", 20),
                                      text = "ICP Step Home",

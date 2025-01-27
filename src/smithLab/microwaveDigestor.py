@@ -49,11 +49,22 @@ def totalP_frame():
     smith_lab_home = tk.Button(frame,
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 8, column = 0, 
+                                                                                           padx = 20, 
+                                                                                           pady = 20)
+    instructions_home = tk.Button(frame,
+                                font = ("Arial", 20),
+                                text = "Instrumentation Home",
+                                command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
+                                                                                            column = 1,
+                                                                                            padx = 20,
+                                                                                            pady = 20)  
+   
     mdHome = tk.Button(frame,
                                  text = "Microwave Digestor Protocols",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.microwaveDigest.digestHome(frame)).grid(row = 8, column = 1,
+                                 command = lambda: ctrl.microwaveDigest.digestHome(frame)).grid(row = 8, column = 2,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
+
     
