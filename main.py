@@ -2,7 +2,6 @@
 
 import tkinter as tk
 from src.smithLab import procedure as pr
-from src.smithLab import control as ctrl
 
 
 class MainGUI(tk.Tk):
