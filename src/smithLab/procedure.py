@@ -2,7 +2,7 @@ import tkinter as tk
 from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins
 
-class mainFrames:
+class mainFrames(tk.Frame):
 
     def piLab_home():
           welcome = ins.welcome.welcome_statment
