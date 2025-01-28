@@ -25,7 +25,9 @@ class MainGUI(tk.Tk):
                               command = lambda: [self.clear(),
                                                  pr.mainFrames.piLab_home()])
         home_menu.add_separator()
-        home_menu.add_command(label = "Exit", command = self.quit)
+        home_menu.add_command(label = "Exit",
+                              font = ("arial", 24),
+                              command = self.quit)
     
         smith_menu  = tk.Menu(piLab_menu, tearoff = 0)
         piLab_menu.add_cascade(label = "Smith Lab", menu = smith_menu)
@@ -43,7 +45,7 @@ class MainGUI(tk.Tk):
         smith_menu.add_command(label = "Instrument Recipes",
                                font = ("Arial", 24),
                                command = lambda: [self.clear(),
-                                                  pr.procedure_selection.analytical_instruments()])
+                                                  pr.procedure_selection.instruments_click()])
         smith_menu.add_separator()
         smith_menu.add_command(label = "Extraction Protocols",
                                font = ("Arial", 24),
@@ -53,7 +55,7 @@ class MainGUI(tk.Tk):
         smith_menu.add_command(label = "Analytical Instrumentation",
                                font = ("Arial", 24),
                                command = lambda: [self.clear(),
-                                                  pr.procedure_selection.extraction_protocol()])
+                                                  pr.procedure_selection.analytical_instruments()])
         smith_menu.add_separator()
 
         yost_menu = tk.Menu(piLab_menu)
