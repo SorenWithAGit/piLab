@@ -1,3 +1,11 @@
+"""
+########################################################################
+control.py serves as a shortcut function file for the lambda expressions
+found in the button commands of the submodules in the smithLab
+Subdirectory.
+########################################################################
+"""
+
 from src.smithLab import procedure as pr
 from src.smithLab import ghg
 from src.smithLab import icp

@@ -1,3 +1,12 @@
+"""
+########################################################################
+microwaveDigestor.py defines the classes and functions for the different
+frames that are related to SOPs for the operation of the Mars6 Microwave
+Digestor and are being constructed through the operation of the piLab.
+########################################################################
+"""
+
+
 import tkinter as tk
 from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins

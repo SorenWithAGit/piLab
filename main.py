@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-
+"""
+########################################################################
+main.py is the GUI initializer for the tkinter package. 
+It contains two classes.
+The MainGUI class inherits from the tk.Tk class and initializes and 
+runs the mainloop.
+homeFrame defines the first frame that appears when running main.py
+########################################################################
+"""
 import tkinter as tk
 from src.smithLab import procedure as pr
 

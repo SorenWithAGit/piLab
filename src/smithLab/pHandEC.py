@@ -1,3 +1,13 @@
+"""
+########################################################################
+pHandEC.py defines the classes and functions for the different
+frames that are related to the SOPs for the pH meter and Electrical 
+Conductivity meters and are being constructed through the operation 
+of the piLab.
+########################################################################
+"""
+
+
 import tkinter as tk
 from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins

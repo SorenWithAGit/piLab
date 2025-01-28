@@ -1,3 +1,12 @@
+"""
+########################################################################
+procedure.py defines the classes and functions for the different
+frames that lead to the different frames that the procedures for the 
+the operation of the piLab are being defined.
+########################################################################
+"""
+
+
 import tkinter as tk
 from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins

@@ -1,3 +1,12 @@
+"""
+########################################################################
+isntructions.py is made up of classes and dictionaries that correspond
+to the SOPs that are being supplied to the textboxes throughout the
+operation of the piLab.
+########################################################################
+"""
+
+
 class welcome:
     welcome_statment = """Welcome to piLab developed by John Sorensen!
 This tool will be a guide to protocols & operating 

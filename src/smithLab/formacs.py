@@ -1,3 +1,12 @@
+"""
+########################################################################
+formacs.py defines the classes and functions for the different
+frames that are related to the Formacs TOC/TN Analyzer and are
+being constructed through the operation of the piLab.
+########################################################################
+"""
+
+
 import tkinter as tk
 from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins
