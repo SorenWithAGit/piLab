@@ -12,13 +12,13 @@ from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins
 
 def microwave_frame():
-    frame = tk.Frame(bg = "#133d22")
+    frame = tk.Frame(bg = "#17572e")
     frame.pack()
-    main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+    main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                           text = "Smith Lab: Microwave Digestor Protocols",
                           font = ("Arial", 25)).grid(row = 0, columnspan = 3)
     for i in range(1,4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                 text = "").grid(row = i)
     wq_digest = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                             text = "Water Quality Total P",
@@ -27,7 +27,7 @@ def microwave_frame():
                                                                         padx = 20,
                                                                         pady = 20)
     for i in range(9,12):
-          label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+          label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                            text = "").grid(row = i)
     instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                          font = ("Arial", 20),
@@ -37,24 +37,24 @@ def microwave_frame():
 
     
 def totalP_frame():
-    frame = tk.Frame(bg = "#133d22")
+    frame = tk.Frame(bg = "#17572e")
     frame.pack()
-    main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+    main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                           text = "Smith Lab: Total P Water Digest",
                           font = ("Arial", 25)).grid(row = 0, columnspan = 3)
     for i in range(1,4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
     text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
                        font = ("Arial", 20))
-    text.configure(bg = "#133d22", fg = "#c8c3e6")
+    text.configure(bg = "#17572e", fg = "#c8c3e6")
     text.grid(row = 4, column = 1, columnspan = 2, padx = 20, pady = 35)
     totalP_digestion = ins.microwaveDigestor.MDprotocols["WQ Total P"]
     text.insert(tk.END, totalP_digestion)
     for i in range(5, 8):
-          label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+          label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                            text = "").grid(row = i)
     smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",

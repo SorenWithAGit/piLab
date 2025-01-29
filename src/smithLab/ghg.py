@@ -11,14 +11,14 @@ from src.smithLab import instructions as ins
 
 class ghg_window:
     def steps():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
         
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smtith Lab: SCION456 GHG SOP",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         stds_click = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                text = "GHG Standards",
@@ -51,7 +51,7 @@ class ghg_window:
                                                                                 padx = 20,
                                                                                 pady = 20)
         for i in range(7, 10):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -67,25 +67,25 @@ class ghg_window:
 class operating_procedure:
 
     def stds():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab: SCION456 GHG SOP: Standards",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         stds = ins.ghg_stds
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = stds.stds
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -114,25 +114,25 @@ class operating_procedure:
                                                    operating_procedure.step1()]).grid(row = 10, column = 2)
 
     def step1():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab: SCION456 GHG SOP: Step 1",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         ghg_op = ins.ghg_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = ghg_op.step1
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -164,25 +164,25 @@ class operating_procedure:
     
 
     def step2():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab: SCION456 GHG SOP: Step 2",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         ghg_op = ins.ghg_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = ghg_op.step2
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -220,25 +220,25 @@ class operating_procedure:
                                                                                 pady = 20)
 
     def step3():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab: SCION456 GHG SOP: Step 3",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         ghg_op = ins.ghg_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = ghg_op.step3
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -276,25 +276,25 @@ class operating_procedure:
                                                                                 pady = 20)
     
     def step4():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab: SCION456 GHG SOP: Step 4",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         ghg_op = ins.ghg_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = ghg_op.step4
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),

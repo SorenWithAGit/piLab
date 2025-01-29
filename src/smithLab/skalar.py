@@ -13,15 +13,15 @@ from src.smithLab import instructions as ins
 
 class skalar_cookbook:
     def home_frame():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: Skalar Recipies Home",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1, 6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
-        channel = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        channel = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Select Channel",
                               font = ("Arial", 20)).grid(row = 6, columnspan = 3, padx = 20, pady = 20)
         nitr_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
@@ -54,13 +54,13 @@ class skalar_cookbook:
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, padx = 20, pady = 20)
 
     def nitrate_frame():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar: Nitrate/Nitrite Reagents",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
 
         nitr_buffer = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
@@ -77,13 +77,13 @@ class skalar_cookbook:
                                 command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 7, column =0, padx = 20, pady = 20)
 
     def phosphate_frame():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar: Phosphate Reagents",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         ffd6_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 text = "FFD6 Solution",
@@ -107,13 +107,13 @@ class skalar_cookbook:
                                 command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
 
     def ammonium_frame():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar: Ammonium Reagents",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         ammo_buffer = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 text = "Ammonium Buffer",
@@ -136,13 +136,13 @@ class skalar_cookbook:
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
     def standards_frame():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar: Standards Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = 1)
         std1 = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                          font = ("Arial", 20),
@@ -172,13 +172,13 @@ class skalar_cookbook:
 
     def buffer_volume_frame(reagent):
         reagent = reagent
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = ("Smith Lab Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         vol_1 = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                           text = "500 mL",
@@ -200,13 +200,13 @@ class skalar_cookbook:
 
     def volume_frame(reagent):
         reagent = reagent
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = ("Smith Lab Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         vol_1 = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                           text = "500 mL",
@@ -223,19 +223,19 @@ class skalar_cookbook:
                                 command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
 
     def instruct_frame(label, recipe):
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: " + str(label),
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 48,
                        font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 20, pady = 35)
         for line in recipe:
             text.insert(tk.END, line)
@@ -380,13 +380,13 @@ class skalar_recipes:
         
 class skalar_window:
     def steps():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar: SOP Steps",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         step1_click = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 text = "Step 1",
@@ -443,7 +443,7 @@ class skalar_window:
                                                                                 padx = 20,
                                                                                 pady = 20)
         for i in range(7, 10):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -459,25 +459,25 @@ class skalar_window:
         
 class operating_procedure:
     def step1():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar SOP: Step 1",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         skal_op = ins.skalar_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = skal_op.step1
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -506,13 +506,13 @@ class operating_procedure:
     
 
     def step2():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar SOP: Step 2",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         skal_op = ins.skalar_operation
         text = tk.Text(frame, borderwidth = 0,
@@ -520,11 +520,11 @@ class operating_procedure:
                            width = 48,
                            font = ("Arial", 20))
         text.grid(row = 5, column = 1)
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         step = skal_op.step2
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -558,25 +558,25 @@ class operating_procedure:
                                                                                 pady = 20)
 
     def step3():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar SOP: Step 3",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         skal_op = ins.skalar_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = skal_op.step3
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -610,25 +610,25 @@ class operating_procedure:
                                                                                 pady = 20)
     
     def step4():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
         skal_op = ins.skalar_operation
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar SOP: Step 4",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = skal_op.step4
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -662,25 +662,25 @@ class operating_procedure:
                                                                                 pady = 20)
         
     def step5():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
         skal_op = ins.skalar_operation
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar SOP: Step 5",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = skal_op.step5
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -714,25 +714,25 @@ class operating_procedure:
                                                                                 pady = 20)
     
     def step6():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
         skal_op = ins.skalar_operation
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar SOP: Step 6",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = skal_op.step6
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -766,25 +766,25 @@ class operating_procedure:
                                                                                 pady = 20)
     
     def step7():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
         skal_op = ins.skalar_operation
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar SOP: Step 7",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = skal_op.step7
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -818,25 +818,25 @@ class operating_procedure:
                                                                                 pady = 20)
     
     def step8():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
         skal_op = ins.skalar_operation
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar SOP: Step 8",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = skal_op.step8
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -870,25 +870,25 @@ class operating_procedure:
                                                                                 pady = 20)
         
     def step9():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
         skal_op = ins.skalar_operation
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab Skalar SOP: Step 9",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = skal_op.step9
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),

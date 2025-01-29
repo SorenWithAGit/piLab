@@ -12,9 +12,9 @@ from src.smithLab import instructions as ins
 
 class icp_cookbook:
     def icp_home_frame():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: ICP-OES Standard Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         std4_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
@@ -43,9 +43,9 @@ class icp_cookbook:
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 3, column = 1, padx = 20, pady = 20)
 
     def icp_element_frame():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: ICP-OES Standard Element Selection",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4,
                                                          padx = 20,
@@ -136,16 +136,16 @@ class icp_cookbook:
 
 class icp_control:
     def std_3_proto():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: ICP Standard 3 Protocol",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         text = tk.Text(frame, borderwidth = 0,
                        height = 6,
                        width = 48,
                        font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 0, column = 0, padx = 20, pady =20)
         std3 = ins.icp_recipes.icpSTD["STD 3"]
         text.insert(tk.END, std3)
@@ -159,16 +159,16 @@ class icp_control:
                              command = lambda: ctrl.icpWindowControl.icp_home(frame)).grid(row = 1, column = 2, padx = 20, pady = 20)
 
     def std_2_proto():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: ICP Standard 2 Protocol",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         text = tk.Text(frame, borderwidth = 0,
                        height = 6,
                        width = 48,
                        font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 0, column = 0, padx = 20, pady =20)
         std2 = ins.icp_recipes.icpSTD["STD 2"]
         text.insert(tk.END, std2)
@@ -182,16 +182,16 @@ class icp_control:
                              command = lambda: ctrl.icpWindowControl.icp_home(frame)).grid(row = 1, column = 2, padx = 20, pady = 20)
 
     def std_1_proto():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: ICP Standard 1 Protocol",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         text = tk.Text(frame, borderwidth = 0,
                        height = 6,
                        width = 48,
                        font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 0, column = 0, padx = 20, pady =20)
         std1 = ins.icp_recipes.icpSTD["STD 1"]
         text.insert(tk.END, std1)
@@ -206,9 +206,9 @@ class icp_control:
 
     def stock_solutions(element):
         element = element
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        choose_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        choose_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                 text = "Choose " + element + " Stock Standard",
                                 font = ("Arial", 25)).grid(row = 0, column =0, columnspan = 5)
         ppm_1000 = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
@@ -235,10 +235,10 @@ class icp_control:
     def desired_conc(stock_conc, element):
         element = element
         stock_conc = stock_conc
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
         concentrations = []
-        conc_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        conc_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Select the desired concentration For Standard 4",
                               font = ("Arial", 20)).grid(row = 0, columnspan = 5)
         conc_6 = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
@@ -267,26 +267,26 @@ class icp_control:
                            font = ("Arial", 15),
                            command = lambda: [concentrations.append(800.0),
                                               text.insert(tk.END, "800.0 ppm" + "\n")]).grid(row = 3, column = 4, padx = 25, pady = 20)
-        blank_1 = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        blank_1 = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "",
                             font = ("Arial", 15)).grid(row = 2, column = 1, padx = 25, pady = 20)
-        blank_2 = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        blank_2 = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "",
                             font = ("Arial", 15)).grid(row = 2, column = 3, padx = 25, pady = 20)
-        blank_3 = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        blank_3 = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "",
                             font = ("Arial", 15)).grid(row = 3, column = 1, padx = 25, pady = 20)
-        blank_4 = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        blank_4 = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "",
                             font = ("Arial", 15)).grid(row = 3, column = 2, padx = 25, pady = 20)
-        blank_5 = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        blank_5 = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "",
                             font = ("Arial", 15)).grid(row = 3, column = 3, padx = 25, pady = 20)
         text = tk.Text(frame, borderwidth = 0,
                        height = 5,
                        width = 48,
                        font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 4, columnspan = 5, padx = 25, pady = 15)
 
         clear_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
@@ -313,16 +313,16 @@ class icp_control:
                                                                      pady = 20)
 
     def std_instructions(concentrations, element):
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: ICP Standard 4 Protocol",
                               font = ("Arial", 25)).pack()
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.pack(padx = 25, pady = 30)
         for std in concentrations:
             text.insert(tk.END, str(std) + " uL " + " or " + str(std / 1000) + ' mL ' + "of " + element + "\n")
@@ -345,13 +345,13 @@ class icp_math:
     
 class icp_step_window():
     def steps():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Steps",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         step1_click = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 text = "Step 1",
@@ -408,7 +408,7 @@ class icp_step_window():
                                                                                 padx = 20,
                                                                                 pady = 20)
         for i in range(7, 10):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -424,25 +424,25 @@ class icp_step_window():
 
 class icp_operation:
     def step1():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Step 1",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_op = ins.icp_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = icp_op.step1
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -471,25 +471,25 @@ class icp_operation:
     
 
     def step2():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Step 2",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_op = ins.icp_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = icp_op.step2
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -523,25 +523,25 @@ class icp_operation:
                                                                                 pady = 20)
 
     def step3():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Step 3",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_op = ins.icp_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = icp_op.step3
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -575,25 +575,25 @@ class icp_operation:
                                                                                 pady = 20)
     
     def step4():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Step 4",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_op = ins.icp_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = icp_op.step4
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -627,25 +627,25 @@ class icp_operation:
                                                                                 pady = 20)
         
     def step5():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Step 5",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_op = ins.icp_operation
         text = tk.Text(frame, borderwidth = 0,
                         height = 10,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = icp_op.step5
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -679,25 +679,25 @@ class icp_operation:
                                                                                 pady = 20)
     
     def step6():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Step 6",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_op = ins.icp_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = icp_op.step6
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -731,25 +731,25 @@ class icp_operation:
                                                                                 pady = 20)
     
     def step7():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Step 7",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_op = ins.icp_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = icp_op.step7
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -783,25 +783,25 @@ class icp_operation:
                                                                                 pady = 20)
     
     def step8():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Step 8",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_op = ins.icp_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = icp_op.step8
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -835,25 +835,25 @@ class icp_operation:
                                                                                 pady = 20)
         
     def step9():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab ICP-OES SOP: Step 9",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_op = ins.icp_operation
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         step = icp_op.step9
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),

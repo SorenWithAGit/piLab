@@ -12,13 +12,13 @@ from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins
 
 def tocHome():
-    frame = tk.Frame(bg = "#133d22")
+    frame = tk.Frame(bg = "#17572e")
     frame.pack()
-    main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+    main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                           text = "Smith Lab: TOC Home",
                           font = ("Arial", 25)).grid(row = 0, columnspan = 3)
     for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
     standards = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                           text = "Formacs Standards and PO4 Acid",
@@ -33,7 +33,7 @@ def tocHome():
                                                   padx = 20,
                                                   pady = 20)
     for i in range(5, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
     smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                             font = ("Arial", 20),
@@ -50,13 +50,13 @@ def tocHome():
 class formacsOperation:
     
     def standardFrame():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "Smith Lab: TOC Standards",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                 text = "").grid(row = i)
         std1 = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                          text = "TC Standard",
@@ -83,7 +83,7 @@ class formacsOperation:
                                                      padx = 20,
                                                      pady = 20)
         for i in range(5, 8):
-                label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+                label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                 text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -105,24 +105,24 @@ class formacsOperation:
                                                                               pady = 20)
     
     def std1_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "Smith Lab TOC SOP: TC Standard",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         tcSTD = ins.formacsTOC.standard_prep["TC Stock"]
         text = tk.Text(frame, borderwidth = 0,
                         height = 10,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, tcSTD)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -156,24 +156,24 @@ class formacsOperation:
                                         pady = 20)
             
     def std2_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "Smith Lab TOC SOP: IC Standard",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         icSTD = ins.formacsTOC.standard_prep["IC Stock"]
         text = tk.Text(frame, borderwidth = 0,
                         height = 10,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, icSTD)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -207,24 +207,24 @@ class formacsOperation:
                                         pady = 20)
 
     def std3_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "Smith Lab TOC SOP: TN Standard",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         tnSTD = ins.formacsTOC.standard_prep["TN Stock"]
         text = tk.Text(frame, borderwidth = 0,
                         height = 10,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, tnSTD)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -258,24 +258,24 @@ class formacsOperation:
                                         pady = 20)
         
     def phos_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "Smith Lab TOC SOP: Phosphoric Acid",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         phos = ins.formacsTOC.phosphoricAcid
         text = tk.Text(frame, borderwidth = 0,
                         height = 10,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, phos)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -297,13 +297,13 @@ class formacsOperation:
                                                                                     pady = 20)
 
     def stepsHome():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab TOC SOP: Steps",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         step1_click = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 text = "Step 1",
@@ -343,7 +343,7 @@ class formacsOperation:
                                                                                 pady = 20)  
 
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -364,24 +364,24 @@ class formacsOperation:
                                                                                     padx = 20,
                                                                                     pady = 20)
     def step1():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab TOC SOP: Step 1",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step1"]
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -409,24 +409,24 @@ class formacsOperation:
                                                                                 pady = 20)
         
     def step2():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab TOC SOP: Step 2",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step2"]
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -460,24 +460,24 @@ class formacsOperation:
                                                                                 pady = 20)    
         
     def step3():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab TOC SOP: Step 3",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step3"]
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -510,24 +510,24 @@ class formacsOperation:
                                                                                 padx = 20,
                                                                                 pady = 20)    
     def step4():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab TOC SOP: Step 4",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step4"]
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -560,24 +560,24 @@ class formacsOperation:
                                                                                 padx = 20,
                                                                                 pady = 20)
     def step5():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab TOC SOP: Step 5",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step5"]
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),
@@ -610,24 +610,24 @@ class formacsOperation:
                                                                                 padx = 20,
                                                                                 pady = 20)
     def step6():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab TOC SOP: Step 6",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         step = ins.formacsTOC.formacsOperation["Step6"]
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
         for i in range(6, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                 font = ("Arial", 20),

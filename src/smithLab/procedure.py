@@ -15,13 +15,13 @@ class mainFrames(tk.Frame):
 
     def piLab_home():
           welcome = ins.welcome.welcome_statment
-          frame = tk.Frame(bg = "#133d22")
+          frame = tk.Frame(bg = "#17572e")
           frame.pack()
           icp_op = ins.icp_operation
-          label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+          label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "piLab Home",
                               font = ("Arial", 25)).grid(row = 0, column = 1)
-          welcome_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+          welcome_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = welcome,
                               height = 10,
                               width = 52,
@@ -47,13 +47,13 @@ class mainFrames(tk.Frame):
 
 
     def Smith_lab_home():
-          frame = tk.Frame(bg = "#133d22")
+          frame = tk.Frame(bg = "#17572e")
           frame.pack()
-          label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+          label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                          text = "Smith Lab Home",
                          font = ("Arial", 25)).grid(row = 0, columnspan = 4)
           for i in range(1,6):
-                    label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+                    label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                    text = "").grid(row = i)
           extracts = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                               text = "Extractant Recipes",
@@ -83,13 +83,13 @@ class procedure_selection:
 
     def piLab_home():
           welcome = ins.welcome.welcome_statment
-          frame = tk.Frame(bg = "#133d22")
+          frame = tk.Frame(bg = "#17572e")
           frame.pack()
           icp_op = ins.icp_operation
-          label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+          label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "piLab Home",
                               font = ("Arial", 25)).grid(row = 0, column = 1)
-          welcome_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+          welcome_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = welcome,
                               height = 10,
                               width = 52,
@@ -115,13 +115,13 @@ class procedure_selection:
 
 
     def Smith_lab_home():
-          frame = tk.Frame(bg = "#133d22")
+          frame = tk.Frame(bg = "#17572e")
           frame.pack()
-          label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+          label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                          text = "Smith Lab Home",
                          font = ("Arial", 25)).grid(row = 0, columnspan = 4)
           for i in range(1,6):
-                    label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+                    label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                    text = "").grid(row = i)
           extracts = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                               text = "Extractant Recipes",
@@ -148,13 +148,13 @@ class procedure_selection:
                                                                       pady = 20)
 
     def instruments_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: Instrument Recipes Selection",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                         text = "ICP-OES",
@@ -165,20 +165,20 @@ class procedure_selection:
                         font = ("Arial", 25),
                         command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
         for i in range(9,12):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 12, column = 0, padx = 20, pady = 20)
     def extracts_click():     
-         frame = tk.Frame(bg = "#133d22")
+         frame = tk.Frame(bg = "#17572e")
          frame.pack()
-         main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+         main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                text = "Smith Lab: Extraction Recipes",
                                font = ("Arial", 25)).grid(row = 0, columnspan = 3)
          for i in range(1,6):
-             label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+             label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "").grid(row = i)
          m3 = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                        text = "Mehlich 3",
@@ -197,7 +197,7 @@ class procedure_selection:
                         font = ("Arial", 20),
                         command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 8, column = 2, padx = 20, pady = 20)
          for i in range(9,12):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
          smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
@@ -206,13 +206,13 @@ class procedure_selection:
     
     
     def m3_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: Mehlich 3 Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         stock = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                           text = "M3 Stock Solution",
@@ -238,13 +238,13 @@ class procedure_selection:
                                                                                                    pady = 20)
 
     def h3a_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: Haney 3 Acids Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         h3a_1L = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                            text = "H3A 1 L",
@@ -266,13 +266,13 @@ class procedure_selection:
                                                                                                    pady = 20)
 
     def olsen_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: Olsen P Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         olsen_1L = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                              text = "Olsen P 1 L",
@@ -294,13 +294,13 @@ class procedure_selection:
                                                                                                    pady = 20)
 
     def kcl_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: Potassium Chloride Recipes",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         kcl_1N_1L = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                               text = "1N KCl 1 L",
@@ -330,13 +330,13 @@ class procedure_selection:
                                                                                                    pady = 20)
         
     def extraction_protocol():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: Extraction Protocols",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         mehlich3 = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                              text = "M3 Extraction",
@@ -369,7 +369,7 @@ class procedure_selection:
                                                                                   padx = 20,
                                                                                   pady = 20)
         for i in range(9,12):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
@@ -377,13 +377,13 @@ class procedure_selection:
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 12, column = 0, padx = 20, pady = 20)
 
     def analytical_instruments():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                               text = "Smith Lab: Analytical Instrumentation Protocols",
                               font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         icp_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                text = "ICP-OES",
@@ -422,7 +422,7 @@ class procedure_selection:
                                                                          padx = 20,
                                                                          pady = 20)
         for i in range(9,12):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",

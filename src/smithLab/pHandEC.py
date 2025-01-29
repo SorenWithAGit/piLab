@@ -13,15 +13,15 @@ from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins
 
 def phec_frame():
-    frame = tk.Frame(bg = "#133d22")
+    frame = tk.Frame(bg = "#17572e")
     frame.pack()
-    main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+    main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                           text = "Smith Lab: pH and Electrical Conductivity",
                           font = ("Arial", 25)).grid(row = 0, columnspan = 3,
                                                      padx = 20,
                                                      pady = 20)
     for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
     ec_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                           text = "Electrical Conductivity",
@@ -36,7 +36,7 @@ def phec_frame():
                                                              padx = 20,
                                                              pady = 20)
     for i in range(5, 8):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                              text = "").grid(row = i)
     smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -52,13 +52,13 @@ def phec_frame():
 class ecMeter:
 
     def ec_steps():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "Smith Lab EC Meter SOP",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
-                label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+                label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                 text = "").grid(row = i)
         
         cal_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
@@ -80,7 +80,7 @@ class ecMeter:
                                         padx = 20,
                                         pady = 20)
         for i in range(5, 8):
-                label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+                label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                 text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -100,24 +100,24 @@ class ecMeter:
                                                                          padx = 20,
                                                                          pady = 20)
     def cal_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab EC Meter SOP: Calibration",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         cal = ins.ecph.ecMeter["Calibration"]
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, cal)
         for i in range(6, 9):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -144,24 +144,24 @@ class ecMeter:
                                                                                    pady = 20)
         
     def mode_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab EC Meter SOP: Measurement Mode",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         cal = ins.ecph.ecMeter["Measurement Mode"]
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, cal)
         for i in range(6, 9):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -194,24 +194,24 @@ class ecMeter:
                                                                                           pady = 20)
     
     def measure_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab EC Meter SOP: Measurement",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         cal = ins.ecph.ecMeter["Measurement"]
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, cal)
         for i in range(6, 9):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -243,13 +243,13 @@ class ecMeter:
 class phMeter:
      
     def ph_steps():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "Smith Lab pH Meter SOP",
                             font = ("Arial", 25)).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
-                label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+                label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                 text = "").grid(row = i)
         
         cal_check = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
@@ -271,7 +271,7 @@ class phMeter:
                                         padx = 20,
                                         pady = 20)
         for i in range(5, 8):
-                label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+                label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                                 text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -291,24 +291,24 @@ class phMeter:
                                                                          padx = 20,
                                                                          pady = 20)
     def ph_cal_check():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab pH Meter SOP: Calibration Check",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         check = ins.ecph.ph_meter["CalCheck"]
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
                         font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, check)
         for i in range(6, 9):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -341,24 +341,24 @@ class phMeter:
                                                                                              pady = 20)
         
     def ph_cal():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab pH Meter SOP: Calibration Mode",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         cal = ins.ecph.ph_meter["Calibration"]
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, cal)
         for i in range(6, 9):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
@@ -391,24 +391,24 @@ class phMeter:
                                                                                           pady = 20)
         
     def ph_measure_click():
-        frame = tk.Frame(bg = "#133d22")
+        frame = tk.Frame(bg = "#17572e")
         frame.pack()
-        main_label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+        main_label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                         text = "Smith Lab pH Meter SOP: Measurement",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
         for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         measure = ins.ecph.ph_meter["Measurement"]
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
                            font = ("Arial", 20))
-        text.configure(bg = "#133d22", fg = "#c8c3e6")
+        text.configure(bg = "#17572e", fg = "#c8c3e6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, measure)
         for i in range(6, 9):
-            label = tk.label = tk.Label(frame, bg = "#133d22", fg = "#c8c3e6",
+            label = tk.label = tk.Label(frame, bg = "#17572e", fg = "#c8c3e6",
                             text = "").grid(row = i)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#c8c3e6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
