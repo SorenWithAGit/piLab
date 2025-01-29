@@ -19,7 +19,7 @@ class MainGUI(tk.Tk):
         self.title("piLab By John Sorensen")
         self.geometry("1280x800")
         self.resizable(width = False, height = False)
-        self.configure(bg = "#211e1e")
+        self.configure(bg = "#133d22")
 
         # Ribbon Menu
         piLab_menu = tk.Menu(self)
