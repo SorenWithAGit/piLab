@@ -39,3 +39,66 @@ After the run has completed the instrument will enter
 sleep mode. Close the valves on the supply tanks."""
     }
 
+class rootScanner:
+
+    sop = {
+    "Root Processing" : """Root Processing
+Place the sample in a 2mm soil sieve and shake to
+remove excess loose soil.
+With a secondary container below the sieve wash
+the sample with water from the tap to remove 
+remaining soil. 
+For large root structures, cut sample into 
+segments (select "Segment Example").
+Collect fine roots that may have passed through
+the sieve. 
+Lay roots as flat as possible in sample tray.""",
+
+    "Setup" : """Setup
+Connect scanner and insert Regent USB key into
+the computer, Turn on the root scanner.
+On the computer open "WinRHIZO Reg 2022b" Folder.
+If the run will use the same settings as the 
+previous run, select "The same as the last time".
+Select Epson Perfection V800/850 from the 
+"Select Source" popup.
+At the top ribbon click Image -> Aquisition
+Parameters. Ensure Reagent Postioning System
+matches the tray/spacers in scanner.
+Adjust the margins according to the Calibration
+Number.
+Tray and spacers should be aligned to the top
+right of the scanner window (Arrow).""",
+
+    "Scanning" : """Scanning
+At the top ribbon of WinRHIZO, click the
+Scanner Icon to scan an image.
+Shrink/enlarge the image via the magnification
+option at the bottom left.
+To select entire image for analysis, click
+anywhere on the scan image. Click and drag
+to crop smaller areas.
+Enter sample ID, soil volume, and operator,
+click OK.
+If running a new sample set click "Create One"
+when prompted and click "Create One"
+Name the file, subsequent scans will save
+as new entries in text file.
+If running an existing sample set click 
+"Open one" and choose the corresponding file.
+Setup next sample, align, scan and save as
+new ID for remaining samples.""",
+
+    "XLRhizo" : """XLRhizo and Exporting
+In the main WinRHIZO folder open "XLRhizo 2022"
+folder and open "XLRhizo.xlsx".
+Enable macros.
+At the top ribbon, click Add-ins -> XLRhizo ->
+Open a WinRHIZO data file. Locate the text 
+file from the scanned run and press ok.
+Root data begins on column P.
+Save as new file with sampleset name.
+Do not save the XLRhizo file.
+Eject the Regent USB key and return to
+the WinRHIZO Supplies drawer."""
+    }
