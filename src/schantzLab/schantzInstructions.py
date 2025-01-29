@@ -65,24 +65,24 @@ Select Epson Perfection V800/850 from the
 At the top ribbon click Image -> Aquisition
 Parameters. Ensure Reagent Postioning System
 matches the tray/spacers in scanner.
-Adjust the margins according to the Calibration
-Number.
+Adjust the margins according to the correct
+calibration values.
 Tray and spacers should be aligned to the top
 right of the scanner window (Arrow).""",
 
     "Scanning" : """Scanning
-At the top ribbon of WinRHIZO, click the
+At the left ribbon of WinRHIZO, click the
 Scanner Icon to scan an image.
 Shrink/enlarge the image via the magnification
 option at the bottom left.
 To select entire image for analysis, click
 anywhere on the scan image. Click and drag
-to crop smaller areas.
+to analyze smaller areas.
 Enter sample ID, soil volume, and operator,
 click OK.
 If running a new sample set click "Create One"
-when prompted and click "Create One"
-Name the file, subsequent scans will save
+when prompted to create a txt file.
+Name the file; subsequent scans will save
 as new entries in text file.
 If running an existing sample set click 
 "Open one" and choose the corresponding file.
