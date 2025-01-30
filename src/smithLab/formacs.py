@@ -49,7 +49,7 @@ def tocHome():
                                                                 pady = 20)
     instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
-                                    text = "Instrumentation Home",
+                                    text = "Analytical Instruments",
                                     command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, 
                                                                                                             column = 2,
                                                                                                             rowspan = 2,
@@ -108,14 +108,14 @@ class formacsOperation:
                                                                     pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                         font = ("Arial", 20),
-                                        text = "Instrumentation Home",
+                                        text = "Analytical Instruments",
                                         command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, 
                                                                                                                 column = 2,
                                                                                                                 rowspan = 2,
                                                                                                                 padx = 20,
                                                                                                                 pady = 20)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                             text = "TOC Home",
+                             text = "TOC SOP Steps",
                              font = ("Arial", 20),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 3, rowspan = 2,
                                                                               padx = 20,
@@ -155,14 +155,14 @@ class formacsOperation:
                                                                     pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Instrumentation Home",
+                                      text = "Analytical Instruments",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
                                                                                                     pady = 20)
         TOC_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
-                                    text = "TOC Home",
+                                    text = "TOC SOP Steps",
                                     command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
                                                                                     rowspan = 2,
                                                                                     padx = 20,
@@ -214,14 +214,14 @@ class formacsOperation:
                                                                     pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Instrumentation Home",
+                                      text = "Analytical Instruments",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
                                                                                                     pady = 20)
         TOC_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
-                                    text = "TOC Home",
+                                    text = "TOC SOP Steps",
                                     command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
                                                                                     rowspan = 2,
                                                                                     padx = 20,
@@ -273,7 +273,7 @@ class formacsOperation:
                                                                     pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Instrumentation Home",
+                                      text = "Analytical Instruments",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, 
                                                                                                     column = 1,
                                                                                                     rowspan = 2,
@@ -281,7 +281,7 @@ class formacsOperation:
                                                                                                     pady = 20)
         TOC_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
-                                    text = "TOC Home",
+                                    text = "TOC SOP Steps",
                                     command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
                                                                                     rowspan = 2,
                                                                                     padx = 20,
@@ -333,21 +333,21 @@ class formacsOperation:
                                                                     pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Instrumentation Home",
+                                      text = "Analytical Instruments",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
                                                                                                     pady = 20)
         TOC_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
-                                    text = "TOC Home",
+                                    text = "TOC SOP Steps",
                                     command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
                                                                                     rowspan = 2,
                                                                                     padx = 20,
                                                                                     pady = 20)
         TOC_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
-                                    text = "TOC Home",
+                                    text = "TOC SOP Steps",
                                     command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 3,
                                                                                     rowspan = 2,
                                                                                     padx = 20,
@@ -417,7 +417,7 @@ class formacsOperation:
                                                                         pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                          font = ("Arial", 20),
-                                         text = "Instrumentation Home",
+                                         text = "Analytical Instruments",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, 
                                                                                                                      column = 1,
                                                                                                                      rowspan = 2,
@@ -425,7 +425,7 @@ class formacsOperation:
                                                                                                                      pady = 20)
         TOC_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     font = ("Arial", 20),
-                                    text = "TOC Home",
+                                    text = "TOC SOP Steps",
                                     command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
                                                                                     rowspan = 2,
                                                                                     padx = 30 ,
@@ -463,7 +463,7 @@ class formacsOperation:
                                                                       padx = 20,
                                                                       pady = 20)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                             text = "TOC Home",
+                             text = "TOC SOP Steps",
                              font = ("Arial", 20),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 1,
                                                                               rowspan = 2,
@@ -516,7 +516,7 @@ class formacsOperation:
                                                                       padx = 20,
                                                                       pady = 20)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                             text = "TOC Home",
+                             text = "TOC SOP Steps",
                              font = ("Arial", 20),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 1,
                                                                               rowspan = 2,
@@ -575,7 +575,7 @@ class formacsOperation:
                                                                       padx = 20,
                                                                       pady = 20)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                             text = "TOC Home",
+                             text = "TOC SOP Steps",
                              font = ("Arial", 20),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 1,
                                                                               rowspan = 2,
@@ -633,7 +633,7 @@ class formacsOperation:
                                                                       padx = 20,
                                                                       pady = 20)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                             text = "TOC Home",
+                             text = "TOC SOP Steps",
                              font = ("Arial", 20),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 1,
                                                                               rowspan = 2,
@@ -691,7 +691,7 @@ class formacsOperation:
                                                                       padx = 20,
                                                                       pady = 20)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                             text = "TOC Home",
+                             text = "TOC SOP Steps",
                              font = ("Arial", 20),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 1,
                                                                               rowspan = 2,
@@ -749,7 +749,7 @@ class formacsOperation:
                                                                       padx = 20,
                                                                       pady = 20)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                             text = "TOC Home",
+                             text = "TOC SOP Steps",
                              font = ("Arial", 20),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 1,
                                                                               rowspan = 2,
