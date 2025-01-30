@@ -152,7 +152,7 @@ class icpWindowControl:
 
      def std1_click(frame):
          window.clear_frame(frame)
-         icp.icp_control.std_2_proto()
+         icp.icp_control.std_1_proto()
      
      def al_click(frame):
          window.clear_frame(frame)
