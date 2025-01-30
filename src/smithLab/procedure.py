@@ -446,10 +446,3 @@ class procedure_selection:
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 13, column = 0, 
                                                                                     padx = 20, 
                                                                                     pady = 20)
-        extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                 text = "Extractants",
-                                 font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 12, column = 3,
-                                                                                                   rowspan = 2,
-                                                                                                   padx = 20,
-                                                                                                   pady = 20)
