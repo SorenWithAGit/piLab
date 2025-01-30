@@ -37,19 +37,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         m3_recipes_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Mehlich 3 Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.m3_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.m3_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
 
@@ -79,19 +79,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         m3_recipes_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Mehlich 3 Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.m3_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.m3_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
         
@@ -121,19 +121,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         m3_recipes_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Mehlich 3 Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.m3_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.m3_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
 
@@ -163,19 +163,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         h3a_recipes_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Haney 3 Acids Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.h3a_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.h3a_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
         
@@ -205,19 +205,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         h3a_recipes_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Haney 3 Acids Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.h3a_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.h3a_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
 
@@ -247,19 +247,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         olsen_recipes_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Olsen P Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.olsen_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.olsen_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
 
@@ -289,19 +289,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         olsen_recipes_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Olsen P Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.olsen_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.olsen_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
         
@@ -331,19 +331,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         kcl_recipes_Button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Potassium Chloride Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
 
@@ -373,19 +373,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         kcl_recipes_Button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Potassium Chloride Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
 
@@ -415,19 +415,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         kcl_recipes_Button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Potassium Chloride Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
 
@@ -457,19 +457,19 @@ class recipes:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
         kcl_recipes_Button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Potassium Chloride Recipes",
                                       font = ("Arial", 20),
-                                      command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 3,
+                                      command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 3, rowspan = 2,
                                                                                                   padx = 8, 
                                                                                                   pady = 20)
 
@@ -501,13 +501,13 @@ class extract_protocol:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extraction Protocols",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
     def potassium_chloride_click():
@@ -536,13 +536,13 @@ class extract_protocol:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extraction Protocols",
                                  font = ("Arial", 20),
-                                 command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2,
+                                 command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                    padx = 8,
                                                                                                    pady = 20)
     def olsenP_click():
@@ -571,13 +571,13 @@ class extract_protocol:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Extraction Protocols",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2,
+                                command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                 padx = 8,
                                                                                                 pady = 20)
     def h3a_click():
@@ -606,13 +606,13 @@ class extract_protocol:
             smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Smith Lab Home",
                                     font = ("Arial", 20),
-                                    command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                    command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                                padx = 8, 
                                                                                                pady = 20)
             extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Extraction Protocols",
                                     font = ("Arial", 20),
-                                    command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2,
+                                    command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                     padx = 8,
                                                                                                     pady = 20)
     def hcl_click():
@@ -641,12 +641,12 @@ class extract_protocol:
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 5, column = 1, 
+                                command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
                                                                                            padx = 8, 
                                                                                            pady = 20)
         extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Extraction Protocols",
                                 font = ("Arial", 20),
-                                command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2,
+                                command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
                                                                                                 padx = 8,
                                                                                                 pady = 20)
