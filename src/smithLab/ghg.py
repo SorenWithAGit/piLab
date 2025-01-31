@@ -83,7 +83,7 @@ class operating_procedure:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: SCION456 GHG SOP: Standards",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         stds = ins.ghg_stds
@@ -95,7 +95,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = stds.stds
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -138,7 +138,7 @@ class operating_procedure:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: SCION456 GHG SOP: Step 1",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         ghg_op = ins.ghg_operation
@@ -150,7 +150,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step1
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -203,7 +203,7 @@ class operating_procedure:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: SCION456 GHG SOP: Step 2",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         ghg_op = ins.ghg_operation
@@ -215,7 +215,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step2
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -267,7 +267,7 @@ class operating_procedure:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: SCION456 GHG SOP: Step 3",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         ghg_op = ins.ghg_operation
@@ -279,7 +279,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step3
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -331,7 +331,7 @@ class operating_procedure:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: SCION456 GHG SOP: Step 4",
                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         ghg_op = ins.ghg_operation
@@ -343,7 +343,7 @@ class operating_procedure:
         text.grid(row = 5, column = 1)
         step = ghg_op.step4
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",

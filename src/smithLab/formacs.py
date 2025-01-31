@@ -254,7 +254,7 @@ class formacsOperation:
                         width = 48,
                         font = ("Arial", 20))
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 5, column = 1, rowspan = 5)
+        text.grid(row = 5, column = 1, columnspan = 4, rowspan = 2)
         text.insert(tk.END, tnSTD)
         for i in range(6, 9):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
@@ -440,7 +440,7 @@ class formacsOperation:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -493,7 +493,7 @@ class formacsOperation:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -552,7 +552,7 @@ class formacsOperation:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -610,7 +610,7 @@ class formacsOperation:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -668,7 +668,7 @@ class formacsOperation:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -726,7 +726,7 @@ class formacsOperation:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",

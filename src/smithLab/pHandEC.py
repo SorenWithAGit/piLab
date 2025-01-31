@@ -78,7 +78,7 @@ class ecMeter:
                                     padx = 20,
                                     pady = 20)
         step1_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                 text = "Measurement Mode",
+                                 text = "Mode Selection",
                                  font = ("Arial", 20),
                                  command = lambda: ctrl.pHEC.ec_mode_click(frame)).grid(row = 4, column = 1,
                                         padx = 20,
@@ -177,7 +177,7 @@ class ecMeter:
                                                                          padx = 10,
                                                                          pady = 20)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                            text = "Measurement Mode",
+                            text = "Mode Selection",
                             font = ("Arial", 20),
                             command = lambda: ctrl.pHEC.ec_mode_click(frame)).grid(row = 5, column = 3,
                                                                                    padx = 10,
