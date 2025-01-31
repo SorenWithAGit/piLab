@@ -389,7 +389,7 @@ class skalar_cookbook:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab: " + str(label),
                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
-        for i in range(1,4):
+        for i in range(1,3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
@@ -400,7 +400,7 @@ class skalar_cookbook:
         text.grid(row = 4, column = 1, columnspan = 2, padx = 20, pady = 35)
         for line in recipe:
             text.insert(tk.END, line)
-        for i in range(5,9):
+        for i in range(5,8):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
