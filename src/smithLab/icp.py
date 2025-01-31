@@ -71,77 +71,77 @@ class icp_cookbook:
                                     text = "Aluminium",
                                     font = ("Arial", 20),
                                     command = lambda: ctrl.icpWindowControl.al_click(frame)).grid(row = 1, column = 0,
-                                                            padx = 50, pady = 50)
+                                                            padx = 50, pady = 40)
         Ca_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Calcium",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.ca_click(frame)).grid(row = 1,
                                                                                         column = 1,
                                                                                         padx = 50,
-                                                                                        pady = 50)
+                                                                                        pady = 40)
         Cu_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Copper",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.cu_click(frame)).grid(row = 1,
                                                                                     column = 2,
                                                                                     padx = 50,
-                                                                                    pady = 50)
+                                                                                    pady = 40)
         Fe_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Iron",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.fe_click(frame)).grid(row = 1,
                                                                                     column = 3,
                                                                                     padx = 50,
-                                                                                    pady =50)
+                                                                                    pady =40)
         K_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Potassium",
                                 font = ("Arial", 20),
                                 command = lambda:ctrl.icpWindowControl.k_click(frame)).grid(row = 2,
                                                                                         column = 1,
                                                                                         padx = 50,
-                                                                                        pady = 50)
+                                                                                        pady = 40)
         Mg_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Magnesium",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.mg_click(frame)).grid(row = 2,
                                                                                         column = 2,
                                                                                         padx = 50,
-                                                                                        pady = 50)
+                                                                                        pady = 40)
         Mn_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Manganese",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.mn_click(frame)).grid(row = 2,
                                                                                         column = 3,
                                                                                         padx = 50,
-                                                                                        pady = 50)
+                                                                                        pady = 40)
         Na_Button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Sodium",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.na_click(frame)).grid(row = 3,
                                                                                     column = 0,
                                                                                     padx = 50,
-                                                                                    pady = 50)
+                                                                                    pady = 40)
         P_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Phosphorus",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.p_click(frame)).grid(row = 3,
                                                                                         column = 1,
                                                                                         padx = 50,
-                                                                                        pady = 50)
+                                                                                        pady = 40)
         S_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Sulfur",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.s_click(frame)).grid(row = 3,
                                                                                     column = 2,
                                                                                     padx = 50,
-                                                                                    pady = 50)
+                                                                                    pady = 40)
         Zn_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Zinc",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.zn_click(frame)).grid(row = 3,
                                                                                     column = 3,
                                                                                     padx = 50,
-                                                                                    pady = 50)
+                                                                                    pady = 40)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
                                font = ("Arial", 20),
