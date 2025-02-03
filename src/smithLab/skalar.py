@@ -645,7 +645,7 @@ class skalar_window:
                                                                         pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                          font = ("Arial", 20),
-                                         text = "Analytical Instruments",
+                                         text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 10, 
                                                                                                                   column = 2,
                                                                                                                   rowspan = 2,
@@ -688,7 +688,7 @@ class operating_procedure:
                                                                       pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Analytical Instruments",
+                                      text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
@@ -743,7 +743,7 @@ class operating_procedure:
                                                                       pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Analytical Instruments",
+                                      text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
@@ -803,7 +803,7 @@ class operating_procedure:
                                                                       pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Analytical Instruments",
+                                      text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
@@ -863,7 +863,7 @@ class operating_procedure:
                                                                       pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Analytical Instruments",
+                                      text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
@@ -923,7 +923,7 @@ class operating_procedure:
                                                                       pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Analytical Instruments",
+                                      text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
@@ -983,7 +983,7 @@ class operating_procedure:
                                                                       pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Analytical Instruments",
+                                      text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
@@ -1043,7 +1043,7 @@ class operating_procedure:
                                                                       pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Analytical Instruments",
+                                      text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
@@ -1103,7 +1103,7 @@ class operating_procedure:
                                                                       pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Analytical Instruments",
+                                      text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,
@@ -1163,7 +1163,7 @@ class operating_procedure:
                                                                       pady = 20)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       font = ("Arial", 20),
-                                      text = "Analytical Instruments",
+                                      text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
                                                                                                     padx = 20,

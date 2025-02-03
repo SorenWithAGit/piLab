@@ -53,7 +53,7 @@ def phec_frame():
                                                                         pady = 20)
     instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                          font = ("Arial", 20),
-                                         text = "Analytical Instruments",
+                                         text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 2,
                                                                                                                   rowspan = 2,
@@ -108,7 +108,7 @@ class ecMeter:
                                                                             pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                             font = ("Arial", 20),
-                                            text = "Analytical Instruments",
+                                            text = "Instrumentation SOPs",
                                             command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                     column = 1,
                                                                                                                     rowspan = 2,
@@ -156,7 +156,7 @@ class ecMeter:
                                                                             pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                             font = ("Arial", 20),
-                                            text = "Analytical Instruments",
+                                            text = "Instrumentation SOPs",
                                             command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                     column = 1,
                                                                                                                     rowspan = 2,
@@ -218,7 +218,7 @@ class ecMeter:
                                                                             pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                             font = ("Arial", 20),
-                                            text = "Analytical Instruments",
+                                            text = "Instrumentation SOPs",
                                             command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                     column = 1,
                                                                                                                     rowspan = 2,
@@ -286,7 +286,7 @@ class ecMeter:
                                                                             pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                             font = ("Arial", 20),
-                                            text = "Analytical Instruments",
+                                            text = "Instrumentation SOPs",
                                             command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                     column = 1,
                                                                                                                     rowspan = 2,
@@ -364,7 +364,7 @@ class phMeter:
                                                                         pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                          font = ("Arial", 20),
-                                         text = "Analytical Instruments",
+                                         text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 1,
                                                                                                                   rowspan = 2,
@@ -411,7 +411,7 @@ class phMeter:
                                                                         pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                          font = ("Arial", 20),
-                                         text = "Analytical Instruments",
+                                         text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 1,
                                                                                                                   rowspan = 2,
@@ -478,7 +478,7 @@ class phMeter:
                                                                         pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                          font = ("Arial", 20),
-                                         text = "Analytical Instruments",
+                                         text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 1,
                                                                                                                   rowspan = 2,
@@ -545,7 +545,7 @@ class phMeter:
                                                                         pady = 20)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                          font = ("Arial", 20),
-                                         text = "Analytical Instruments",
+                                         text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 1,
                                                                                                                   rowspan = 2,

@@ -69,7 +69,7 @@ class mainFrames(tk.Frame):
                               font = ("Arial", 20),
                               command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 8, column = 1, padx = 20, pady = 20)
           analytical_instruments = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                   text = "Analytical Instrumentation",
+                                   text = "Instrumentation SOPs",
                                    font = ("Arial", 20),
                                    command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, column = 3, padx = 20, pady = 20)
           piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
