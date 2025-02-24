@@ -10,6 +10,7 @@ homeFrame defines the first frame that appears when running main.py
 """
 import tkinter as tk
 from src.smithLab import procedure as pr
+from src.schantzLab import frames as fr
 
 
 class MainGUI(tk.Tk):
@@ -70,6 +71,16 @@ class MainGUI(tk.Tk):
 
         schantz_menu = tk.Menu(piLab_menu)
         piLab_menu.add_cascade(label = "Schantz Lab", menu = schantz_menu)
+        schantz_menu.add_separator()
+        schantz_menu.add_command(label = "Schantz Lab",
+                               font = ("Arial", 24),
+                               command = lambda: [self.clear(),
+                                                  fr.homeFrames.schantz_lab_home()])
+        schantz_menu.add_separator()
+        schantz_menu.add_command(label = "Schantz Instruments",
+                               font = ("Arial", 24),
+                               command = lambda: [self.clear(),
+                                                  fr.homeFrames.instuments_frame()])
 
 
         # Home Frame

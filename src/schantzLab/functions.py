@@ -38,3 +38,21 @@ class elementarSOPs:
     def step3(frame):
         ctrl.window.clear_frame(frame)
         fr.elementarSteps.step3()
+
+class rootScannerSOPs:
+    
+    def step1(frame):
+        ctrl.window.clear_frame(frame)
+        fr.rootScannerSteps.step1()
+    
+    def step2(frame):
+        ctrl.window.clear_frame(frame)
+        fr.rootScannerSteps.step2()
+
+    def step3(frame):
+        ctrl.window.clear_frame(frame)
+        fr.rootScannerSteps.step3()
+        
+    def step4(frame):
+        ctrl.window.clear_frame(frame)
+        fr.rootScannerSteps.step4()
