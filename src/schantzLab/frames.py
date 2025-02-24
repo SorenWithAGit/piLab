@@ -14,7 +14,7 @@ class homeFrames:
                 label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "").grid(row = i)
         instuments = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                text = "Instrument SOPs",
+                                text = "Schantz Instrument SOPs",
                                 font = ("Arial", 20),
                                 command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
                                         padx = 20,
@@ -110,7 +110,7 @@ class instrumentFrames:
                                                                     padx = 20,
                                                                     pady = 20)
         instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     text = "Instrument SOPs",
+                                     text = "Schantz Instrument SOPs",
                                      font = ("Arial", 20),
                                      command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 10, column = 1,
                                                                                                   rowspan = 2,
@@ -166,7 +166,7 @@ class instrumentFrames:
                                                                     padx = 20,
                                                                     pady = 20)
         instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     text = "Instrument SOPs",
+                                     text = "Schantz Instrument SOPs",
                                      font = ("Arial", 20),
                                      command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 10, column = 1,
                                                                                                   rowspan = 2,
@@ -190,7 +190,7 @@ class elementarSteps:
                             width = 48,
                             font = ("Arial", 18),
                             bd = 5,
-                            relief = "raised")
+                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
@@ -216,7 +216,7 @@ class elementarSteps:
                                                                     padx = 20,
                                                                     pady = 20)
         instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                        text = "Instrument SOPs",
+                                        text = "Schantz Instrument SOPs",
                                         font = ("Arial", 20),
                                         command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
                                                                                                     rowspan = 2,
@@ -244,7 +244,7 @@ class elementarSteps:
                            width = 48,
                            font = ("Arial", 18),
                            bd = 5,
-                           relief = "raised")
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
@@ -274,7 +274,7 @@ class elementarSteps:
                                                                     padx = 20,
                                                                     pady = 20)
         instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     text = "Instrument SOPs",
+                                     text = "Schantz Instrument SOPs",
                                      font = ("Arial", 20),
                                      command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
                                                                                                   rowspan = 2,
@@ -302,7 +302,7 @@ class elementarSteps:
                            width = 48,
                            font = ("Arial", 18),
                            bd = 5,
-                           relief = "raised")
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
@@ -328,7 +328,7 @@ class elementarSteps:
                                                                     padx = 20,
                                                                     pady = 20)
         instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     text = "Instrument SOPs",
+                                     text = "Schantz Instrument SOPs",
                                      font = ("Arial", 20),
                                      command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
                                                                                                   rowspan = 2,
@@ -359,7 +359,7 @@ class rootScannerSteps:
                             width = 48,
                             font = ("Arial", 17),
                             bd = 5,
-                            relief = "raised")
+                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
@@ -385,7 +385,7 @@ class rootScannerSteps:
                                                                     padx = 20,
                                                                     pady = 10)
         instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                        text = "Instrument SOPs",
+                                        text = "Schantz Instrument SOPs",
                                         font = ("Arial", 20),
                                         command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
                                                                                                     rowspan = 2,
@@ -413,7 +413,7 @@ class rootScannerSteps:
                             width = 48,
                             font = ("Arial", 17),
                             bd = 5,
-                            relief = "raised")
+                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
@@ -445,7 +445,7 @@ class rootScannerSteps:
                                                                     padx = 20,
                                                                     pady = 10)
         instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                        text = "Instrument SOPs",
+                                        text = "Schantz Instrument SOPs",
                                         font = ("Arial", 20),
                                         command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
                                                                                                     rowspan = 2,
@@ -473,7 +473,7 @@ class rootScannerSteps:
                             width = 48,
                             font = ("Arial", 17),
                             bd = 5,
-                            relief = "raised")
+                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
@@ -505,7 +505,7 @@ class rootScannerSteps:
                                                                     padx = 20,
                                                                     pady = 10)
         instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                        text = "Instrument SOPs",
+                                        text = "Schantz Instrument SOPs",
                                         font = ("Arial", 20),
                                         command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
                                                                                                     rowspan = 2,
@@ -559,7 +559,7 @@ class rootScannerSteps:
                                                                     padx = 20,
                                                                     pady = 10)
         instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                        text = "Instrument SOPs",
+                                        text = "Schantz Instrument SOPs",
                                         font = ("Arial", 20),
                                         command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
                                                                                                     rowspan = 2,
