@@ -34,6 +34,12 @@ class homeFrames:
         for i in range(1,6):
                 label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "").grid(row = i)
+        lai = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                        text = "Leaf Area Index Meter",
+                        font = ("Arial", 20),
+                        ).grid(row = 8, column = 0,
+                               padx = 20,
+                               pady = 20)
         elementar = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "ELEMENTAR SOP",
                                 font = ("Arial", 20),
@@ -182,7 +188,9 @@ class elementarSteps:
         text = tk.Text(frame, borderwidth = 0,
                             height = 13,
                             width = 48,
-                            font = ("Arial", 18))
+                            font = ("Arial", 18),
+                            bd = 5,
+                            relief = "raised")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
@@ -215,7 +223,7 @@ class elementarSteps:
                                                                                                     padx = 20,
                                                                                                     pady = 20)
         elementar_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    text = "Elementar SOP Steps",
+                                    text = "Elementar SOP",
                                     font = ("Arial", 20),
                                     command = lambda: fn.frames.elementar(frame)).grid(row = 8, column = 2,
                                                                                         rowspan = 2,
@@ -234,7 +242,9 @@ class elementarSteps:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 18))
+                           font = ("Arial", 18),
+                           bd = 5,
+                           relief = "raised")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
@@ -271,7 +281,7 @@ class elementarSteps:
                                                                                                   padx = 20,
                                                                                                   pady = 20)
         elementar_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    text = "Elementar SOP Steps",
+                                    text = "Elementar SOP",
                                     font = ("Arial", 20),
                                     command = lambda: fn.frames.elementar(frame)).grid(row = 8, column = 2,
                                                                                        rowspan = 2,
@@ -290,7 +300,9 @@ class elementarSteps:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 18))
+                           font = ("Arial", 18),
+                           bd = 5,
+                           relief = "raised")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
@@ -323,7 +335,7 @@ class elementarSteps:
                                                                                                   padx = 20,
                                                                                                   pady = 20)
         elementar_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    text = "Elementar SOP Steps",
+                                    text = "Elementar SOP",
                                     font = ("Arial", 20),
                                     command = lambda: fn.frames.elementar(frame)).grid(row = 8, column = 2,
                                                                                        rowspan = 2,
@@ -343,13 +355,15 @@ class rootScannerSteps:
                                 text = "").grid(row = i)
         step1_INS = si.rootScanner.sop["Root Processing"]
         text = tk.Text(frame, borderwidth = 0,
-                            height = 13,
+                            height = 18,
                             width = 48,
-                            font = ("Arial", 17))
+                            font = ("Arial", 17),
+                            bd = 5,
+                            relief = "raised")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "").grid(row = i)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -395,13 +409,15 @@ class rootScannerSteps:
                                 text = "").grid(row = i)
         step1_INS = si.rootScanner.sop["Setup"]
         text = tk.Text(frame, borderwidth = 0,
-                            height = 16,
+                            height = 18,
                             width = 48,
-                            font = ("Arial", 17))
+                            font = ("Arial", 17),
+                            bd = 5,
+                            relief = "raised")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "").grid(row = i)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -455,11 +471,13 @@ class rootScannerSteps:
         text = tk.Text(frame, borderwidth = 0,
                             height = 18,
                             width = 48,
-                            font = ("Arial", 17))
+                            font = ("Arial", 17),
+                            bd = 5,
+                            relief = "raised")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "").grid(row = i)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -511,13 +529,15 @@ class rootScannerSteps:
                                 text = "").grid(row = i)
         step1_INS = si.rootScanner.sop["XLRhizo"]
         text = tk.Text(frame, borderwidth = 0,
-                            height = 13,
+                            height = 18,
                             width = 48,
-                            font = ("Arial", 17))
+                            font = ("Arial", 17),
+                            bd = 5,
+                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
-        for i in range(6, 8):
+        for i in range(6, 7):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "").grid(row = i)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",

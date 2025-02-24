@@ -23,7 +23,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         m3stock = ins.extractant_recipes.mehlich3Stock
@@ -65,7 +67,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 11,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         m3_2 = ins.extractant_recipes.mehlich3["2.5 L"]
@@ -107,7 +111,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         m3_3 = ins.extractant_recipes.mehlich3["5.0 L"]
@@ -149,7 +155,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         h3a1L = ins.extractant_recipes.H3A["1 L"]
@@ -191,7 +199,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         h3a2L = ins.extractant_recipes.H3A["2 L"]
@@ -233,7 +243,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         olsen1L = ins.extractant_recipes.olsenP["1 L"]
@@ -275,7 +287,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         olsen2L = ins.extractant_recipes.olsenP["2 L"]
@@ -317,7 +331,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         kcl1N1L = ins.extractant_recipes.potassiumChloride["1 L 1 N"]
@@ -359,7 +375,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         kcl1N2L = ins.extractant_recipes.potassiumChloride["1 L 2 N"]
@@ -401,7 +419,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         kcl2N1L = ins.extractant_recipes.potassiumChloride["1 L 2 N"]
@@ -443,7 +463,9 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         kcl2N2L = ins.extractant_recipes.potassiumChloride["2 L 2 N"]
@@ -487,7 +509,9 @@ class extract_protocol:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         m3_ex_pro = ins.extract_protocols.mehlich3
@@ -522,7 +546,9 @@ class extract_protocol:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         kcl_pro = ins.extract_protocols.potassiumChloride
@@ -557,7 +583,9 @@ class extract_protocol:
         text = tk.Text(frame, borderwidth = 0,
                     height = 10,
                     width = 52,
-                    font = ("Arial", 20))
+                    font = ("Arial", 20),
+                    bd = 5,
+                    relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         olsen_pro = ins.extract_protocols.olsenP
@@ -592,7 +620,9 @@ class extract_protocol:
             text = tk.Text(frame, borderwidth = 0,
                         height = 10,
                         width = 52,
-                        font = ("Arial", 20))
+                        font = ("Arial", 20),
+                        bd = 5,
+                        relief = "sunken")
             text.configure(bg = "#055942", fg = "#67aae6")
             text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
             h3a = ins.extract_protocols.h3a
@@ -627,7 +657,9 @@ class extract_protocol:
         text = tk.Text(frame, borderwidth = 0,
                     height = 10,
                     width = 52,
-                    font = ("Arial", 20))
+                    font = ("Arial", 20),
+                    bd = 5,
+                    relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
         hcl = ins.extract_protocols.hcl

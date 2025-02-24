@@ -90,7 +90,9 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = stds.stds
@@ -145,7 +147,9 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = ghg_op.step1
@@ -210,7 +214,9 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = ghg_op.step2
@@ -274,7 +280,9 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = ghg_op.step3
@@ -338,7 +346,9 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = ghg_op.step4

@@ -175,7 +175,9 @@ class icp_control:
         text = tk.Text(frame, borderwidth = 0,
                        height = 6,
                        width = 48,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, padx = 20, pady =20)
         std3 = ins.icp_recipes.icpSTD["STD 3"]
@@ -219,7 +221,9 @@ class icp_control:
         text = tk.Text(frame, borderwidth = 0,
                        height = 6,
                        width = 48,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, padx = 20, pady =20)
         std2 = ins.icp_recipes.icpSTD["STD 2"]
@@ -269,7 +273,9 @@ class icp_control:
         text = tk.Text(frame, borderwidth = 0,
                        height = 6,
                        width = 48,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, column = 1, padx = 20, pady =20)
         std1 = ins.icp_recipes.icpSTD["STD 1"]
@@ -396,7 +402,9 @@ class icp_control:
         text = tk.Text(frame, borderwidth = 0,
                        height = 5,
                        width = 48,
-                       font = ("Arial", 20))
+                       font = ("Arial", 20),
+                       bd = 5,
+                       relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 4, columnspan = 5, padx = 25, pady = 15)
 
@@ -447,7 +455,9 @@ class icp_control:
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 1, column = 1, padx = 20, pady = 20)
         for std in concentrations:
@@ -586,7 +596,9 @@ class icp_operation:
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = icp_op.step1
@@ -641,7 +653,9 @@ class icp_operation:
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = icp_op.step2
@@ -701,7 +715,9 @@ class icp_operation:
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = icp_op.step3
@@ -761,7 +777,9 @@ class icp_operation:
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = icp_op.step4
@@ -821,7 +839,9 @@ class icp_operation:
         text = tk.Text(frame, borderwidth = 0,
                         height = 10,
                         width = 48,
-                        font = ("Arial", 20))
+                        font = ("Arial", 20),
+                        bd = 5,
+                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = icp_op.step5
@@ -881,7 +901,9 @@ class icp_operation:
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = icp_op.step6
@@ -941,7 +963,9 @@ class icp_operation:
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = icp_op.step7
@@ -1001,7 +1025,9 @@ class icp_operation:
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = icp_op.step8
@@ -1061,7 +1087,9 @@ class icp_operation:
         text = tk.Text(frame, borderwidth = 0,
                            height = 10,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         step = icp_op.step9

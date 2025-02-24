@@ -134,7 +134,9 @@ class ecMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 8,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1, columnspan = 2)
         text.insert(tk.END, cal)
@@ -196,7 +198,9 @@ class ecMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 8,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1, columnspan = 2, rowspan = 2)
         text.insert(tk.END, cal)
@@ -264,7 +268,9 @@ class ecMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 8,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1, columnspan = 2, rowspan = 2)
         text.insert(tk.END, cal)
@@ -390,7 +396,9 @@ class phMeter:
         text = tk.Text(frame, borderwidth = 0,
                         height = 9,
                         width = 48,
-                        font = ("Arial", 20))
+                        font = ("Arial", 20),
+                        bd = 5,
+                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1, rowspan = 2)
         text.insert(tk.END, check)
@@ -457,7 +465,9 @@ class phMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 9,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, cal)
@@ -524,7 +534,9 @@ class phMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 9,
                            width = 48,
-                           font = ("Arial", 20))
+                           font = ("Arial", 20),
+                           bd = 5,
+                           relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1, rowspan = 2, columnspan = 2)
         text.insert(tk.END, measure)
