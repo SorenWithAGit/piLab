@@ -10,6 +10,7 @@ the operation of the piLab are being defined.
 import tkinter as tk
 from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins
+from ..schantzLab import functions as fn
 
 class mainFrames(tk.Frame):
 
@@ -39,9 +40,9 @@ class mainFrames(tk.Frame):
                                         padx = 20,
                                         pady = 20)
           Schantz_lab = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                              text = "Schantz Lab?",
+                              text = "Schantz Lab",
                               font = ("Arial", 20),
-                              ).grid(row = 4, column = 1,
+                              command = lambda: fn.frames.schantz_Home_Frame(frame)).grid(row = 4, column = 1,
                                         padx = 20,
                                         pady = 20)
 
