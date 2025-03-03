@@ -16,7 +16,7 @@ class homeFrames:
         instuments = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Schantz Instrument SOPs",
                                 font = ("Arial", 20),
-                                command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
+                                command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 0,
                                         padx = 20,
                                         pady = 20)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -43,25 +43,25 @@ class homeFrames:
         elementar = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "ELEMENTAR SOP",
                                 font = ("Arial", 20),
-                                command = lambda: fn.frames.elementar(frame)).grid(row = 8, column = 1,
+                                command = lambda: fn.frames.elementar(frame)).grid(row = 8, column = 2,
                                         padx = 20,
                                         pady = 20)
         rootScanner = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Root Scanner SOP",
                                 font = ("Arial", 20),
-                                command = lambda: fn.frames.rootScanner_Frame(frame)).grid(row = 8, column = 2,
+                                command = lambda: fn.frames.rootScanner_Frame(frame)).grid(row = 9, column = 1,
                                        padx = 20,
                                        pady = 20)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "piLab Home",
                                 font = ("Arial", 20),
-                                command = lambda: fn.frames.piLab_Home_Frame(frame)).grid(row = 9, column = 0,
+                                command = lambda: fn.frames.piLab_Home_Frame(frame)).grid(row = 10, column = 0,
                                                                     padx = 20,
                                                                     pady = 20)
         schantz_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Schantz Lab Home",
                                 font = ("Arial", 20),
-                                command = lambda: fn.frames.schantz_Home_Frame(frame)).grid(row = 10, column = 0,
+                                command = lambda: fn.frames.schantz_Home_Frame(frame)).grid(row = 11, column = 0,
                                                                     padx = 20,
                                                                     pady = 20)
         
@@ -350,9 +350,9 @@ class rootScannerSteps:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "Schantz Lab: Root Scanner Step 1",
                                 font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
-                                text = "").grid(row = i)
+        # for i in range(1, 3):
+        #     label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+        #                         text = "").grid(row = i)
         step1_INS = si.rootScanner.sop["Root Processing"]
         text = tk.Text(frame, borderwidth = 0,
                             height = 18,
@@ -363,9 +363,9 @@ class rootScannerSteps:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
-        for i in range(6, 7):
-            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
-                                text = "").grid(row = i)
+        # for i in range(6, 7):
+        #     label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+        #                         text = "").grid(row = i)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 2",
                                 font = ("Arial", 20),
@@ -404,9 +404,9 @@ class rootScannerSteps:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "Schantz Lab: Root Scanner Step 2",
                                 font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
-                                text = "").grid(row = i)
+        # for i in range(1, 3):
+        #     label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+        #                         text = "").grid(row = i)
         step1_INS = si.rootScanner.sop["Setup"]
         text = tk.Text(frame, borderwidth = 0,
                             height = 18,
@@ -417,9 +417,9 @@ class rootScannerSteps:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
-        for i in range(6, 7):
-            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
-                                text = "").grid(row = i)
+        # for i in range(6, 7):
+        #     label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+        #                         text = "").grid(row = i)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Step 1",
                                     font = ("Arial", 20,),
@@ -464,9 +464,9 @@ class rootScannerSteps:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "Schantz Lab: Root Scanner Step 3",
                                 font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
-                                text = "").grid(row = i)
+        # for i in range(1, 3):
+        #     label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+        #                         text = "").grid(row = i)
         step1_INS = si.rootScanner.sop["Scanning"]
         text = tk.Text(frame, borderwidth = 0,
                             height = 18,
@@ -477,9 +477,9 @@ class rootScannerSteps:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
-        for i in range(6, 7):
-            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
-                                text = "").grid(row = i)
+        # for i in range(6, 7):
+        #     label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+        #                         text = "").grid(row = i)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Step 2",
                                     font = ("Arial", 20,),
@@ -524,9 +524,9 @@ class rootScannerSteps:
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "Schantz Lab: Root Scanner Step 4",
                                 font = ("Arial", 25)).grid(row = 0, columnspan = 4)
-        for i in range(1, 4):
-            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
-                                text = "").grid(row = i)
+        # for i in range(1, 3):
+        #     label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+        #                         text = "").grid(row = i)
         step1_INS = si.rootScanner.sop["XLRhizo"]
         text = tk.Text(frame, borderwidth = 0,
                             height = 18,
@@ -537,9 +537,9 @@ class rootScannerSteps:
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 5, column = 1)
         text.insert(tk.END, step1_INS)
-        for i in range(6, 7):
-            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
-                                text = "").grid(row = i)
+        # for i in range(6, 7):
+        #     label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+        #                         text = "").grid(row = i)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Step 3",
                                     font = ("Arial", 20,),
