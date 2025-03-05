@@ -1,3 +1,12 @@
+"""
+#######################################################################
+functions.py is a submodule within the schantzLab folder as part of the
+pyLab package. 
+This module contains the functions that are supplied to the lambda 
+statements within the frames.py within the schantzLab.
+"""
+
+
 import tkinter as tk
 from ..smithLab import control as ctrl
 from ..smithLab import procedure as pr

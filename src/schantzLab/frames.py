@@ -1,3 +1,10 @@
+'''
+########################################################################
+frames.py is module of the schantzLab folder for the pyLab package.
+This module contains the tkinter Frames for the "Schantz Lab" within
+the GUI.
+########################################################################
+'''
 import tkinter as tk
 from src.schantzLab import functions as fn
 from src.schantzLab import schantzInstructions as si

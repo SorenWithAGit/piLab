@@ -1,3 +1,11 @@
+"""
+#######################################################################
+schantzInstructions.py is module within the schantzLab subfolder of
+the pyLab package. 
+This module contains classes with dictionaries containing the SOP
+protocols for the Schantz Group.
+#######################################################################
+"""
 class VarioMax:
 
     sop = {
