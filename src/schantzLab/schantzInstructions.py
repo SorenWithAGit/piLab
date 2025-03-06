@@ -6,6 +6,22 @@ This module contains classes with dictionaries containing the SOP
 protocols for the Schantz Group.
 #######################################################################
 """
+
+class LAI:
+    sop = """Plug in the instrument and toglle the silver
+switch to "On". Start the lamp by pushing in the black
+switch. 
+Clean the belt with ethanol and kimwipes.
+When ready to begin measurement press the reset button.
+Place the sample on the belt and gently feed it until
+the belt can support the sample. 
+Once sample has passed the light bar record LAI.
+Clean belt as described above.
+Load next sample.
+When all samples are completed toggle the power switch
+and unplug the meter.
+"""
+
 class VarioMax:
 
     sop = {

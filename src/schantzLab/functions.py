@@ -4,6 +4,7 @@ functions.py is a submodule within the schantzLab folder as part of the
 pyLab package. 
 This module contains the functions that are supplied to the lambda 
 statements within the frames.py within the schantzLab.
+#######################################################################
 """
 
 
@@ -33,6 +34,11 @@ class frames:
     def rootScanner_Frame(frame):
         ctrl.window.clear_frame(frame)
         fr.instrumentFrames.root_scanner_frame()
+
+class laiMeter:
+    def sop(frame):
+        ctrl.window.clear_frame(frame)
+        fr.instrumentFrames.lai_frame()
 
 class elementarSOPs:
 

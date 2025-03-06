@@ -44,7 +44,7 @@ class homeFrames:
         lai = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "Leaf Area Index Meter",
                         font = ("Arial", 20),
-                        ).grid(row = 8, column = 0,
+                        command = lambda: fn.laiMeter.sop(frame)).grid(row = 8, column = 0,
                                padx = 20,
                                pady = 20)
         elementar = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -73,7 +73,49 @@ class homeFrames:
                                                                     pady = 20)
         
 class instrumentFrames:
-      
+    
+    def lai_frame():
+        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame.pack()
+        main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+                                text = "Schantz Lab: Belt Fed LAI Meter",
+                                font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+        for i in range(1, 4):
+            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+                                text = "").grid(row = i)
+        step1_INS = si.LAI.sop
+        text = tk.Text(frame, borderwidth = 0,
+                            height = 15,
+                            width = 55,
+                            font = ("Arial", 18),
+                            bd = 5,
+                            relief = "sunken")
+        text.configure(bg = "#055942", fg = "#67aae6")
+        text.grid(row = 5, column = 0, columnspan = 3)
+        text.insert(tk.END, step1_INS)
+        for i in range(6, 8):
+            label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
+                                text = "").grid(row = i)
+        piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                                text = "piLab Home",
+                                font = ("Arial", 20),
+                                command = lambda: fn.frames.piLab_Home_Frame(frame)).grid(row = 8, column = 0,
+                                                                    padx = 20,
+                                                                    pady = 20)
+        schantz_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                                text = "Schantz Lab Home",
+                                font = ("Arial", 20),
+                                command = lambda: fn.frames.schantz_Home_Frame(frame)).grid(row = 9, column = 0,
+                                                                    padx = 20,
+                                                                    pady = 20)
+        instuments_frame = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                                        text = "Schantz Instrument SOPs",
+                                        font = ("Arial", 20),
+                                        command = lambda: fn.frames.schantz_instruments(frame)).grid(row = 8, column = 1,
+                                                                                                    rowspan = 2,
+                                                                                                    padx = 20,
+                                                                                                    pady = 20)
+
     def elementar_frame():
         frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
         frame.pack()
