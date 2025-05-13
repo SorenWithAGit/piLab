@@ -8,10 +8,13 @@ protocols for the Schantz Group.
 """
 
 class LAI:
-    sop = """Plug in the instrument and toglle the silver
+    sop = """Plug in the instrument and toggle the silver
 switch to "On". Start the lamp by pushing in the black
 switch. 
 Clean the belt with ethanol and kimwipes.
+Run the silver calibration plate through the instrument.
+Area should read 50 cm squared. Adjust the calibration screw
+with a screwdriver unitl area is acceptable.
 When ready to begin measurement press the reset button.
 Place the sample on the belt and gently feed it until
 the belt can support the sample. 
