@@ -303,7 +303,7 @@ class procedure_selection:
                               font = ("Arial", 20),
                               command = lambda: ctrl.procedureControl.kcl_2N_1L(frame)).grid(row = 8, column =0, padx = 100, pady = 20)
         kcl_2N_2L = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                              text = "1N KCl 2 L",
+                              text = "2N KCl 2 L",
                               font = ("Arial", 20),
                               command = lambda: ctrl.procedureControl.kcl_2N_2L(frame)).grid(row = 8, column =3, padx = 100, pady = 20)
         for i in range(9,12):
