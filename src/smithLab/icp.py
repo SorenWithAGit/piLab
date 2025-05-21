@@ -357,43 +357,43 @@ class icp_control:
         concentrations = []
         conc_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Select the desired concentration For Standard 4",
-                              font = ("Arial", 20)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 20)).grid(row = 0, column = 0, columnspan = 4)
         conc_6 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                            text = "10.0 ppm",
                            font = ("Arial", 15),
                            command = lambda: [concentrations.append(10.0),
                                               text.insert(tk.END, "10.0 ppm" + "\n")]).grid(row = 2, column = 0,
-                                                                                            columnspan = 2,
-                                                                                            padx = 25, pady = 20)
+                                                                                            
+                                                                                            padx = 10, pady = 20)
         conc_7 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                            text = "20.0 ppm",
                            font = ("Arial", 15),
                            command = lambda: [concentrations.append(20.0),
                                               text.insert(tk.END, "20.0 ppm" + "\n")]).grid(row = 2, column = 2,
-                                                                                            columnspan = 2,
-                                                                                            padx = 25, pady = 20)
+                                                                                            
+                                                                                            padx = 10, pady = 20)
         conc_9 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                            text = "40.0 ppm",
                            font = ("Arial", 15),
                            command = lambda: [concentrations.append(40.0),
-                                              text.insert(tk.END, "40.0 ppm" + "\n")]).grid(row = 2, column = 4,
-                                                                                            columnspan = 2,
-                                                                                            padx = 25, pady = 20)
+                                              text.insert(tk.END, "40.0 ppm" + "\n")]).grid(row = 2, column = 3,
+                                                                                            
+                                                                                            padx = 10, pady = 20)
 
         conc_11 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                            text = "100.0 ppm",
                            font = ("Arial", 15),
                            command = lambda: [concentrations.append(100.0),
                                               text.insert(tk.END, "100.0 ppm" + "\n")]).grid(row = 3, column = 0,
-                                                                                             columnspan = 2,
-                                                                                             padx = 25, pady = 20)
+                                                                                             
+                                                                                             padx = 10, pady = 20)
         conc_14 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                            text = "800.0 ppm",
                            font = ("Arial", 15),
                            command = lambda: [concentrations.append(800.0),
-                                              text.insert(tk.END, "800.0 ppm" + "\n")]).grid(row = 3, column = 4,
-                                                                                             columnspan = 2,
-                                                                                             padx = 25, pady = 20)
+                                              text.insert(tk.END, "800.0 ppm" + "\n")]).grid(row = 3, column = 3,
+                                                                                             
+                                                                                             padx = 10, pady = 20)
         # blank_1 = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
         #                     text = "",
         #                     font = ("Arial", 15)).grid(row = 2, column = 1, padx = 25, pady = 20)
@@ -416,7 +416,7 @@ class icp_control:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, columnspan = 3, padx = 25, pady = 15)
+        text.grid(row = 4, column = 0, columnspan = 4, padx = 25, pady = 15)
 
         clear_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Clear Selection",
@@ -499,7 +499,7 @@ class icp_math:
         final = final_concentrations
         std_lst = []
         for i in range(len(final_concentrations)):
-            std = (final[i] * 250) / stock * 1000
+            std = (final[i] * 100) / stock * 1000
             std_lst.append(std)
         return std_lst
     
