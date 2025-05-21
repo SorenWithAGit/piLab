@@ -14,7 +14,7 @@ switch.
 Clean the belt with ethanol and kimwipes.
 Run the silver calibration plate through the instrument.
 Area should read 50 cm squared. Adjust the calibration screw
-with a screwdriver unitl area is acceptable.
+with a screwdriver until area is acceptable.
 When ready to begin measurement press the reset button.
 Place the sample on the belt and gently feed it until
 the belt can support the sample. 
