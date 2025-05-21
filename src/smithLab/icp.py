@@ -463,15 +463,15 @@ class icp_control:
                                                          padx = 20,
                                                          pady = 20)
         text = tk.Text(frame, borderwidth = 0,
-                           height = 10,
-                           width = 48,
-                           font = ("Arial", 20),
+                           height = 7,
+                           width = 38,
+                           font = ("Arial", 30),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
         text.grid(row = 1, column = 1, padx = 20, pady = 20)
         for std in concentrations:
-            text.insert(tk.END, str(std) + " uL " + " or " + str(std / 1000) + ' mL ' + "of " + element + "\n")
+            text.insert(tk.END, str(std) + " uL " + " or " + str(std / 1000) + ' mL ' + "of " + element + "\n" + "to the 100 mL volumetric flask")
         for i in range(2, 5):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
