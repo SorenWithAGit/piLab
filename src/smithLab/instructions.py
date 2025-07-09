@@ -26,18 +26,24 @@ class skalar_recipes:
 Deionized Water
 add 25 g of Ammonium Chlorde
 Add 3.6 mL of ammonium Hydroxide
-Dilute to mark.""",
+Dilute to mark.
+Add to 1 L reagent bottle and add 1.5 mL
+of Brij 35 to the bottle.""",
                             
         "1 L" : """Fill a 1000 mL volumetric flask half full with 
 Deionized Water
 Add 50 g of Ammonium Chloride
 Add 7.2 mL of Ammonium Hydroxide
-Dilute to mark.""",
+Dilute to mark.
+Transfer to 1 L reagent bottle and add 3 mL
+of Brij 35 to the bottle.""",
         "2 L" : """Fill a 2000 mL volumetric flask half full with 
 Deionized Water
 Add 100 g of Ammonium Chloride
 Add 14.4 mL of Ammonium Hydroxide
-Dilute to mark."""
+Dilute to mark.
+Transfer to two 1 L bottles and add 3 mL
+of Brij 35 to each bottle."""
     }
 
     nitrateNitriteColor = {
@@ -116,21 +122,27 @@ Add 16.5 g of Potassium Sodium Tartate
 Add 12 g of Sodium Citrate Dihydrate
 Add 3 mL of 32% Hydrochloric Acid or 5 mL of
 6N Hydrochloric Acid
-Dilute to mark.""",
+Dilute to mark.
+Add to 1 L reagent bottle and add 1.5 mL
+of Brij 35 to the bottle.""",
         "1 L" : """Fill a 1000 mL volumetric flask half full with
 Deionized Water
 Add 33 g of Potassium Sodium Tartate
 Add 24 g of Sodium Citrate Dihydrate
 Add 6 mL of 32% Hydrochloric Acid or 10 mL of
 6N Hydrochloric Acid
-Dilute to mark.""",
+Dilute to mark.
+Transfer to 1 L reagent bottle and add 3 mL
+of Brij 35 to the bottle.""",
         "2 L" : """Fill a 2000 mL volumetric flask half full with
 Deionized Water
 Add 66 g of Potassium Sodium Tartate
 Add 48 g of Sodium Citrate Dihydrate
 Add 12 mL of 32% Hydrochloric acid or 20 mL of
 6N Hydrochloric Acid
-Dilute to mark."""
+Dilute to mark.
+Transfer to two 1 L bottles and add 3 mL
+of Brij 35 to each bottle."""
     }
     ammoniaSalicyalite = {
         "500 mL" : """Fill a 500 mL volumetric falsk half full with
