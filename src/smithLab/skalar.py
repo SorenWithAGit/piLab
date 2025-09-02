@@ -384,6 +384,8 @@ class skalar_cookbook:
                                                                                                 pady = 20)
 
     def instruct_frame(label, recipe):
+        id_char = label[0]
+        # print(id_char)
         frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
@@ -417,18 +419,56 @@ class skalar_cookbook:
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0, 
                                                                                     padx = 20, 
                                                                                     pady = 20)
+        if id_char == "N":
+            skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                                            text = "Nitrate/Nitrite Recipes",
+                                            font = ("Arial", 20),
+                                            command = lambda: ctrl.skalarWindowControl.nitr_click(frame)).grid(row = 8, column = 1,
+                                                                                                                rowspan = 2,
+                                                                                                                padx = 20,
+                                                                                                                pady = 20)
+        elif id_char == "P":
+            skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                                            text = "Phosphate Recipes",
+                                            font = ("Arial", 20),
+                                            command = lambda: ctrl.skalarWindowControl.phos_click(frame)).grid(row = 8, column = 1,
+                                                                                                                rowspan = 2,
+                                                                                                                padx = 20,
+                                                                                                                pady = 20)
+        elif id_char == "A":
+            skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                                            text = "Ammonia Recipes",
+                                            font = ("Arial", 20),
+                                            command = lambda: ctrl.skalarWindowControl.ammo_click(frame)).grid(row = 8, column = 1,
+                                                                                                                rowspan = 2,
+                                                                                                                padx = 20,
+                                                                                                                pady = 20)
+        elif id_char == "R":
+            skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                                            text = "Rinsing Liquid Recipes",
+                                            font = ("Arial", 20),
+                                            command = lambda: ctrl.skalarWindowControl.rins_click(frame)).grid(row = 8, column = 1,
+                                                                                                                rowspan = 2,
+                                                                                                                padx = 20,
+                                                                                                                pady = 20)
+        elif id_char == "S":
+            skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                                            text = "Calibration Standard Recipes",
+                                            font = ("Arial", 20),
+                                            command = lambda: ctrl.skalarWindowControl.cal_stds_click(frame)).grid(row = 8, column = 1,
+                                                                                                                rowspan = 2,
+                                                                                                                padx = 20,
+                                                                                                                pady = 20)                
         skalar_recipes_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                         text = "Skalar Recipes",
                                         font = ("Arial", 20),
-                                        command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 1,
-                                                                                                            rowspan = 2,
+                                        command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 2,
                                                                                                             padx = 20,
                                                                                                             pady = 20)
         instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
                                    font = ("Arial", 20),
-                                   command = lambda: ctrl.window.instruments_click(frame)).grid(row = 8, column = 2, 
-                                                                                                rowspan = 2,
+                                   command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, 
                                                                                                 padx = 20, 
                                                                                                 pady = 20)
 class skalar_recipes:
