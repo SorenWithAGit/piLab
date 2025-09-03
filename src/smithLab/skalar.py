@@ -245,11 +245,11 @@ class skalar_cookbook:
         std4 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Standard 4",
                          font = ("Arial", 20),
-                         command = lambda: ctrl.skalarWindowControl.std4_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 40)
+                         command = lambda: ctrl.skalarWindowControl.std4_click(frame)).grid(row = 7, column = 0, columnspan = 2,padx = 20, pady = 40)
         std5 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Standard 5",
                          font = ("Arial", 20),
-                         command = lambda: ctrl.skalarWindowControl.std5_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 40)
+                         command = lambda: ctrl.skalarWindowControl.std5_click(frame)).grid(row = 7, column = 1, columnspan = 2, padx = 20, pady = 40)
 
         for i in range(8,9):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
@@ -294,7 +294,7 @@ class skalar_cookbook:
         vol_1 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "500 mL",
                           font = ("Arial", 20),
-                          command = lambda: ctrl.skalarWindowControl.buff_vol1_click(frame, reagent)).grid(row = 6, column = 1, padx = 20, pady = 40)
+                          command = lambda: ctrl.skalarWindowControl.buff_vol1_click(frame, reagent)).grid(row = 6, column = 0, padx = 20, pady = 40)
         vol_2 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "1,000 mL",
                           font = ("Arial", 20),
@@ -347,11 +347,11 @@ class skalar_cookbook:
         vol_1 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "500 mL",
                           font = ("Arial", 20),
-                          command = lambda: ctrl.skalarWindowControl.reag_vol1_click(frame, reagent)).grid(row = 6, column = 1, padx = 20, pady = 40)
+                          command = lambda: ctrl.skalarWindowControl.reag_vol1_click(frame, reagent)).grid(row = 6, column = 0, columnspan = 2, padx = 20, pady = 40)
         vol_2 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "1,000 mL",
                           font = ("Arial", 20),
-                          command = lambda: ctrl.skalarWindowControl.reag_vol2_click(frame, reagent)).grid( row = 6, column = 2, padx = 20, pady = 40)
+                          command = lambda: ctrl.skalarWindowControl.reag_vol2_click(frame, reagent)).grid( row = 6, column = 1, columnspan = 2, padx = 20, pady = 40)
 
         for i in range(7,9):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
