@@ -97,14 +97,15 @@ class icp_cookbook:
                                 text = "Potassium",
                                 font = ("Arial", 20),
                                 command = lambda:ctrl.icpWindowControl.k_click(frame)).grid(row = 2,
-                                                                                        column = 1,
+                                                                                        column = 0,
                                                                                         padx = 50,
                                                                                         pady = 40)
         Mg_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Magnesium",
                                 font = ("Arial", 20),
                                 command = lambda: ctrl.icpWindowControl.mg_click(frame)).grid(row = 2,
-                                                                                        column = 2,
+                                                                                        column = 1,
+                                                                                        columnspan = 2,
                                                                                         padx = 50,
                                                                                         pady = 40)
         Mn_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
