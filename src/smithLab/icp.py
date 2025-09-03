@@ -341,6 +341,10 @@ class icp_control:
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, padx = 20, pady = 20)
+        element_selection = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                         text = "Element Selection",
+                         font = ("Arial", 20),
+                         command = lambda: ctrl.icpWindowControl.std4_click(frame)).grid(row = 5, column = 1, rowspan = 2, padx = 20, pady = 20)
         icp_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "ICP Recipes",
                              font = ("Arial", 20),
@@ -446,11 +450,14 @@ class icp_control:
                          text = "Smith Lab Home",
                          font = ("Arial", 20),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, padx = 20, pady = 20)
+        element_selection = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                    text = "Element Selection",
+                    font = ("Arial", 20),
+                    command = lambda: ctrl.icpWindowControl.std4_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 20)
         icp_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "ICP Recipes",
                              font = ("Arial", 20),
                              command = lambda: ctrl.icpWindowControl.icp_home(frame)).grid(row = 5, column = 1, 
-                                                                                           rowspan = 2,
                                                                                            padx = 20, 
                                                                                            pady = 20)
 
@@ -489,9 +496,12 @@ class icp_control:
                              text = "ICP Recipes",
                              font = ("Arial", 20),
                              command = lambda: ctrl.icpWindowControl.icp_home(frame)).grid(row = 5, column = 1, 
-                                                                                           rowspan = 2,
                                                                                            padx = 20, 
                                                                                            pady = 20)
+        element_selection = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
+                    text = "Element Selection",
+                    font = ("Arial", 20),
+                    command = lambda: ctrl.icpWindowControl.std4_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 20)
 
 class icp_math:
     def calculate_conc(stock_concentrations, final_concentrations):
