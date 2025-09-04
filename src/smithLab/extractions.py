@@ -27,7 +27,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         m3stock = ins.extractant_recipes.mehlich3Stock
         text.insert(tk.END, m3stock)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -71,7 +71,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         m3_2 = ins.extractant_recipes.mehlich3["2.5 L"]
         text.insert(tk.END, m3_2)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -115,7 +115,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         m3_3 = ins.extractant_recipes.mehlich3["5.0 L"]
         text.insert(tk.END, m3_3)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -159,7 +159,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         h3a1L = ins.extractant_recipes.H3A["1 L"]
         text.insert(tk.END, h3a1L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -203,7 +203,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         h3a2L = ins.extractant_recipes.H3A["2 L"]
         text.insert(tk.END, h3a2L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -247,7 +247,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         olsen1L = ins.extractant_recipes.olsenP["1 L"]
         text.insert(tk.END, olsen1L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -291,7 +291,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         olsen2L = ins.extractant_recipes.olsenP["2 L"]
         text.insert(tk.END, olsen2L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -335,7 +335,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         kcl1N1L = ins.extractant_recipes.potassiumChloride["1 L 1 N"]
         text.insert(tk.END, kcl1N1L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -379,7 +379,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         kcl1N2L = ins.extractant_recipes.potassiumChloride["1 L 2 N"]
         text.insert(tk.END, kcl1N2L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -423,7 +423,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         kcl2N1L = ins.extractant_recipes.potassiumChloride["1 L 2 N"]
         text.insert(tk.END, kcl2N1L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -467,7 +467,7 @@ class recipes:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         kcl2N2L = ins.extractant_recipes.potassiumChloride["2 L 2 N"]
         text.insert(tk.END, kcl2N2L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -513,7 +513,7 @@ class extract_protocol:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         m3_ex_pro = ins.extract_protocols.mehlich3
         text.insert(tk.END, m3_ex_pro)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -550,7 +550,7 @@ class extract_protocol:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         kcl_pro = ins.extract_protocols.potassiumChloride
         text.insert(tk.END, kcl_pro)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -587,7 +587,7 @@ class extract_protocol:
                     bd = 5,
                     relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         olsen_pro = ins.extract_protocols.olsenP
         text.insert(tk.END, olsen_pro)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -624,7 +624,7 @@ class extract_protocol:
                         bd = 5,
                         relief = "sunken")
             text.configure(bg = "#055942", fg = "#67aae6")
-            text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+            text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
             h3a = ins.extract_protocols.h3a
             text.insert(tk.END, h3a)
             piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
@@ -661,7 +661,7 @@ class extract_protocol:
                     bd = 5,
                     relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 8, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 8, pady = 35)
         hcl = ins.extract_protocols.hcl
         text.insert(tk.END, hcl)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
