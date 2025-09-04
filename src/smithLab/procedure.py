@@ -341,31 +341,31 @@ class procedure_selection:
         mehlich3 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "M3 Extraction",
                              font = ("Arial", 20),
-                             command = lambda: ctrl.procedureControl.m3_proto_click(frame)).grid(row = 7, column = 1,
+                             command = lambda: ctrl.procedureControl.m3_proto_click(frame)).grid(row = 7, column = 0,
                                                                                               padx = 20,
                                                                                               pady = 20)
         potassiumChloride = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                             text = "KCl Extraction",
                             font = ("Arial", 20),
-                            command = lambda: ctrl.procedureControl.kcl_proto_click(frame)).grid(row = 7, column = 2,
+                            command = lambda: ctrl.procedureControl.kcl_proto_click(frame)).grid(row = 7, column = 1,
                                                                                                    padx = 20,
                                                                                                    pady = 20)
         olsenP = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                            text = "Olsen P Extraction",
                            font = ("Arial", 20),
-                           command = lambda: ctrl.procedureControl.olsen_proto_click(frame)).grid(row = 7, column = 3,
+                           command = lambda: ctrl.procedureControl.olsen_proto_click(frame)).grid(row = 7, column = 2,
                                                                                         padx = 20,
                                                                                         pady = 20)
         h3a = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = ("H3A Extraction"),
                         font = ("Arial", 20),
-                        command = lambda: ctrl.procedureControl.h3a_proto_click(frame)).grid(row = 8, column = 1,
+                        command = lambda: ctrl.procedureControl.h3a_proto_click(frame)).grid(row = 8, column = 0,
                                                                                   padx = 20,
                                                                                   pady = 20)
         hcl = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "HCl Extraction",
                         font = ("Arial", 20),
-                        command = lambda: ctrl.procedureControl.hcl_proto_click(frame)).grid(row = 8, column = 3,
+                        command = lambda: ctrl.procedureControl.hcl_proto_click(frame)).grid(row = 8, column = 2,
                                                                                   padx = 20,
                                                                                   pady = 20)
         for i in range(9,12):
