@@ -467,7 +467,8 @@ class icp_control:
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab: ICP Standard 4 Protocol",
-                              font = ("Arial", 25)).grid(row = 0, column = 1,
+                              font = ("Arial", 25)).grid(row = 0, column = 0,
+                                                         columnspan = 3,
                                                          padx = 20,
                                                          pady = 20)
         text = tk.Text(frame, borderwidth = 0,
