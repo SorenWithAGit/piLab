@@ -401,7 +401,7 @@ class skalar_cookbook:
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 1, columnspan = 2, padx = 20, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 20, pady = 35)
         for line in recipe:
             text.insert(tk.END, line)
         for i in range(5,8):

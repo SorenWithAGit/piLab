@@ -477,7 +477,7 @@ class icp_control:
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 1, column = 1, padx = 20, pady = 20)
+        text.grid(row = 1, column = 0, columnspan = 3, padx = 20, pady = 20)
         for std in concentrations:
             text.insert(tk.END, str(std) + " uL " + " or " + str(std / 1000) + ' mL ' + "of " + element + "\n" + "to the 100 mL volumetric flask")
         for i in range(2, 5):
