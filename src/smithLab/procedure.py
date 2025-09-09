@@ -18,7 +18,6 @@ class mainFrames(tk.Frame):
           welcome = ins.welcome.welcome_statment
           frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
           frame.pack()
-          icp_op = ins.icp_operation
           label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "piLab Home",
                               font = ("Arial", 25)).grid(row = 0, column = 1)
