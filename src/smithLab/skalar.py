@@ -13,395 +13,395 @@ from src.smithLab import instructions as ins
 
 class skalar_cookbook:
     def home_frame():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab: Skalar Recipies Home",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1, 6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         channel = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Select Channel",
-                              font = ("Arial", 20)).grid(row = 6, columnspan = 3, padx = 20, pady = 20)
+                              font = ("Arial", 25)).grid(row = 6, columnspan = 3, padx = 40, pady = 40)
         nitr_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Nitrate/Nitrite Channel",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.nitr_click(frame)).grid(row = 7, column = 0, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.nitr_click(frame)).grid(row = 7, column = 0, padx = 40, pady = 40)
         phos_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Phosphate Channel",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.phos_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.phos_click(frame)).grid(row = 7, column = 1, padx = 40, pady = 40)
         ammo_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Ammonium Channel",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.ammo_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.ammo_click(frame)).grid(row = 7, column = 2, padx = 40, pady = 40)
         rins_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Rinsing Liquid",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.rins_click(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.rins_click(frame)).grid(row = 8, column = 0, padx = 40, pady = 40)
         stds_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Calibration Standards",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.cal_stds_click(frame)).grid(row = 8, column = 2, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.cal_stds_click(frame)).grid(row = 8, column = 2, padx = 40, pady = 40)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                           padx = 20,
-                                                                                           pady = 20)
+                                                                                           padx = 40,
+                                                                                           pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, 
                                                                                                 rowspan = 2,
-                                                                                                padx = 20, 
-                                                                                                pady = 20)
+                                                                                                padx = 40, 
+                                                                                                pady = 40)
 
     def nitrate_frame():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab Skalar: Nitrate/Nitrite Reagents",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
 
         nitr_buffer = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Nitrate/Nitrite Buffer",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.nitr_buff_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.nitr_buff_click(frame)).grid(row = 6, column = 1, padx = 40, pady = 40)
         color_reag = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "Color Reagent",
-                               font = ("Arial", 20),
-                               command = lambda: ctrl.skalarWindowControl.color_click(frame)).grid(row = 6, column = 2, padx = 20, pady = 20)
+                               font = ("Arial", 25),
+                               command = lambda: ctrl.skalarWindowControl.color_click(frame)).grid(row = 6, column = 2, padx = 40, pady = 40)
         for i in range(7,9):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                           padx = 20,
-                                                                                           pady = 20)
+                                                                                           padx = 40,
+                                                                                           pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         skalar_recipes_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                         text = "Skalar Recipes",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 9, column = 1,
                                                                                                             rowspan = 2,
-                                                                                                            padx = 20,
-                                                                                                            pady = 20)
+                                                                                                            padx = 40,
+                                                                                                            pady = 40)
         instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, 
                                                                                                 rowspan = 2,
-                                                                                                padx = 20, 
-                                                                                                pady = 20)
+                                                                                                padx = 40, 
+                                                                                                pady = 40)
 
     def phosphate_frame():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab Skalar: Phosphate Reagents",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         ffd6_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "FFD6 Solution",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.ffd6_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.ffd6_click(frame)).grid(row = 6, column = 1, padx = 40, pady = 40)
         sulf_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Sulfuric Acid Solution",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.sulf_click(frame)).grid(row = 6, column = 2, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.sulf_click(frame)).grid(row = 6, column = 2, padx = 40, pady = 40)
         hept_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Ammonium Heptamolybdate",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.hept_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.hept_click(frame)).grid(row = 7, column = 1, padx = 40, pady = 40)
         lplus_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "L+ Ascorbic Acid",
-                                 font = ("Arial", 20),
-                                 command = lambda: ctrl.skalarWindowControl.lplus_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
+                                 font = ("Arial", 25),
+                                 command = lambda: ctrl.skalarWindowControl.lplus_click(frame)).grid(row = 7, column = 2, padx = 40, pady = 40)
         for i in range(8,9):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                           padx = 20,
-                                                                                           pady = 20)
+                                                                                           padx = 40,
+                                                                                           pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         skalar_recipes_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                         text = "Skalar Recipes",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 9, column = 1,
                                                                                                             rowspan = 2,
-                                                                                                            padx = 20,
-                                                                                                            pady = 20)
+                                                                                                            padx = 40,
+                                                                                                            pady = 40)
         instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, 
                                                                                                 rowspan = 2,
-                                                                                                padx = 20, 
-                                                                                                pady = 20)
+                                                                                                padx = 40, 
+                                                                                                pady = 40)
 
     def ammonium_frame():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab Skalar: Ammonium Reagents",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         ammo_buffer = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Ammonium Buffer",
-                                font = ("Arial", 20),
-                                command = lambda: ctrl.skalarWindowControl.ammo_buff_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 20)
+                                font = ("Arial", 25),
+                                command = lambda: ctrl.skalarWindowControl.ammo_buff_click(frame)).grid(row = 6, column = 1, padx = 40, pady = 40)
         sali_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                   text = "Sodium Salicyalite Solution",
-                                  font = ("Arial", 20),
-                                  command = lambda: ctrl.skalarWindowControl.sali_click(frame)).grid(row = 6, column = 2, padx = 20, pady = 20)
+                                  font = ("Arial", 25),
+                                  command = lambda: ctrl.skalarWindowControl.sali_click(frame)).grid(row = 6, column = 2, padx = 40, pady = 40)
         nitro_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Nitroprusside Solution",
-                                 font = ("Arial", 20),
-                                 command = lambda: ctrl.skalarWindowControl.nitro_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
+                                 font = ("Arial", 25),
+                                 command = lambda: ctrl.skalarWindowControl.nitro_click(frame)).grid(row = 7, column = 1, padx = 40, pady = 40)
         dichlo_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                   text = "Dichlorocyanurite Solution",
-                                  font = ("Arial", 20),
-                                  command = lambda: ctrl.skalarWindowControl.dichlor_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
+                                  font = ("Arial", 25),
+                                  command = lambda: ctrl.skalarWindowControl.dichlor_click(frame)).grid(row = 7, column = 2, padx = 40, pady = 40)
         for i in range(8,9):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                           padx = 20,
-                                                                                           pady = 20)
+                                                                                           padx = 40,
+                                                                                           pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         skalar_recipes_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                         text = "Skalar Recipes",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 9, column = 1,
                                                                                                             rowspan = 2,
-                                                                                                            padx = 20,
-                                                                                                            pady = 20)
+                                                                                                            padx = 40,
+                                                                                                            pady = 40)
         instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, 
                                                                                                 rowspan = 2,
-                                                                                                padx = 20, 
-                                                                                                pady = 20)
+                                                                                                padx = 40, 
+                                                                                                pady = 40)
     def standards_frame():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab Skalar: Standards Recipes",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = 1)
         std1 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          text = "Standard 1",
-                         command = lambda: ctrl.skalarWindowControl.std1_click(frame)).grid(row = 6, column = 0, padx = 20, pady = 40)
+                         command = lambda: ctrl.skalarWindowControl.std1_click(frame)).grid(row = 6, column = 0, padx = 40, pady = 40)
         std2 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Standard 2",
-                         font = ("Arial", 20),
-                         command = lambda: ctrl.skalarWindowControl.std2_click(frame)).grid(row = 6, column = 1, padx = 20, pady = 40)
+                         font = ("Arial", 25),
+                         command = lambda: ctrl.skalarWindowControl.std2_click(frame)).grid(row = 6, column = 1, padx = 40, pady = 40)
         std3 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Standard 3",
-                         font = ("Arial", 20),
-                         command = lambda: ctrl.skalarWindowControl.std3_click(frame)).grid(row = 6, column = 2, padx = 20, pady = 40)
+                         font = ("Arial", 25),
+                         command = lambda: ctrl.skalarWindowControl.std3_click(frame)).grid(row = 6, column = 2, padx = 40, pady = 40)
         std4 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Standard 4",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.skalarWindowControl.std4_click(frame)).grid(row = 7, column = 0, columnspan = 2,padx = 20, pady = 40)
         std5 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Standard 5",
-                         font = ("Arial", 20),
-                         command = lambda: ctrl.skalarWindowControl.std5_click(frame)).grid(row = 7, column = 1, columnspan = 2, padx = 20, pady = 40)
+                         font = ("Arial", 25),
+                         command = lambda: ctrl.skalarWindowControl.std5_click(frame)).grid(row = 7, column = 1, columnspan = 2, padx = 40, pady = 40)
 
         for i in range(8,9):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                           padx = 20,
-                                                                                           pady = 20)
+                                                                                           padx = 40,
+                                                                                           pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         skalar_recipes_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                         text = "Skalar Recipes",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 9, column = 1,
                                                                                                             rowspan = 2,
-                                                                                                            padx = 20,
-                                                                                                            pady = 20)
+                                                                                                            padx = 40,
+                                                                                                            pady = 40)
         instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, 
                                                                                                 rowspan = 2,
-                                                                                                padx = 20, 
-                                                                                                pady = 20)
+                                                                                                padx = 40, 
+                                                                                                pady = 40)
 
     def buffer_volume_frame(reagent):
         reagent = reagent
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = ("Smith Lab Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         vol_1 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "500 mL",
-                          font = ("Arial", 20),
-                          command = lambda: ctrl.skalarWindowControl.buff_vol1_click(frame, reagent)).grid(row = 6, column = 0, padx = 20, pady = 40)
+                          font = ("Arial", 25),
+                          command = lambda: ctrl.skalarWindowControl.buff_vol1_click(frame, reagent)).grid(row = 6, column = 0, padx = 40, pady = 40)
         vol_2 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "1,000 mL",
-                          font = ("Arial", 20),
-                          command = lambda: ctrl.skalarWindowControl.buff_vol2_click(frame, reagent)).grid( row = 6, column = 2, padx = 20, pady = 40)
+                          font = ("Arial", 25),
+                          command = lambda: ctrl.skalarWindowControl.buff_vol2_click(frame, reagent)).grid( row = 6, column = 2, padx = 40, pady = 40)
         vol_3 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "2,000 mL",
-                          font = ("Arial", 20),
-                          command = lambda: ctrl.skalarWindowControl.buff_vol3_click(frame, reagent)).grid(row = 7, column = 1, padx = 20, pady = 40)
+                          font = ("Arial", 25),
+                          command = lambda: ctrl.skalarWindowControl.buff_vol3_click(frame, reagent)).grid(row = 7, column = 1, padx = 40, pady = 40)
 
         for i in range(8,9):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                           padx = 20,
-                                                                                           pady = 20)
+                                                                                           padx = 40,
+                                                                                           pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         skalar_recipes_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                         text = "Skalar Recipes",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 9, column = 1,
                                                                                                             rowspan = 2,
-                                                                                                            padx = 20,
-                                                                                                            pady = 20)
+                                                                                                            padx = 40,
+                                                                                                            pady = 40)
         instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, 
                                                                                                 rowspan = 2,
-                                                                                                padx = 20, 
-                                                                                                pady = 20)
+                                                                                                padx = 40, 
+                                                                                                pady = 40)
 
     def volume_frame(reagent):
         reagent = reagent
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = ("Smith Lab Skalar: " + str(reagent).replace("_", " ") + " Volume Frame"),
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         vol_1 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "500 mL",
-                          font = ("Arial", 20),
-                          command = lambda: ctrl.skalarWindowControl.reag_vol1_click(frame, reagent)).grid(row = 6, column = 0, columnspan = 2, padx = 20, pady = 40)
+                          font = ("Arial", 25),
+                          command = lambda: ctrl.skalarWindowControl.reag_vol1_click(frame, reagent)).grid(row = 6, column = 0, columnspan = 2, padx = 40, pady = 40)
         vol_2 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "1,000 mL",
-                          font = ("Arial", 20),
-                          command = lambda: ctrl.skalarWindowControl.reag_vol2_click(frame, reagent)).grid( row = 6, column = 1, columnspan = 2, padx = 20, pady = 40)
+                          font = ("Arial", 25),
+                          command = lambda: ctrl.skalarWindowControl.reag_vol2_click(frame, reagent)).grid( row = 6, column = 1, columnspan = 2, padx = 40, pady = 40)
 
         for i in range(7,9):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                           padx = 20,
-                                                                                           pady = 20)
+                                                                                           padx = 40,
+                                                                                           pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         skalar_recipes_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                         text = "Skalar Recipes",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 9, column = 1,
                                                                                                             rowspan = 2,
-                                                                                                            padx = 20,
-                                                                                                            pady = 20)
+                                                                                                            padx = 40,
+                                                                                                            pady = 40)
         instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, 
                                                                                                 rowspan = 2,
-                                                                                                padx = 20, 
-                                                                                                pady = 20)
+                                                                                                padx = 40, 
+                                                                                                pady = 40)
 
     def instruct_frame(label, recipe):
         id_char = label[0]
         # print(id_char)
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab: " + str(label),
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1,3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 48,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
-        text.grid(row = 4, column = 0, columnspan = 3, padx = 20, pady = 35)
+        text.grid(row = 4, column = 0, columnspan = 3, padx = 40, pady = 35)
         for line in recipe:
             text.insert(tk.END, line)
         for i in range(5,8):
@@ -409,68 +409,68 @@ class skalar_cookbook:
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                           padx = 20,
-                                                                                           pady = 20)
+                                                                                           padx = 40,
+                                                                                           pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         if id_char == "N":
             skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                             text = "Nitrate/Nitrite Recipes",
-                                            font = ("Arial", 20),
+                                            font = ("Arial", 25),
                                             command = lambda: ctrl.skalarWindowControl.nitr_click(frame)).grid(row = 8, column = 1,
                                                                                                                 rowspan = 2,
-                                                                                                                padx = 20,
-                                                                                                                pady = 20)
+                                                                                                                padx = 40,
+                                                                                                                pady = 40)
         elif id_char == "P":
             skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                             text = "Phosphate Recipes",
-                                            font = ("Arial", 20),
+                                            font = ("Arial", 25),
                                             command = lambda: ctrl.skalarWindowControl.phos_click(frame)).grid(row = 8, column = 1,
                                                                                                                 rowspan = 2,
-                                                                                                                padx = 20,
-                                                                                                                pady = 20)
+                                                                                                                padx = 40,
+                                                                                                                pady = 40)
         elif id_char == "A":
             skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                             text = "Ammonia Recipes",
-                                            font = ("Arial", 20),
+                                            font = ("Arial", 25),
                                             command = lambda: ctrl.skalarWindowControl.ammo_click(frame)).grid(row = 8, column = 1,
                                                                                                                 rowspan = 2,
-                                                                                                                padx = 20,
-                                                                                                                pady = 20)
+                                                                                                                padx = 40,
+                                                                                                                pady = 40)
         elif id_char == "R":
             skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                             text = "Rinsing Liquid Recipes",
-                                            font = ("Arial", 20),
+                                            font = ("Arial", 25),
                                             command = lambda: ctrl.skalarWindowControl.rins_click(frame)).grid(row = 8, column = 1,
                                                                                                                 rowspan = 2,
-                                                                                                                padx = 20,
-                                                                                                                pady = 20)
+                                                                                                                padx = 40,
+                                                                                                                pady = 40)
         elif id_char == "S":
             skalar_channel_select = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                             text = "Calibration Standard Recipes",
-                                            font = ("Arial", 20),
+                                            font = ("Arial", 25),
                                             command = lambda: ctrl.skalarWindowControl.cal_stds_click(frame)).grid(row = 8, column = 1,
                                                                                                                 rowspan = 2,
-                                                                                                                padx = 20,
-                                                                                                                pady = 20)                
+                                                                                                                padx = 40,
+                                                                                                                pady = 40)                
         skalar_recipes_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                         text = "Skalar Recipes",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 2,
-                                                                                                            padx = 20,
-                                                                                                            pady = 20)
+                                                                                                            padx = 40,
+                                                                                                            pady = 40)
         instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.instruments_click(frame)).grid(row = 9, column = 2, 
-                                                                                                padx = 20, 
-                                                                                                pady = 20)
+                                                                                                padx = 40, 
+                                                                                                pady = 40)
 class skalar_recipes:
     def get_recipe(reagent, volume):
         nitrb = ins.skalar_recipes.nitrateNitriteBuffer
@@ -608,95 +608,95 @@ class skalar_recipes:
         
 class skalar_window:
     def steps():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab Skalar: SOP Steps",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1, 4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         step1_click = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 1",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.skalarWindowControl.sop_step1(frame)).grid(row = 4, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         step2_click = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 2",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.skalarWindowControl.sop_step2(frame)).grid(row = 4, column = 1,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         step3_click = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 3",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.skalarWindowControl.sop_step3(frame)).grid(row = 4, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         step4_click = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 4",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.skalarWindowControl.sop_step4(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         step5_click = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 5",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.skalarWindowControl.sop_step5(frame)).grid(row = 5, column = 1,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         step6_click = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 6",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.skalarWindowControl.sop_step6(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         step7_click = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 7",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.skalarWindowControl.sop_step7(frame)).grid(row = 6, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         step8_click = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 8",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.skalarWindowControl.sop_step8(frame)).grid(row = 6, column = 1,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         step9_click = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Step 9",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.skalarWindowControl.sop_step9(frame)).grid(row = 6, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         for i in range(7, 10):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "piLab Home",
                                       command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 10, column = 0,
-                                                                                                  padx = 20,
-                                                                                                  pady = 20)
+                                                                                                  padx = 40,
+                                                                                                  pady = 40)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "Smith Lab Home",
                                     command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 11,
                                                                         column = 0,
-                                                                        pady = 20)
+                                                                        pady = 40)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                         font = ("Arial", 20),
+                                         font = ("Arial", 25),
                                          text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 10, 
                                                                                                                   column = 2,
                                                                                                                   rowspan = 2,
-                                                                                                                  padx = 20,
-                                                                                                                  pady = 20)
+                                                                                                                  padx = 40,
+                                                                                                                  pady = 40)
         
 class operating_procedure:
     def step1():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab Skalar SOP: Step 1",
@@ -708,7 +708,7 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -719,41 +719,41 @@ class operating_procedure:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
-                                                                                                    padx = 20,
-                                                                                                    pady = 20)
+                                                                                                    padx = 40,
+                                                                                                    pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "Skalar SOP Steps",
                                      command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 9, column = 2,
                                                                                       rowspan = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 2",
                                 command = lambda: ctrl.skalarWindowControl.sop_step2(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
     
 
     def step2():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab Skalar SOP: Step 2",
@@ -765,7 +765,7 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.grid(row = 5, column = 1)
@@ -776,46 +776,46 @@ class operating_procedure:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
-                                                                                                    padx = 20,
-                                                                                                    pady = 20)
+                                                                                                    padx = 40,
+                                                                                                    pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "Skalar SOP Steps",
                                      command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 9, column = 2,
                                                                                       rowspan = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 1",
                                 command = lambda: ctrl.skalarWindowControl.sop_step1(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 3",
                                 command = lambda: ctrl.skalarWindowControl.sop_step3(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
 
     def step3():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab Skalar SOP: Step 3",
@@ -827,7 +827,7 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -838,46 +838,46 @@ class operating_procedure:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
-                                                                                                    padx = 20,
-                                                                                                    pady = 20)
+                                                                                                    padx = 40,
+                                                                                                    pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "Skalar SOP Steps",
                                      command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 9, column = 2,
                                                                                       rowspan = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 2",
                                 command = lambda: ctrl.skalarWindowControl.sop_step2(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 4",
                                 command = lambda: ctrl.skalarWindowControl.sop_step4(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
     
     def step4():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
@@ -889,7 +889,7 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -900,46 +900,46 @@ class operating_procedure:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
-                                                                                                    padx = 20,
-                                                                                                    pady = 20)
+                                                                                                    padx = 40,
+                                                                                                    pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "Skalar SOP Steps",
                                      command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 9, column = 2,
                                                                                       rowspan = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 3",
                                 command = lambda: ctrl.skalarWindowControl.sop_step3(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 5",
                                 command = lambda: ctrl.skalarWindowControl.sop_step5(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         
     def step5():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
@@ -951,7 +951,7 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -962,46 +962,46 @@ class operating_procedure:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
-                                                                                                    padx = 20,
-                                                                                                    pady = 20)
+                                                                                                    padx = 40,
+                                                                                                    pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "Skalar SOP Steps",
                                      command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 9, column = 2,
                                                                                       rowspan = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 4",
                                 command = lambda: ctrl.skalarWindowControl.sop_step4(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 6",
                                 command = lambda: ctrl.skalarWindowControl.sop_step6(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
     
     def step6():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
@@ -1013,7 +1013,7 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -1024,58 +1024,58 @@ class operating_procedure:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
-                                                                                                    padx = 20,
-                                                                                                    pady = 20)
+                                                                                                    padx = 40,
+                                                                                                    pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "Skalar SOP Steps",
                                      command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 9, column = 2,
                                                                                       rowspan = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 5",
                                 command = lambda: ctrl.skalarWindowControl.sop_step5(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 7",
                                 command = lambda: ctrl.skalarWindowControl.sop_step7(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
     
     def step7():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab Skalar SOP: Step 7",
                               font = ("Arial", 25),).grid(row = 0, columnspan = 3)
-        for i in range(1, 4):
+        for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -1086,46 +1086,46 @@ class operating_procedure:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
-                                                                                                    padx = 20,
-                                                                                                    pady = 20)
+                                                                                                    padx = 40,
+                                                                                                    pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "Skalar SOP Steps",
                                      command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 9, column = 2,
                                                                                       rowspan = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 6",
                                 command = lambda: ctrl.skalarWindowControl.sop_step6(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 8",
                                 command = lambda: ctrl.skalarWindowControl.sop_step8(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
     
     def step8():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
@@ -1137,7 +1137,7 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -1148,46 +1148,46 @@ class operating_procedure:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
-                                                                                                    padx = 20,
-                                                                                                    pady = 20)
+                                                                                                    padx = 40,
+                                                                                                    pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "Skalar SOP Steps",
                                      command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 9, column = 2,
                                                                                       rowspan = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 7",
                                 command = lambda: ctrl.skalarWindowControl.sop_step7(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 9",
                                 command = lambda: ctrl.skalarWindowControl.sop_step9(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         
     def step9():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         skal_op = ins.skalar_operation
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
@@ -1199,7 +1199,7 @@ class operating_procedure:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -1210,34 +1210,34 @@ class operating_procedure:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         instructions_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "Instrumentation SOPs",
                                       command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                                     rowspan = 2,
-                                                                                                    padx = 20,
-                                                                                                    pady = 20)
+                                                                                                    padx = 40,
+                                                                                                    pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "Skalar SOP Steps",
                                      command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 9, column = 2,
                                                                                       rowspan = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 8",
                                 command = lambda: ctrl.skalarWindowControl.sop_step8(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
