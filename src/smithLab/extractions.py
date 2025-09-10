@@ -144,18 +144,18 @@ class recipes:
                                                                                                   pady = 40)
 
     def h3a_1L_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Haney 3 Acids Protocol 1 L",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -164,42 +164,42 @@ class recipes:
         text.insert(tk.END, h3a1L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1, rowspan = 2,
-                                                                                                   padx = 8,
-                                                                                                   pady = 20)
+                                                                                                   padx = 20,
+                                                                                                   pady = 40)
         h3a_recipes_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Haney 3 Acids Recipes",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       command = lambda: ctrl.procedureControl.h3a_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                  padx = 8, 
-                                                                                                  pady = 20)
+                                                                                                  padx = 20, 
+                                                                                                  pady = 40)
         
     def h3a_2L_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Haney 3 Acids Protocol 2 L",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -208,28 +208,28 @@ class recipes:
         text.insert(tk.END, h3a2L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1, rowspan = 2,
-                                                                                                   padx = 8,
-                                                                                                   pady = 20)
+                                                                                                   padx = 20,
+                                                                                                   pady = 40)
         h3a_recipes_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Haney 3 Acids Recipes",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       command = lambda: ctrl.procedureControl.h3a_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                  padx = 8, 
-                                                                                                  pady = 20)
+                                                                                                  padx = 20, 
+                                                                                                  pady = 40)
 
     def olsen_1L_click():
         frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
