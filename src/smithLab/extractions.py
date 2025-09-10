@@ -498,18 +498,18 @@ class recipes:
 class extract_protocol:
 
     def mehlich3_pro_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Mehlich 3 Extraction Protocol",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -518,35 +518,35 @@ class extract_protocol:
         text.insert(tk.END, m3_ex_pro)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extraction Protocols",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                   padx = 8,
-                                                                                                   pady = 20)
+                                                                                                   padx = 20,
+                                                                                                   pady = 40)
     def potassium_chloride_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Potassium Chloride Extraction Protocol",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -555,35 +555,35 @@ class extract_protocol:
         text.insert(tk.END, kcl_pro)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extraction Protocols",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                   padx = 8,
-                                                                                                   pady = 20)
+                                                                                                   padx = 20,
+                                                                                                   pady = 40)
     def olsenP_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Olsen P Extraction Protocol",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                     height = 10,
                     width = 52,
-                    font = ("Arial", 20),
+                    font = ("Arial", 25),
                     bd = 5,
                     relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -592,35 +592,35 @@ class extract_protocol:
         text.insert(tk.END, olsen_pro)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Extraction Protocols",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                padx = 8,
-                                                                                                pady = 20)
+                                                                                                padx = 20,
+                                                                                                pady = 40)
     def h3a_click():
-            frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+            frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
             frame.pack()
             main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Haney 3 Acids Extraction Protocol",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
             for i in range(1,4):
                 label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "").grid(row = i)
             text = tk.Text(frame, borderwidth = 0,
                         height = 10,
                         width = 52,
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         bd = 5,
                         relief = "sunken")
             text.configure(bg = "#055942", fg = "#67aae6")
@@ -629,35 +629,35 @@ class extract_protocol:
             text.insert(tk.END, h3a)
             piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
             smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Smith Lab Home",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                               padx = 8, 
-                                                                                               pady = 20)
+                                                                                               padx = 20, 
+                                                                                               pady = 40)
             extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Extraction Protocols",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                    padx = 8,
-                                                                                                    pady = 20)
+                                                                                                    padx = 20,
+                                                                                                    pady = 40)
     def hcl_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Hydrochloric Acid Extraction Protocol",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                     height = 10,
                     width = 52,
-                    font = ("Arial", 20),
+                    font = ("Arial", 25),
                     bd = 5,
                     relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -666,19 +666,19 @@ class extract_protocol:
         text.insert(tk.END, hcl)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extraction_protocols= tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Extraction Protocols",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                padx = 8,
-                                                                                                pady = 20)
+                                                                                                padx = 20,
+                                                                                                pady = 40)
