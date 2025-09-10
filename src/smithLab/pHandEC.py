@@ -13,116 +13,116 @@ from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins
 
 def phec_frame():
-    frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+    frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
     frame.pack()
     main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                           text = "Smith Lab: pH and Electrical Conductivity",
-                          font = ("Arial", 25)).grid(row = 0, columnspan = 3,
-                                                     padx = 20,
-                                                     pady = 20)
+                          font = ("Arial", 30)).grid(row = 0, columnspan = 3,
+                                                     padx = 40,
+                                                     pady = 40)
     for i in range(1, 4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
     ec_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "Electrical Conductivity",
-                          font = ("Arial", 20),
+                          font = ("Arial", 25),
                           command = lambda: ctrl.pHEC.ec_click(frame)).grid(row = 4, column = 1,
-                                                             padx = 20,
-                                                             pady = 20)
+                                                             padx = 40,
+                                                             pady = 40)
     ph_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "pH Meter",
-                          font = ("Arial", 20),
+                          font = ("Arial", 25),
                           command = lambda: ctrl.pHEC.ph_click(frame)).grid(row = 4, column =2,
-                                                             padx = 20,
-                                                             pady = 20)
+                                                             padx = 40,
+                                                             pady = 40)
     for i in range(5, 8):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
     piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                  font = ("Arial", 20),
+                                  font = ("Arial", 25),
                                   text = "piLab Home",
                                   command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                              padx = 20,
-                                                                                              pady = 20)
+                                                                                              padx = 40,
+                                                                                              pady = 40)
     smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "Smith Lab Home",
                                     command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9,
                                                                         column = 0,
-                                                                        padx = 20,
-                                                                        pady = 20)
+                                                                        padx = 40,
+                                                                        pady = 40)
     instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                         font = ("Arial", 20),
+                                         font = ("Arial", 25),
                                          text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 2,
                                                                                                                   rowspan = 2,
-                                                                                                                  padx = 20,
-                                                                                                                  pady = 20)
+                                                                                                                  padx = 40,
+                                                                                                                  pady = 40)
 class ecMeter:
 
     def ec_steps():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "Smith Lab EC Meter SOP",
-                            font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                            font = ("Arial", 30)).grid(row = 0, columnspan = 3,)
         for i in range(1, 4):
                 label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "").grid(row = i)
         
         cal_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                             text = "Calibration",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             command = lambda: ctrl.pHEC.ec_cal_click(frame)).grid(row = 4, column = 0,
-                                    padx = 20,
-                                    pady = 20)
+                                    padx = 40,
+                                    pady = 40)
         step1_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Mode Selection",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.pHEC.ec_mode_click(frame)).grid(row = 4, column = 1,
-                                        padx = 20,
-                                        pady = 20)
+                                        padx = 40,
+                                        pady = 40)
         step2_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Measurement",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.pHEC.ec_measure_click(frame)).grid(row = 4, column = 2,
-                                        padx = 20,
-                                        pady = 20)
+                                        padx = 40,
+                                        pady = 40)
         for i in range(5, 8):
                 label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "").grid(row = i)
         
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         text = "Smith Lab Home",
                                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9,
                                                                             column = 0,
-                                                                            padx = 20,
-                                                                            pady = 20)
+                                                                            padx = 40,
+                                                                            pady = 40)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                            font = ("Arial", 20),
+                                            font = ("Arial", 25),
                                             text = "Instrumentation SOPs",
                                             command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                     column = 1,
                                                                                                                     rowspan = 2,
-                                                                                                                    padx = 20,
-                                                                                                                    pady = 20)
+                                                                                                                    padx = 40,
+                                                                                                                    pady = 40)
         phec_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "pH and EC Home",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 2,
                                                                         rowspan = 2,
-                                                                         padx = 20,
-                                                                         pady = 20)
+                                                                         padx = 40,
+                                                                         pady = 40)
     def cal_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab EC Meter SOP: Calibration",
@@ -134,7 +134,7 @@ class ecMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 8,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -144,49 +144,49 @@ class ecMeter:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         text = "Smith Lab Home",
                                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9,
                                                                             column = 0,
-                                                                            padx = 20,
-                                                                            pady = 20)
+                                                                            padx = 40,
+                                                                            pady = 40)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                            font = ("Arial", 20),
+                                            font = ("Arial", 25),
                                             text = "Instrumentation SOPs",
                                             command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                     column = 1,
                                                                                                                     rowspan = 2,
-                                                                                                                    padx = 20,
-                                                                                                                    pady = 20)
+                                                                                                                    padx = 40,
+                                                                                                                    pady = 40)
         phec_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "pH and EC Home",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 2,
                                                                         rowspan = 2,
-                                                                         padx = 20,
-                                                                         pady = 20)
+                                                                         padx = 40,
+                                                                         pady = 40)
         steps_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "EC Steps",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.ec_click(frame)).grid(row = 8, column = 3,
                                                                          rowspan = 2,
                                                                          padx = 10,
-                                                                         pady = 20)
+                                                                         pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                             text = "Mode Selection",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             command = lambda: ctrl.pHEC.ec_mode_click(frame)).grid(row = 5, column = 3,
                                                                                    padx = 10,
-                                                                                   pady = 20)
+                                                                                   pady = 40)
         
     def mode_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab EC Meter SOP: Measurement Mode",
@@ -198,7 +198,7 @@ class ecMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 8,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -208,55 +208,55 @@ class ecMeter:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         text = "Smith Lab Home",
                                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9,
                                                                             column = 0,
-                                                                            padx = 20,
-                                                                            pady = 20)
+                                                                            padx = 40,
+                                                                            pady = 40)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                            font = ("Arial", 20),
+                                            font = ("Arial", 25),
                                             text = "Instrumentation SOPs",
                                             command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                     column = 1,
                                                                                                                     rowspan = 2,
-                                                                                                                    padx = 20,
-                                                                                                                    pady = 20)
+                                                                                                                    padx = 40,
+                                                                                                                    pady = 40)
         phec_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "pH and EC Home",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 2,
                                                                         rowspan = 2,
-                                                                         padx = 20,
-                                                                         pady = 20)
+                                                                         padx = 40,
+                                                                         pady = 40)
         steps_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "EC Steps",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.ec_click(frame)).grid(row = 8, column = 3,
                                                                          rowspan = 2,
                                                                          padx = 10,
-                                                                         pady = 20)
+                                                                         pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Calibration",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     command = lambda: ctrl.pHEC.ec_cal_click(frame)).grid(row = 5, column = 0,
-                                                                                          padx = 20,
-                                                                                          pady = 20)
+                                                                                          padx = 40,
+                                                                                          pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Measurement",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.pHEC.ec_measure_click(frame)).grid(row = 5, column = 3,
-                                                                                          padx = 20,
-                                                                                          pady = 20)
+                                                                                          padx = 40,
+                                                                                          pady = 40)
     
     def measure_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab EC Meter SOP: Measurement",
@@ -268,7 +268,7 @@ class ecMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 8,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -278,113 +278,113 @@ class ecMeter:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "piLab Home",
                                     command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                                padx = 20,
-                                                                                                pady = 20)
+                                                                                                padx = 40,
+                                                                                                pady = 40)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                        font = ("Arial", 20),
+                                        font = ("Arial", 25),
                                         text = "Smith Lab Home",
                                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9,
                                                                             column = 0,
-                                                                            padx = 20,
-                                                                            pady = 20)
+                                                                            padx = 40,
+                                                                            pady = 40)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                            font = ("Arial", 20),
+                                            font = ("Arial", 25),
                                             text = "Instrumentation SOPs",
                                             command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                     column = 1,
                                                                                                                     rowspan = 2,
-                                                                                                                    padx = 20,
-                                                                                                                    pady = 20)
+                                                                                                                    padx = 40,
+                                                                                                                    pady = 40)
         phec_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "pH and EC Home",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 2,
                                                                         rowspan = 2,
-                                                                         padx = 20,
-                                                                         pady = 20)
+                                                                         padx = 40,
+                                                                         pady = 40)
         steps_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "EC Steps",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.ec_click(frame)).grid(row = 8, column = 3,
                                                                          rowspan = 2,
                                                                          padx = 10,
-                                                                         pady = 20)        
+                                                                         pady = 40)        
         cal_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Calibration",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     command = lambda: ctrl.pHEC.ec_cal_click(frame)).grid(row = 5, column = 0,
                                                                                           padx = 20)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Measurement Mode",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     command = lambda: ctrl.pHEC.ec_mode_click(frame)).grid(row = 6, column = 0,
                                                                                            padx = 20)
         
 class phMeter:
      
     def ph_steps():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "Smith Lab pH Meter SOP",
-                            font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                            font = ("Arial", 30)).grid(row = 0, columnspan = 3,)
         for i in range(1, 4):
                 label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "").grid(row = i)
         
         cal_check = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                             text = "Calibration Check",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             command = lambda: ctrl.pHEC.ph_cal_check(frame)).grid(row = 4, column = 0,
-                                    padx = 20,
-                                    pady = 20)
+                                    padx = 40,
+                                    pady = 40)
         cal = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Calibration",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.pHEC.ph_cal(frame)).grid(row = 4, column = 1,
-                                        padx = 20,
-                                        pady = 20)
+                                        padx = 40,
+                                        pady = 40)
         meas = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Measurement",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.pHEC.ph_measure_click(frame)).grid(row = 4, column = 2,
-                                        padx = 20,
-                                        pady = 20)
+                                        padx = 40,
+                                        pady = 40)
         for i in range(5, 8):
                 label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                 text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "piLab Home",
                                       command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                                  padx = 20,
-                                                                                                  pady = 20)
+                                                                                                  padx = 40,
+                                                                                                  pady = 40)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "Smith Lab Home",
                                     command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
-                                                                        padx = 20,
-                                                                        pady = 20)
+                                                                        padx = 40,
+                                                                        pady = 40)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                         font = ("Arial", 20),
+                                         font = ("Arial", 25),
                                          text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 1,
                                                                                                                   rowspan = 2,
-                                                                                                                  padx = 20,
-                                                                                                                  pady = 20)
+                                                                                                                  padx = 40,
+                                                                                                                  pady = 40)
         phec_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "pH and EC Home",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 2,
                                                                          rowspan = 2,
-                                                                         padx = 20,
-                                                                         pady = 20)
+                                                                         padx = 40,
+                                                                         pady = 40)
     def ph_cal_check():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab pH Meter SOP: Calibration Check",
@@ -396,7 +396,7 @@ class phMeter:
         text = tk.Text(frame, borderwidth = 0,
                         height = 9,
                         width = 48,
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         bd = 5,
                         relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -406,54 +406,54 @@ class phMeter:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "piLab Home",
                                       command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                                  padx = 20,
-                                                                                                  pady = 20)
+                                                                                                  padx = 40,
+                                                                                                  pady = 40)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "Smith Lab Home",
                                     command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
-                                                                        padx = 20,
-                                                                        pady = 20)
+                                                                        padx = 40,
+                                                                        pady = 40)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                         font = ("Arial", 20),
+                                         font = ("Arial", 25),
                                          text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 1,
                                                                                                                   rowspan = 2,
-                                                                                                                  padx = 20,
-                                                                                                                  pady = 20)
+                                                                                                                  padx = 40,
+                                                                                                                  pady = 40)
         phec_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "pH and EC Home",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 2,
                                                                          rowspan = 2,
-                                                                         padx = 20,
-                                                                         pady = 20)
+                                                                         padx = 40,
+                                                                         pady = 40)
         steps_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                             text = "pH Steps",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             command = lambda: ctrl.pHEC.ph_click(frame)).grid(row = 8, column = 3,
                                                                         rowspan = 2,
-                                                                        padx = 20,
-                                                                        pady = 20)
+                                                                        padx = 40,
+                                                                        pady = 40)
         cal_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                             text = "Calibration Mode",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             command = lambda: ctrl.pHEC.ph_cal(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         measure_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Measurement",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.pHEC.ph_measure_click(frame)).grid(row = 6, column = 2,
-                                                                                             padx = 20,
-                                                                                             pady = 20)
+                                                                                             padx = 40,
+                                                                                             pady = 40)
         
     def ph_cal():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab pH Meter SOP: Calibration Mode",
@@ -465,7 +465,7 @@ class phMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 9,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -475,54 +475,54 @@ class phMeter:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "piLab Home",
                                       command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                                  padx = 20,
-                                                                                                  pady = 20)
+                                                                                                  padx = 40,
+                                                                                                  pady = 40)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "Smith Lab Home",
                                     command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
-                                                                        padx = 20,
-                                                                        pady = 20)
+                                                                        padx = 40,
+                                                                        pady = 40)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                         font = ("Arial", 20),
+                                         font = ("Arial", 25),
                                          text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 1,
                                                                                                                   rowspan = 2,
-                                                                                                                  padx = 20,
-                                                                                                                  pady = 20)
+                                                                                                                  padx = 40,
+                                                                                                                  pady = 40)
         phec_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "pH and EC Home",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 2,
                                                                          rowspan = 2,
-                                                                         padx = 20,
-                                                                         pady = 20)
+                                                                         padx = 40,
+                                                                         pady = 40)
         steps_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                             text = "pH Steps",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             command = lambda: ctrl.pHEC.ph_click(frame)).grid(row = 8, column = 3,
                                                                         rowspan = 2,
-                                                                        padx = 20,
-                                                                        pady = 20)
+                                                                        padx = 40,
+                                                                        pady = 40)
         cal_check_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Calibration Check",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     command = lambda: ctrl.pHEC.ph_cal_check(frame)).grid(row = 5, column = 0,
-                                                                                          padx = 20,
-                                                                                          pady = 20)
+                                                                                          padx = 40,
+                                                                                          pady = 40)
         meas_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Measurement",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.pHEC.ph_measure_click(frame)).grid(row = 5, column = 2,
-                                                                                          padx = 20,
-                                                                                          pady = 20)
+                                                                                          padx = 40,
+                                                                                          pady = 40)
         
     def ph_measure_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab pH Meter SOP: Measurement",
@@ -534,7 +534,7 @@ class phMeter:
         text = tk.Text(frame, borderwidth = 0,
                            height = 9,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -544,47 +544,47 @@ class phMeter:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                             text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       text = "piLab Home",
                                       command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 8, column = 0,
-                                                                                                  padx = 20,
-                                                                                                  pady = 20)
+                                                                                                  padx = 40,
+                                                                                                  pady = 40)
         smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "Smith Lab Home",
                                     command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 9, column = 0,
-                                                                        padx = 20,
-                                                                        pady = 20)
+                                                                        padx = 40,
+                                                                        pady = 40)
         instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                         font = ("Arial", 20),
+                                         font = ("Arial", 25),
                                          text = "Instrumentation SOPs",
                                          command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, 
                                                                                                                   column = 1,
                                                                                                                   rowspan = 2,
-                                                                                                                  padx = 20,
-                                                                                                                  pady = 20)
+                                                                                                                  padx = 40,
+                                                                                                                  pady = 40)
         phec_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "pH and EC Home",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 2,
                                                                          rowspan = 2,
-                                                                         padx = 20,
-                                                                         pady = 20)
+                                                                         padx = 40,
+                                                                         pady = 40)
         steps_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                             text = "pH Steps",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             command = lambda: ctrl.pHEC.ph_click(frame)).grid(row = 8, column = 3,
                                                                         rowspan = 2,
-                                                                        padx = 20,
-                                                                        pady = 20)
+                                                                        padx = 40,
+                                                                        pady = 40)
         cal_check_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                      text = "Calibration Check",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      command = lambda: ctrl.pHEC.ph_cal(frame)).grid(row = 5, column = 0,
-                                                                                     pady = 20)
+                                                                                     pady = 40)
         cal_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                     text = "Calibration Mode",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     command = lambda: ctrl.pHEC.ph_cal(frame)).grid(row = 6, column = 0,
-                                                                                          pady = 20)
+                                                                                          pady = 40)
         
