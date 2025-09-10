@@ -320,18 +320,18 @@ class recipes:
                                                                                                   pady = 40)
         
     def kcl_1N_1L_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Potassium Chloride Protocol 1N 1 L",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -340,42 +340,42 @@ class recipes:
         text.insert(tk.END, kcl1N1L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1, rowspan = 2,
-                                                                                                   padx = 8,
-                                                                                                   pady = 20)
+                                                                                                   padx = 20,
+                                                                                                   pady = 40)
         kcl_recipes_Button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Potassium Chloride Recipes",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                  padx = 8, 
-                                                                                                  pady = 20)
+                                                                                                  padx = 20, 
+                                                                                                  pady = 40)
 
     def kcl_1N_2L_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Potassium Chloride Protocol 1N 2 L",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -384,42 +384,42 @@ class recipes:
         text.insert(tk.END, kcl1N2L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1, rowspan = 2,
-                                                                                                   padx = 8,
-                                                                                                   pady = 20)
+                                                                                                   padx = 20,
+                                                                                                   pady = 40)
         kcl_recipes_Button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Potassium Chloride Recipes",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                  padx = 8, 
-                                                                                                  pady = 20)
+                                                                                                  padx = 20, 
+                                                                                                  pady = 40)
 
     def kcl_2N_1L_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Potassium Chloride Protocol 2N 1 L",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -428,42 +428,42 @@ class recipes:
         text.insert(tk.END, kcl2N1L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1, rowspan = 2,
-                                                                                                   padx = 8,
-                                                                                                   pady = 20)
+                                                                                                   padx = 20,
+                                                                                                   pady = 40)
         kcl_recipes_Button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Potassium Chloride Recipes",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                  padx = 8, 
-                                                                                                  pady = 20)
+                                                                                                  padx = 20, 
+                                                                                                  pady = 40)
 
     def kcl_2N_2L_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                         text = "Smith Lab: Potassium Chloride Protocol 2N 2 L",
-                        font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                        font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(4):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -472,28 +472,28 @@ class recipes:
         text.insert(tk.END, kcl2N2L)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "piLab Home",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 5, column = 0,
-                                                                                    padx = 8,
-                                                                                    pady = 20)
+                                                                                    padx = 20,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Smith Lab Home",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 6, column = 0, 
-                                                                                           padx = 8, 
-                                                                                           pady = 20)
+                                                                                           padx = 20, 
+                                                                                           pady = 40)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 5, column = 1, rowspan = 2,
-                                                                                                   padx = 8,
-                                                                                                   pady = 20)
+                                                                                                   padx = 20,
+                                                                                                   pady = 40)
         kcl_recipes_Button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                       text = "Potassium Chloride Recipes",
-                                      font = ("Arial", 20),
+                                      font = ("Arial", 25),
                                       command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 5, column = 2, rowspan = 2,
-                                                                                                  padx = 8, 
-                                                                                                  pady = 20)
+                                                                                                  padx = 20, 
+                                                                                                  pady = 40)
 
 class extract_protocol:
 
