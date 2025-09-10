@@ -390,7 +390,7 @@ class procedure_selection:
 
 
     def analytical_instruments():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab: Analytical Instrumentation Protocols",
