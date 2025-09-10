@@ -394,58 +394,58 @@ class procedure_selection:
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab: Analytical Instrumentation Protocols",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         icp_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                text = "ICP-OES",
-                               font = ("Arial", 20),
+                               font = ("Arial", 25),
                                command = lambda: ctrl.icpWindowControl.icp_step_home(frame)).grid(row = 7, column = 0,
-                                                                                    padx = 20,
-                                                                                    pady = 20)
+                                                                                    padx = 40,
+                                                                                    pady = 40)
         skalar_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                   text = "Skalar CFA",
-                                  font = ("Arial", 20),
+                                  font = ("Arial", 25),
                                   command = lambda: ctrl.skalarWindowControl.step_home(frame)).grid(row = 7, column = 1,
-                                                                               padx = 20,
-                                                                               pady = 20)
+                                                                               padx = 40,
+                                                                               pady = 40)
         scion456 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "SCION 456 GHG",
-                             font = ("Arial", 20),
+                             font = ("Arial", 25),
                              command = lambda: ctrl.ghgWindowControl.steps_home(frame)).grid(row = 7, column = 2,
-                                                                             padx = 20,
-                                                                             pady = 20)
+                                                                             padx = 40,
+                                                                             pady = 40)
         mars6 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "Microwave Digestor",
-                          font = ("Arial", 20),
+                          font = ("Arial", 25),
                           command = lambda: ctrl.microwaveDigest.digestHome(frame)).grid(row = 8, column = 0,
-                                                                                         padx = 20,
-                                                                                         pady = 20)
+                                                                                         padx = 40,
+                                                                                         pady = 40)
         phec = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "pH and Conductivity Meters",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.pHEC.phec_home(frame)).grid(row = 8, column = 1,
-                                                                            padx = 20,
-                                                                            pady = 20)
+                                                                            padx = 40,
+                                                                            pady = 40)
         toc = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "Formacs TOC",
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         command = lambda: ctrl.toc.toc_home(frame)).grid(row = 8, column = 2,
-                                                                         padx = 20,
-                                                                         pady = 20)
+                                                                         padx = 40,
+                                                                         pady = 40)
         for i in range(9,12):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "piLab Home",
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 12, column = 0,
-                                                                                    padx = 20,
-                                                                                    pady = 20)
+                                                                                    padx = 40,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 13, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
