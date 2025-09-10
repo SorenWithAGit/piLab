@@ -162,48 +162,48 @@ class procedure_selection:
     
     
     def m3_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab: Mehlich 3 Recipes",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         stock = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "M3 Stock Solution",
-                          font = ("Arial", 20),
-                          command = lambda: ctrl.procedureControl.stock_click(frame)).grid(row = 7, column = 0, padx = 20, pady = 20)
+                          font = ("Arial", 25),
+                          command = lambda: ctrl.procedureControl.stock_click(frame)).grid(row = 7, column = 0, padx = 40, pady = 40)
         m3_1L = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "M3 Solution 2.5 L",
-                          font = ("Arial", 20),
-                          command = lambda: ctrl.procedureControl.m3_1_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
+                          font = ("Arial", 25),
+                          command = lambda: ctrl.procedureControl.m3_1_click(frame)).grid(row = 7, column = 2, padx = 40, pady = 40)
         m3_2L = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "M3 Solution 5 L",
-                          font = ("Arial", 20),
-                          command = lambda: ctrl.procedureControl.m3_2_click(frame)).grid(row = 8, column = 1, padx = 20, pady = 20)
+                          font = ("Arial", 25),
+                          command = lambda: ctrl.procedureControl.m3_2_click(frame)).grid(row = 8, column = 1, padx = 40, pady = 40)
         for i in range(9,12):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "piLab Home",
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 12, column = 0,
-                                                                                    padx = 20,
-                                                                                    pady = 20)
+                                                                                    padx = 40,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 13, column = 0, 
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 12, column = 2,
                                                                                                    rowspan = 2,
-                                                                                                   padx = 20,
-                                                                                                   pady = 20)
+                                                                                                   padx = 40,
+                                                                                                   pady = 40)
 
     def h3a_click():
         frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
