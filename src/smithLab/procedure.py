@@ -82,11 +82,11 @@ class mainFrames(tk.Frame):
 class procedure_selection:
 
     def instruments_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab: Instrument Recipes Selection",
-                              font = ("Arial", 25)).grid(row = 1, columnspan = 2)
+                              font = ("Arial", 30)).grid(row = 1, columnspan = 2)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
@@ -94,27 +94,32 @@ class procedure_selection:
                         text = "ICP-OES",
                         font = ("Arial", 25),
                         command = lambda: ctrl.icpWindowControl.icp_home(frame)).grid(row = 7, column = 0,
-                                                                                    padx = 20, 
-                                                                                    pady = 20)
+                                                                                    columnspan = 2,
+                                                                                    padx = 40, 
+                                                                                    pady = 40)
         cfa = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "Skalar San ++",
                         font = ("Arial", 25),
-                        command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0, 
-                                                                                            padx = 20, 
-                                                                                            pady = 20)
+                        command = lambda: ctrl.skalarWindowControl.skalar_home(frame)).grid(row = 8, column = 0,
+                                                                                            columnspan = 2, 
+                                                                                            padx = 40, 
+                                                                                            pady = 40)
         for i in range(9,12):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "piLab Home",
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 12, column = 0,
-                                                                                    padx = 20,
-                                                                                    pady = 20)
+                                                                                    columnspan = 2,
+                                                                                    padx = 40,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
-                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 13, column = 0, padx = 20, pady = 20)
+                         font = ("Arial", 25),
+                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 13, column = 0,
+                                                                                    columnspan = 2,
+                                                                                    padx = 20, pady = 20)
     def extracts_click():     
         frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
         frame.pack()
