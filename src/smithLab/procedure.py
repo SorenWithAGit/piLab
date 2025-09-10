@@ -16,7 +16,7 @@ class mainFrames(tk.Frame):
 
     def piLab_home():
           welcome = ins.welcome.welcome_statment
-          frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+          frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
           frame.pack()
           label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "piLab Home",
@@ -25,22 +25,22 @@ class mainFrames(tk.Frame):
                               text = welcome,
                               height = 10,
                               width = 52,
-                              font = ("Arial", 20)).grid(row = 1, columnspan = 3)
+                              font = ("Arial", 30)).grid(row = 1, columnspan = 3)
           smith_lab = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Smith Lab",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 2, column = 1,
                                                                                      padx = 20,
                                                                                      pady = 20)
           yost_lab = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "Yost Lab?",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               ).grid(row = 3, column = 1,
                                         padx = 20,
                                         pady = 20)
           Schantz_lab = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "Schantz Lab",
-                              font = ("Arial", 20),
+                              font = ("Arial", 25),
                               command = lambda: fn.frames.schantz_Home_Frame(frame)).grid(row = 4, column = 1,
                                         padx = 20,
                                         pady = 20)
