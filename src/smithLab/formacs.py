@@ -12,49 +12,50 @@ from src.smithLab import control as ctrl
 from src.smithLab import instructions as ins
 
 def tocHome():
-    frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+    frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
     frame.pack()
     main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                           text = "Smith Lab: TOC Home",
-                          font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                          font = ("Arial", 30)).grid(row = 0, columnspan = 3)
     for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
     standards = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "Formacs Standards and PO4 Acid",
-                          font = ("Arial", 20),
+                          font = ("Arial", 25),
                           command = lambda: ctrl.toc.stds(frame)).grid(row = 4, column = 0,
-                                                     padx = 20,
-                                                     pady = 20)
+                                                     padx = 40,
+                                                     pady = 40)
     steps = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                       text = "Formacs TOC Steps",
-                      font = ("Arial", 20),
+                      font = ("Arial", 25),
                       command = lambda: ctrl.toc.steps(frame)).grid(row = 4, column = 2,
-                                                  padx = 20,
-                                                  pady = 20)
+                                                  padx = 40,
+                                                  pady = 40)
     for i in range(5, 8):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
     piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             text = "piLab Home",
                             command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                        padx = 20,
-                                                                                        pady = 20)
+                                                                                        padx = 40,
+                                                                                        pady = 40)
     smtih_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             text = "Smith Lab Home",
                             command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10,
                                                                 column = 0,
-                                                                pady = 20)
+                                                                padx = 40,
+                                                                pady = 40)
     instrumentation_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                    font = ("Arial", 20),
+                                    font = ("Arial", 25),
                                     text = "Instrumentation SOPs",
                                     command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, 
                                                                                                             column = 2,
                                                                                                             rowspan = 2,
-                                                                                                            padx = 20,
-                                                                                                            pady = 20)
+                                                                                                            padx = 40,
+                                                                                                            pady = 40)
 
 class formacsOperation:
     
