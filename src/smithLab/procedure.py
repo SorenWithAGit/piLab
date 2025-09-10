@@ -121,44 +121,44 @@ class procedure_selection:
                                                                                     columnspan = 2,
                                                                                     padx = 20, pady = 20)
     def extracts_click():     
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                text = "Smith Lab: Extraction Recipes",
-                               font = ("Arial", 25)).grid(row = 0, columnspan = 3)
+                               font = ("Arial", 30)).grid(row = 0, columnspan = 3)
         for i in range(1,6):
              label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "").grid(row = i)
         m3 = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                        text = "Mehlich 3",
-                       font = ("Arial", 20),
-                       command = lambda: ctrl.procedureControl.m3_click(frame)).grid(row = 7, column = 0, padx = 20, pady = 20)
+                       font = ("Arial", 25),
+                       command = lambda: ctrl.procedureControl.m3_click(frame)).grid(row = 7, column = 0, padx = 40, pady = 40)
         h3a = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "H3A: Haney 3 Acids",
-                        font = ("Arial", 20),
-                        command = lambda: ctrl.procedureControl.h3a_click(frame)).grid(row = 7, column = 2, padx = 20, pady = 20)
+                        font = ("Arial", 25),
+                        command = lambda: ctrl.procedureControl.h3a_click(frame)).grid(row = 7, column = 2, padx = 40, pady = 40)
         olsen = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                           text = "Olsen P",
-                          font = ("Arial", 20),
-                          command = lambda: ctrl.procedureControl.olsen_click(frame)).grid(row = 8, column = 0, padx = 20, pady = 20)
+                          font = ("Arial", 25),
+                          command = lambda: ctrl.procedureControl.olsen_click(frame)).grid(row = 8, column = 0, padx = 40, pady = 40)
         kcl = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "KCl: Potassium Chloride",
-                        font = ("Arial", 20),
-                        command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 8, column = 2, padx = 20, pady = 20)
+                        font = ("Arial", 25),
+                        command = lambda: ctrl.procedureControl.kcl_click(frame)).grid(row = 8, column = 2, padx = 40, pady = 40)
         for i in range(9,12):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "piLab Home",
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 12, column = 0,
-                                                                                    padx = 20,
-                                                                                    pady = 20)
+                                                                                    padx = 40,
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
-                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 13, column = 0, padx = 20, pady = 20)
+                         font = ("Arial", 25),
+                         command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 13, column = 0, padx = 40, pady = 40)
     
     
     def m3_click():
