@@ -70,11 +70,11 @@ class procedureControl:
 
      def m3_1_click(frame):
           window.clear_frame(frame)
-          ex.recipes.m3_1L_click()
+          ex.recipes.m3_2_5L_click()
 
      def m3_2_click(frame):
           window.clear_frame(frame)
-          ex.recipes.m3_2L_click()
+          ex.recipes.m3_5L_click()
      
      def h3a_1_click(frame):
           window.clear_frame(frame)
