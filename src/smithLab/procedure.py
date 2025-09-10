@@ -47,37 +47,37 @@ class mainFrames(tk.Frame):
 
 
     def Smith_lab_home():
-          frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+          frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
           frame.pack()
           label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                          text = "Smith Lab Home",
-                         font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                         font = ("Arial", 30)).grid(row = 0, columnspan = 4)
           for i in range(1,6):
                     label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                                    text = "").grid(row = i)
           extracts = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "Extractant Recipes",
-                              font = ("Arial", 20),
-                              command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 7, column = 1, padx = 20, pady = 20)
+                              font = ("Arial", 25),
+                              command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 7, column = 1, padx = 40, pady = 40)
 
           instrument_recipies = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrument Recipes",
-                                   font = ("Arial", 20),
-                                   command = lambda: ctrl.window.instruments_click(frame)).grid(row = 7, column = 3, padx = 20, pady = 20)
+                                   font = ("Arial", 25),
+                                   command = lambda: ctrl.window.instruments_click(frame)).grid(row = 7, column = 3, padx = 40, pady = 40)
           extraction_protocols = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                               text = "Extraction Protocols",
-                              font = ("Arial", 20),
-                              command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 8, column = 1, padx = 20, pady = 20)
+                              font = ("Arial", 25),
+                              command = lambda: ctrl.procedureControl.extraction_proto_click(frame)).grid(row = 8, column = 1, padx = 40, pady = 40)
           analytical_instruments = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "Instrumentation SOPs",
-                                   font = ("Arial", 20),
-                                   command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, column = 3, padx = 20, pady = 20)
+                                   font = ("Arial", 25),
+                                   command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 8, column = 3, padx = 40, pady = 40)
           piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                    text = "piLab Home",
-                                   font = ("Arial", 20),
+                                   font = ("Arial", 25),
                                    command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
 
 class procedure_selection:
 
