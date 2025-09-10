@@ -246,44 +246,44 @@ class procedure_selection:
                                                                                                    pady = 40)
 
     def olsen_click():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab: Olsen P Recipes",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1,6):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         olsen_1L = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "Olsen P 1 L",
-                             font = ("Arial", 20),
-                             command = lambda: ctrl.procedureControl.olsen_1_click(frame)).grid(row = 7, column = 0, padx = 20, pady = 20)
+                             font = ("Arial", 25),
+                             command = lambda: ctrl.procedureControl.olsen_1_click(frame)).grid(row = 7, column = 0, padx = 40, pady = 40)
         olsen_2L = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "Olsen P 2 L",
-                             font = ("Arial", 20),
-                             command = lambda: ctrl.procedureControl.olsen_2_click(frame)).grid(row = 7, column = 3, padx = 20, pady = 20)
+                             font = ("Arial", 25),
+                             command = lambda: ctrl.procedureControl.olsen_2_click(frame)).grid(row = 7, column = 3, padx = 40, pady = 40)
         for i in range(9,12):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                         text = "piLab Home",
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 12, column = 0,
                                                                                     padx = 100,
-                                                                                    pady = 20)
+                                                                                    pady = 40)
         smith_lab_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                          text = "Smith Lab Home",
-                         font = ("Arial", 20),
+                         font = ("Arial", 25),
                          command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 13, column = 0, 
                                                                                     padx = 100, 
-                                                                                    pady = 20)
+                                                                                    pady = 40)
         extract_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                  text = "Extractants",
-                                 font = ("Arial", 20),
+                                 font = ("Arial", 25),
                                  command = lambda: ctrl.procedureControl.extract_home_click(frame)).grid(row = 12, column = 3,
                                                                                                    rowspan = 2,
                                                                                                    padx = 100,
-                                                                                                   pady = 20)
+                                                                                                   pady = 40)
 
     def kcl_click():
         frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
