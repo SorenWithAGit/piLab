@@ -357,7 +357,7 @@ class formacsOperation:
                                                                                     pady = 40)
 
     def stepsHome():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab TOC SOP: Steps",
@@ -434,11 +434,11 @@ class formacsOperation:
                                                                                     padx = 30 ,
                                                                                     pady = 20)
     def step1():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab TOC SOP: Step 1",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
@@ -446,7 +446,7 @@ class formacsOperation:
         text = tk.Text(frame, borderwidth = 0,
                            height = 13,
                            width = 48,
-                           font = ("Arial", 20),
+                           font = ("Arial", 25),
                            bd = 5,
                            relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -456,50 +456,50 @@ class formacsOperation:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             text = "piLab Home",
                             command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                        padx = 20,
-                                                                                        pady = 20)
+                                                                                        padx = 40,
+                                                                                        pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
 
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "TOC SOP Home",
-                             font = ("Arial", 20),
+                             font = ("Arial", 25),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
-                                                                               padx = 20,
-                                                                               pady = 20)
+                                                                               padx = 40,
+                                                                               pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "TOC SOP Steps",
                                      command = lambda: ctrl.toc.steps(frame)).grid(row = 10, column = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         instrumentationSOP = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Instrumentation SOPs",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                              rowspan = 2,
-                                                                                             padx = 20, 
-                                                                                             pady = 20)
+                                                                                             padx = 40, 
+                                                                                             pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 2",
                                 command = lambda: ctrl.toc.step2(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         
     def step2():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab TOC SOP: Step 2",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
@@ -507,7 +507,7 @@ class formacsOperation:
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         bd = 5,
                         relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -517,55 +517,55 @@ class formacsOperation:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             text = "piLab Home",
                             command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                        padx = 20,
-                                                                                        pady = 20)
+                                                                                        padx = 40,
+                                                                                        pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "TOC SOP Home",
-                             font = ("Arial", 20),
+                             font = ("Arial", 25),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
-                                                                               padx = 20,
-                                                                               pady = 20)
+                                                                               padx = 40,
+                                                                               pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "TOC SOP Steps",
                                      command = lambda: ctrl.toc.steps(frame)).grid(row = 10, column = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         instrumentationSOP = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Instrumentation SOPs",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                              rowspan = 2,
-                                                                                             padx = 20, 
-                                                                                             pady = 20)
+                                                                                             padx = 40, 
+                                                                                             pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 2",
                                 command = lambda: ctrl.toc.step1(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 3",
                                 command = lambda: ctrl.toc.step3(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)    
+                                                                                padx = 40,
+                                                                                pady = 40)    
         
     def step3():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab TOC SOP: Step 3",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
@@ -573,7 +573,7 @@ class formacsOperation:
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         bd = 5,
                         relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -583,54 +583,54 @@ class formacsOperation:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             text = "piLab Home",
                             command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                        padx = 20,
-                                                                                        pady = 20)
+                                                                                        padx = 40,
+                                                                                        pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "TOC SOP Home",
-                             font = ("Arial", 20),
+                             font = ("Arial", 25),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
-                                                                               padx = 20,
-                                                                               pady = 20)
+                                                                               padx = 40,
+                                                                               pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "TOC SOP Steps",
                                      command = lambda: ctrl.toc.steps(frame)).grid(row = 10, column = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         instrumentationSOP = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Instrumentation SOPs",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                              rowspan = 2,
-                                                                                             padx = 20, 
-                                                                                             pady = 20)
+                                                                                             padx = 40, 
+                                                                                             pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 2",
                                 command = lambda: ctrl.toc.step2(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 4",
                                 command = lambda: ctrl.toc.step4(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)    
+                                                                                padx = 40,
+                                                                                pady = 40)    
     def step4():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab TOC SOP: Step 4",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
@@ -638,7 +638,7 @@ class formacsOperation:
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         bd = 5,
                         relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -648,54 +648,54 @@ class formacsOperation:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             text = "piLab Home",
                             command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                        padx = 20,
-                                                                                        pady = 20)
+                                                                                        padx = 40,
+                                                                                        pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "TOC SOP Home",
-                             font = ("Arial", 20),
+                             font = ("Arial", 25),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
-                                                                               padx = 20,
-                                                                               pady = 20)
+                                                                               padx = 40,
+                                                                               pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "TOC SOP Steps",
                                      command = lambda: ctrl.toc.steps(frame)).grid(row = 10, column = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         instrumentationSOP = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Instrumentation SOPs",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                              rowspan = 2,
-                                                                                             padx = 20, 
-                                                                                             pady = 20)
+                                                                                             padx = 40, 
+                                                                                             pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 3",
                                 command = lambda: ctrl.toc.step3(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 5",
                                 command = lambda: ctrl.toc.step5(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
     def step5():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab TOC SOP: Step 5",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
@@ -703,7 +703,7 @@ class formacsOperation:
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         bd = 5,
                         relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -713,54 +713,54 @@ class formacsOperation:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             text = "piLab Home",
                             command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                        padx = 20,
-                                                                                        pady = 20)
+                                                                                        padx = 40,
+                                                                                        pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "TOC SOP Home",
-                             font = ("Arial", 20),
+                             font = ("Arial", 25),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
-                                                                               padx = 20,
-                                                                               pady = 20)
+                                                                               padx = 40,
+                                                                               pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "TOC SOP Steps",
                                      command = lambda: ctrl.toc.steps(frame)).grid(row = 10, column = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         instrumentationSOP = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Instrumentation SOPs",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                              rowspan = 2,
-                                                                                             padx = 20, 
-                                                                                             pady = 20)
+                                                                                             padx = 40, 
+                                                                                             pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 4",
                                 command = lambda: ctrl.toc.step4(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
         next_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 6",
                                 command = lambda: ctrl.toc.step6(frame)).grid(row = 5, column = 2,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
     def step6():
-        frame = tk.Frame(bg = "#055942", width = 1280, height = 800)
+        frame = tk.Frame(bg = "#055942", width = 1920, height = 1080)
         frame.pack()
         main_label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                               text = "Smith Lab TOC SOP: Step 6",
-                              font = ("Arial", 25)).grid(row = 0, columnspan = 4)
+                              font = ("Arial", 30)).grid(row = 0, columnspan = 4)
         for i in range(1, 3):
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
@@ -768,7 +768,7 @@ class formacsOperation:
         text = tk.Text(frame, borderwidth = 0,
                         height = 13,
                         width = 48,
-                        font = ("Arial", 20),
+                        font = ("Arial", 25),
                         bd = 5,
                         relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
@@ -778,39 +778,39 @@ class formacsOperation:
             label = tk.label = tk.Label(frame, bg = "#055942", fg = "#67aae6",
                              text = "").grid(row = i)
         piLab_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                            font = ("Arial", 20),
+                            font = ("Arial", 25),
                             text = "piLab Home",
                             command = lambda: ctrl.window.piLab_home_click(frame)).grid(row = 9, column = 0,
-                                                                                        padx = 20,
-                                                                                        pady = 20)
+                                                                                        padx = 40,
+                                                                                        pady = 40)
         smith_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Smith Lab Home",
                                 command = lambda: ctrl.window.smith_lab_click(frame)).grid(row = 10, column = 0,
-                                                                      padx = 20,
-                                                                      pady = 20)
+                                                                      padx = 40,
+                                                                      pady = 40)
         toc_home = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                              text = "TOC SOP Home",
-                             font = ("Arial", 20),
+                             font = ("Arial", 25),
                              command = lambda: ctrl.toc.toc_home(frame)).grid(row = 9, column = 2,
-                                                                               padx = 20,
-                                                                               pady = 20)
+                                                                               padx = 40,
+                                                                               pady = 40)
         step_home_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                     font = ("Arial", 20),
+                                     font = ("Arial", 25),
                                      text = "TOC SOP Steps",
                                      command = lambda: ctrl.toc.steps(frame)).grid(row = 10, column = 2,
-                                                                                      padx = 20,
-                                                                                      pady = 20)
+                                                                                      padx = 40,
+                                                                                      pady = 40)
         instrumentationSOP = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
                                 text = "Instrumentation SOPs",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 command = lambda: ctrl.window.analytical_instrumentation_click(frame)).grid(row = 9, column = 1,
                                                                                              rowspan = 2,
-                                                                                             padx = 20, 
-                                                                                             pady = 20)
+                                                                                             padx = 40, 
+                                                                                             pady = 40)
         previous_button = tk.Button(frame, bg = "#453f3f", fg = "#67aae6", bd = 5, relief = "raised",
-                                font = ("Arial", 20),
+                                font = ("Arial", 25),
                                 text = "Step 5",
                                 command = lambda: ctrl.toc.step5(frame)).grid(row = 5, column = 0,
-                                                                                padx = 20,
-                                                                                pady = 20)
+                                                                                padx = 40,
+                                                                                pady = 40)
