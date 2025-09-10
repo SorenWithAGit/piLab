@@ -23,7 +23,7 @@ class recipes:
         text = tk.Text(frame, borderwidth = 0,
                        height = 10,
                        width = 52,
-                       font = ("Arial", 20),
+                       font = ("Arial", 25),
                        bd = 5,
                        relief = "sunken")
         text.configure(bg = "#055942", fg = "#67aae6")
