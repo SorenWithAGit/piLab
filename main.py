@@ -9,6 +9,7 @@ homeFrame defines the first frame that appears when running main.py
 ########################################################################
 """
 import tkinter as tk
+from tkinter import font as tkfont
 from src.smithLab import procedure as pr
 from src.schantzLab import frames as fr
 
@@ -25,6 +26,8 @@ class MainGUI(tk.Tk):
         # Ribbon Menu
         piLab_menu = tk.Menu(self)
         self.config(menu = piLab_menu)
+        custom_font = tkfont.Font(family = "Arial", size = 20, weight = "bold")
+        piLab_menu.config(font = custom_font)
 
         home_menu = tk.Menu(piLab_menu, tearoff = 0)
         piLab_menu.add_cascade(label = "Home", menu = home_menu)
